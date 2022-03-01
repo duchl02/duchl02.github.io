@@ -18,7 +18,7 @@ body > div{
     text-align: center;
     box-shadow: 10px 10px 10px ;
     opacity: 0;
-    Magin-top: 300px;
+    /* margin-top: 300px; */
 }
 .button:hover{
     background-image: linear-gradient(to right ,rgb(122,222,212), rgb(111,121,111));
@@ -33,3 +33,4 @@ body > div{
 .button--erro{
     background-image: linear-gradient(to right, rgb(111,121,111), rgb(122,222,212));
 }
+
