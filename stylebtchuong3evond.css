@@ -21,7 +21,7 @@ body > div{
     /* margin-top: 300px; */
 }
 .button:hover{
-    background-image: linear-gradient(to right ,rgb(122,222,212), rgb(111,121,111));
+    background-image: linear-gradient(to right ,rgb(222, 122, 210), rgb(196, 26, 49));
     opacity: 1;
 }
 .button + .button{
