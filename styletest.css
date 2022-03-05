@@ -437,3 +437,14 @@ img.map-img {
         margin-left: 10px;
     }
 }
+/* ngày chỉnh sửa 05/03/2022 */
+#content .tickets-list li:first-child {
+    width: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#content .tickets-list li:last-child {
+    width: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
