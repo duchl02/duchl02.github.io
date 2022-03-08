@@ -1,257 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="./styletest.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <title>Su Dung Bem</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/97aa991169.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="main">
-    <div id="header">
-        <ul id="nav">
-            <li><a href="#">Home M</a></li>
-            <li><a href="#band">Band</a></li>
-            <li><a href="#tour">Tour</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-                <a href="">More
-                    <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="subnav">
-                       <li><a href="#">Merchandise</a></li>
-                       <li><a href="#">Extras</a></li>
-                       <li><a href="#">Media</a></li>
-                </ul>                            
-            </li>
-        </ul>
-        <div class="search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div id="mobile-menu" class="mobile-menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+    <p class="all">
+        <p class="content">
+            Tất cả vẻ đẹp của cuộc sống được tạo nên là nhờ vào sức mạnh của tình yêu đối với người phụ nữ.
+        </p>
+        <h3 class="title">
+            Gửi ngàn yêu thương những người phụ nữ Việt Nam.
+        </h3>
+    </p>
+    <!-- <div id="toast">
+
     </div>
-<!-- ------------------------------------------------------------------------------------- -->
-    <div id="slider">
-        <div class="text-content">
-            <div class="text-heading">
-                <h3>Danh Ngôn</h3>
-            </div>
-            <div class="text-description">
-                <p>Mọi thứ dù cho có khó,phức tạp đến đâu nếu làm nhiều thì đều trở nên đơn giản.</p>
-            </div>
+    <div>
+        <div class="btn btn--success">Success</div>
+        <div class="btn btn--error">Error</div>
+    </div>
+ -->
+
+    <!-- <div class="toast toast__warn">
+        <div class="toast__icon">
+            <i class="fa-duotone fa-exclamation"></i>
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Warn</h3>
+            <p class="toast__msg">Go Make Something Awesome Go Make Something Awesome</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa-solid fa-circle-xmark"></i>
         </div>
     </div>
 
-    <div id="content">
-        <div id="band" class="content-section">
-            <h2 class="section-heading">THE BAND</h2>
-            <p class="section-sub-heading">we love music</p>
-            <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div class="member-list">
-                <div class="member-item">
-                    <p class="member-name">Name</p>
-                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="name" class="member-img">
-                </div>    
-                <div class="member-item">
-                    <p class="member-name">Name</p>
-                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="name" class="member-img">
-                </div> 
-                <div class="member-item">
-                    <p class="member-name">Name</p>
-                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="name" class="member-img">
-                </div>                  
-            </div>
+
+    <div class="toast toast__error">
+        <div class="toast__icon">
+            <i class="fa-regular fa-circle-exclamation"></i>
         </div>
-<!-- ------------------------------------------------------------------------------------- -->
-        <div id="tour" class="tour-section">
-            <div class="content-section">
-                <h2 class="section-heading text-white">TOUR DATES</h2>
-                <p class="section-sub-heading text-white">Remember to book your tickets!</p>
-
-                <ul class="tickets-list">
-                    <li>September <span class="sold-out">Sold-out</span></li>
-                    <li>Octuber <span class="sold-out">Sold-out</span></li>
-                    <li>November <span class="quantity">3</span></li>
-                </ul>
-            </div>
-<!-- place------------------------------------------------------------------------------------- -->
-            <div class="places-list">
-                <div class="place-item">
-                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" class="place-img">
-                    <div class="place-body">
-                        <h3 class="place-heading">New York</h3>
-                        <p class="place-time">Fri 27 Nov 2016</p>
-                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
-                    </div>
-                </div>
-
-                <div class="place-item">
-                    <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" class="place-img">
-                    <div class="place-body">
-                        <h3 class="place-heading">Paris</h3>
-                        <p class="place-time">Sat 28 Nov 2016</p>
-                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
-                    </div>
-                </div>
-                
-                <div class="place-item">
-                    <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" class="place-img">
-                    <div class="place-body">
-                        <h3 class="place-heading">San Francisco</h3>
-                        <p class="place-time">Sun 29 Nov 2016</p>
-                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Error</h3>
+            <p class="toast__msg">Go Make Something Awesome Go Make Something Awesome</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa-solid fa-circle-xmark"></i>
         </div>
     </div>
 
-    <div id="footer">
-        
-    </div>
-    <!-- modal----------------------------------------------------------------------------------------- -->
-    <div class="modal js-modal">
-      <div class="modal-container js-modal-container">
-        <div class="modal-close js-modal-close"><i class="fa-solid fa-x"></i></div>
-        <div class="modal-header">
-            <i class="fa-solid fa-bag-shopping"></i>Tickets
+
+    <div class="toast toast__info">
+        <div class="toast__icon">
+            <i class="fa-solid fa-info"></i>
         </div>
-        <div class="modal-body">
-            <label for="" class="modal-label">
-                <i class=" fa-solid fa-cart-shopping"></i>
-                Tickets, $15 per person
-            </label>
-            <input type="text" class="modal-input" placeholder="How many?">
+        <div class="toast__body">
+            <h3 class="toast__title">Info</h3>
+            <p class="toast__msg">Go Make Something Awesome Go Make Something Awesome</p>
         </div>
-        
-        <div class="modal-body">
-            <label for="" class="modal-label">
-                <i class="fa-solid fa-user"></i>
-                Send To
-            </label>
-            <input type="email" class="modal-input" placeholder="Enter Email">
-        </div>
-        <button id="buy-tickets">
-            PAY <i class="fa-solid fa-check"></i>
-        </button>
-        <div class="modal-footer">
-            <p class="modal-help">Need <a href="">help?</a></p>
-        </div>
-      </div>
-    </div>
-    <!-- Contact form------------------------------------- -->
-    <div id="contact" class="content-section">
-        <h2 class="section-heading text-white">CONTACT</h2>
-        <p class="section-sub-heading text-white">Fan? Drop a note!</p>
-        <div class="row">
-            <div class="row col-half">
-                <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-                <p><i class="fa-solid fa-phone"></i>Phone:<a href="tel:0254994904">+00 151515</a>  </p>
-                <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:duc1503honglinh@gmail.com">mail@mail.com</a> </p>
-            </div>
-            <div class="row col-half">
-                <div class="col col-hafl">
-                    <form action="">
-                        <div class="row">
-                            <div class="col col-hafl">
-                                <input type="text" placeholder="Name" class="form-control">
-                            </div>
-                            <div class="col col-hafl">
-                                <input type="email" placeholder="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-full">
-                                <input type="message" placeholder="Message" class="form-control">
-                            </div>
-                            <input type="SUBMIT">
-                        </div>
-                        
-                    </form>
+        <div class="toast__close">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div> -->
+    <!-- <script>
+        function toast({
+            title = '',
+            message = '',
+            type = 'info',
+            duration = 3000
+        }) {
+            const main = document.getElementById('toast');
+            if (main) {
+                const toast = document.createElement('div');
+                toast.classList.add('toast', `toast--${type}`);
+                toast.innerHTML = `
+                <div class="toast__icon">
+                     <i class="fa-solid fa-check"></i>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- ---------map-------------------------------- -->
-    <div class="footer">
-        <div class="map-section">
-            <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="map-img">
-        </div>
-        <div class="footer-list">
-            <a href="https://www.facebook.com/duchonglinh02/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/duchl02/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCkEeWhaZUFm_hp_Wybq0EbQ"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://javhdd.net/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/@duc1503honglinh"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://github.com/duchl02"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="footer-power">
-            <p>Powered by <a href="">duchl02</a></p>
-        </div>
-    </div>
-</div>
-<!-- script:modal---------------------------------------------------------- -->
-<script>
-    //dat bien
-    const buyBtns = document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.js-modal')
-    const modalClose = document.querySelector('.js-modal-close')
-    const modalContaier = document.querySelector('.js-modal-container')
-    
-//them hoac bot class
-    function showBuyTickets() {
-    modal.classList.add('open')
-    }
-    function hideBuyTicks() {
-        modal.classList.remove('open')
-    }
-    for (const buyBtn of buyBtns ) {
-        buyBtn.addEventListener('click', showBuyTickets)
-    }
-//chon hanh dong    
-    modalClose.addEventListener('click', hideBuyTicks)
-    modal.addEventListener('click', hideBuyTicks)
-    modalContaier.addEventListener('click', function(event){
-        event.stopPropagation()
-    })
-</script>
-<!-- script header-------------------------------------- -->
-<script>
-    var header = document.getElementById('header');
-    var mobileMenu = document.getElementById('mobile-menu');
-    var headerHeight = header.clientHeight
-    mobileMenu.onclick = function(){
-        var isClose = header.clientHeight === headerHeight;
-        if (isClose) {
-            header.style.height = 'auto';
-        } else {
-            header.style.height = null;
-        }
-    }
-    // tu dong dong khi chon menu
-    var menuItems = document.querySelectorAll('#nav li a[href *="#"]');
-    for ( var i = 0;i< menuItems.length; i++) {
-        var menuItiem=menuItems[i];
-    
-        menuItems.onclick = function(event){
-            var isParenMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-            if (isParenMenu){
-                event.preventDefault();
-            }else {
-            header.style.height = null;
+                <div class="toast__body">
+                    <h3 class="toast__title">${title}</h3>
+                    <p class="toast__msg">${message}</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                `;
+                main.appendChild(toast);
             }
         }
-    }    
+        
+
+        toast({
+            title: 'success' ,
+            message: 'Go Make Something Awesome Go Make Something Awesome',
+            type:'error',
+            duration:3000
+        });
+    </script> -->
+    <div id="toast"></div>
+
+    <div>
+      <div onclick="showSuccessToast();" class="btn btn--success">Chưa ny nhấn để nhận quà</div>
+      <div onclick="showErrorToast();" class="btn btn--danger">Có ny, chồng thì bên này</div>
+    </div>
+    
+    <script>
+      function showSuccessToast() {
+        toast({
+          title: "SEND NUDE!",
+          message: "Show Me Your Body. ",
+          type: "success",
+          duration: 5000
+        });
+      }
+    
+      function showErrorToast() {
+        toast({
+          title: "Không Có!",
+          message: " Tôi không có đủ yêu thương để chia hết cho bạn, hãy hỏi chàng trai của bạn.",
+          type: "error",
+          duration: 5000
+        });
+      }
+    </script>
+    <!-- // Toast function -->
+<script>
+    function toast({ title = "", message = "", type = "info", duration = 3000 }) {
+      const main = document.getElementById("toast");
+      if (main) {
+        const toast = document.createElement("div");
+    
+        // Auto remove toast
+        const autoRemoveId = setTimeout(function () {
+          main.removeChild(toast);
+        }, duration + 1000);
+    
+        // Remove toast when clicked
+        toast.onclick = function (e) {
+          if (e.target.closest(".toast__close")) {
+            main.removeChild(toast);
+            clearTimeout(autoRemoveId);
+          }
+        };
+    
+        const icons = {
+          success: "fas fa-check-circle",
+          info: "fas fa-info-circle",
+          warning: "fas fa-exclamation-circle",
+          error: "fas fa-exclamation-circle"
+        };
+        const icon = icons[type];
+        const delay = (duration / 1000).toFixed(2);
+    
+        toast.classList.add("toast", `toast--${type}`);
+        toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
+    
+        toast.innerHTML = `
+                        <div class="toast__icon">
+                            <i class="${icon}"></i>
+                        </div>
+                        <div class="toast__body">
+                            <h3 class="toast__title">${title}</h3>
+                            <p class="toast__msg">${message}</p>
+                        </div>
+                        <div class="toast__close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    `;
+        main.appendChild(toast);
+      }
+    }
 </script>
+<div class="footer">
+    <div class="footer-list">
+        <a href="https://www.facebook.com/duchonglinh02/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/duchl02/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCkEeWhaZUFm_hp_Wybq0EbQ"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://javhdd.net/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@duc1503honglinh"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://github.com/duchl02"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <div class="footer-power">
+        <p>Powered by <a href="https://www.facebook.com/duchonglinh02/">duchl02</a></p>
+    </div>
+</div>
 </body>
 </html>
