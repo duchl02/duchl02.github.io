@@ -1,320 +1,336 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/Screen Shot 2022-04-09 at 10.07.55.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Music player</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/main.css">
-    <title> MP3 Music Play </title>
+    <title>MY InFo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/resetcss.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <script src="https://kit.fontawesome.com/97aa991169.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="main">
+        <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="" direction="">Chào mừng đến với Web Site của tôi, liên hệ qua <a href="https://www.facebook.com/duchonglinh02/">Facebook</a> nhé!</marquee>
+        <div class="grid wide">
+            <!-- heading -->
+            <div class="row  header">
+                    <div class="header__left col l-6 m-12 c-12">
+                        <div class="row">
+                            <div class="header__avata col l-4 m-4 c-12">
+                                <img  src="./assets/img/Screen Shot 2022-04-09 at 10.07.55.png" alt="Đây là Đức" class="header__avata-img">
+                            </div>
+                            <div class="header__left-info col l-8 m-8 c-12 ">
+                                <h1 class="header__left-name">Nguyễn Văn Đức</h1>
+                                <div class="header__left-discription">Nông dân chuyên cần</div>
+                                <div class="header__left-icon">
+                                    <a href="https://www.facebook.com/duchonglinh02/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://zaloapp.com/qr/p/uhiwzpwro6hu"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCkEeWhaZUFm_hp_Wybq0EbQ"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://github.com/duchl02"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right col l-6 m-12 c-12">
+                        <div class="row">
+                            <div class="header__right-info col l-6 m-6 c-12">
+                                <h3>EMAIL
+                                    <p >duc1503honglinh@gmail.com</p>
+                                </h3><h3>NGÀY SINH
+                                    <p >15/03/2002</p>
+                                </h3>
+                            </div>
+                            <div class="header__right-info col l-6 m-6 c-12">
+                                <h3>SỐ ĐIỆN THOẠI
+                                    <p >0354***904</p>
+                                </h3>
+                                <h3>QUÊ QUÁN
+                                    <p >Hồng Lĩnh - Hà Tĩnh</p>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- CONTAINER -->
+            <div class="row container">
+                <!-- CONTAINER SELECTION -->
+                <div class="container__selection-all col l-2 m-12 c-12 ">
+                    <div class="container__selection ">
+                        <div class="container__selection-item active">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/nobciafz.json"
+                                    trigger="morph"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            <p>Bản Thân</p>
+                        </div>
+                        <div class="container__selection-item ">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/wxnxiano.json"
+                                    trigger="morph"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            <p>Kết Quả</p>
+                        </div>
+                        <div class="container__selection-item">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/iltqorsz.json"
+                                    trigger="morph"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            <p>Mục Tiêu</p>
+                        </div>
+                        <div class="container__selection-item">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/rjzlnunf.json"
+                                    trigger="morph"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            <p>Sở Thích</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTENT -->
+                <div class="container__content-all col l-10 m-12 c-12">
+                    <!-- INFOMATION -->
+                    <div class="container__content active ">
+                        <div class="container__content-info ">
+                                <div class="container__content-title">
+                                    <h1>Giới Thiệu!</h1>
+                                </div>
+                                <div class="title__discription">
+                                    <p>Năm 2020 sau khi học hết cấp 3 mình đăng ký thi đại học, vì lúc đấy chưa có định hướng cho tương lai nên đã chọn một ngành mà bản thân chẳng biết học để làm gì và mình đã chọn ngành Kinh Tế.</p>
+                                    <br>
+                                    <p>Tháng 3/2021 quyết định bỏ học đại học. </p>
+                                    <br>
+                                    <p>Sau khi nghỉ học mình lên Hà Nội vào Đồng Nai bươn chải bằng nhiều nghề từ shipper, sale, công nhân,...với mộng tưởng tay trắng làm nên Bill Gates thứ 2. Nhưng vừa bước ra khỏi nhà cuộc đời đã vã ngay vào mặt rất đau làm việc gì cũng thất bại.Thời gian bươn chải ngoài xã hội, bị cuộc đời dẫm đạp nhưng cũng trong quãng thời gian ấy cũng đã giúp bản thân nhận ra nhiều điều.</p>
+                                    <br>
+                                    <p>Tháng 2/2022 mua máy tính học lập trình.</p>
+                                    <br>
+                                    <p>Từ đó đến nay cũng được hai tháng và trang Web này là nột trong số sản phẩm được viết bởi những kiến thức học qua internet và chủ yếu qua hai kênh Youtube F8 FullStack và Evondev</p>  
+                                </div>
+                                <div class="title__discription">
+                                    <br>
+                                    <p>
+                                        Mình không đám nói là bản thân chăm học trong 2 tháng vừa rồi mình học đôi lúc hay chảnh mảng không tập trung. Nhưng rồi trang Web này vẫn được mình cho ra đời mình hi vọng rằng sẽ gặp được một "Chiến Hữu hay Đối Thủ" để có thể giao tranh "Đấu Kiếm" sớm tiến tới đắc đạo thống nhất thiên hạ.
+                                    </p>
+                               <h1>Một số câu nói ảnh hưởng đến thế giới quan của mình!</h1>
+                                </div>
+                            <div class="slide__container">
+                                <i class="slide-left fa-solid fa-angle-left"></i>
+                                <i class="slide-right fa-solid fa-angle-right"></i>
+                                <ul class="slide-dot">
+                                    <li class="slide-dot-item active"></li>
+                                    <li class="slide-dot-item"></li>
+                                    <li class="slide-dot-item"></li>
+                                    <li class="slide-dot-item"></li>
+                                    <li class="slide-dot-item"></li>
+                                </ul>
 
-<div class="player">
-  <!-- Dashboard -->
-  <div class="dashboard">
-    <!-- Header -->
-    <header>
-      <h4>Now playing:</h4>
-      <h2>String 57th & 9th</h2>
-    </header>
-
-    <!-- CD -->
-    <div class="cd">
-      <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
-      </div>
+                                <div class="slide-main active">
+                                    
+                                    <div class="slide-img">
+                                        <img src="./assets/img/ton-tu.jpeg" alt="">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h1>Tôn Tử</h1>
+                                    <p>Tiên hạ thủ vi cường, hậu thủ vi tai ương</p>
+                                    </div>
+                                </div>
+                                <div class="slide-main ">
+                                    <div class="slide-img">
+                                        <img src="./assets/img/tien-bip.jpeg" alt="">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h1>Tiến Bịp</h1>
+                                    <p>Tiên trách kỷ, hậu vẫn là trách kỷ</p>
+                                    </div>
+                                </div>
+                                <div class="slide-main">
+                                    <div class="slide-img">
+                                        <img src="./assets/img/ngan-ngu-hay.jpeg" alt="">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h1>Khuyết Danh</h1>
+                                    <p>Sau tất cả, mục đích mỗi con người hướng đến là sự bình yên</p>
+                                    </div>
+                                </div>
+                                <div class="slide-main ">
+                                    <div class="slide-img">
+                                        <img src="./assets/img/the-godfather-1-1375687021-500-2676-4881-1631806006.jpeg" alt="">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h1>The Godfather</h1>
+                                    <p>Sức khỏe tốt là điều quan trọng nhất, hơn cả thành công, hơn cả tiền bạc, hơn cả quyền lực.</p>
+                                    </div>
+                                </div>
+                                <div class="slide-main ">
+                                    <div class="slide-img">
+                                        <img src="./assets/img/jvevermind.jpeg" alt="">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h1>Jvevermind</h1>
+                                    <p>Công bằng là giấc mơ của kẻ yếu, người tỉnh táo nhất chính là kẻ mạnh nhất, kẻ mạnh nhất chính là người thành công nhất</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RESULT -->
+                    <div class="container__content ">
+                        <div class="container__result">
+                            <div class="container__content-product">
+                                <div class="container__content-title">
+                                <h1>Thành quả sau hai tháng</h1>
+                            </div>
+                            <div class="container__content-img-item row">
+                                <div class="container__content-img col l-6 m-6 c-12">
+                                    <a href=""><img src="./assets/img/clock.png" alt=""></a>
+                                    <b>Đồng Hồ</b>
+                                </div>
+                                <div class="container__content-img col l-6 m-6 c-12">
+                                    <a href=""><img src="./assets/img/clock.png" alt=""></a>
+                                    <b>Đồng Hồ</b>
+                                </div> 
+                                <div class="container__content-img col l-6 m-6 c-12">
+                                    <a href=""><img src="./assets/img/clock.png" alt=""></a>
+                                    <b>Đồng Hồ</b>
+                                </div> 
+                                <div class="container__content-img col l-6 m-6 c-12">
+                                    <a href="http://duchl02.ga/"><img src="./assets/img/clock.png" alt=""></a>
+                                    <b>Đồng Hồ</b>
+                                </div>     
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TARGET -->
+                    <div class="container__content">
+                        <div class="container__target">
+                            <h1>Mục Tiêu</h1>
+                            <h2>Biết Sử Dụng Jquery và Boostrap</h2>
+                            <h4>01/05/2022</h4>
+                            <p>Jquery và Boostrap là hai thư viện quan trọng nhất định phải học khi làm lập trình viên Front End. Việc sử dụng thuần thục hai thư viện này sẽ giúp code nhanh gọn và học ReactJS nhanh hơn.</p>
+                            <h2>Học ReactJS và luyện tập Javascript</h2>
+                            <h4>01/06/2022</h4>
+                            <p>ReactJS là yêu cầu thiết yếu của các nhà tuyển dụng Front End, nhằm nâng cao và tối ưu hoá UI. Bên cạch đó việc nâng khả năng Javascript càng quan trọng không kém, có khả năng viết tốt Javascript mới kết hợp được tất cả kiến thức tạo ra sự trơn tru mạch lạc.</p>
+                            <h2>Học sử dụng Git và tạo sản phẩm</h2>
+                            <h4>01/07/2022</h4>
+                            <p>Hiện nay, Git trở thành một trong các phần mềm quản lý mã nguồn phổ biến nhất. Việc biết sử dụng Git sẽ là lợi thế lớn với nhà tuyển dụng vì độ phổ biến và sự ứng dụng cao của nó. Trong thời gian này bản thân sẽ cố gắng luyện code nhiều nhất có thể, một tuần sẽ cố gắng cho ra một sản phẩm hoàn chỉnh và sẽ được đưa vào CV.</p>
+                        </div>
+                    </div>
+                    <!-- ENJOIN -->
+                    <div class="container__content">
+                        <div class="cnj">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis fugit a accusamus. Provident cupiditate reiciendis rem in beatae voluptas odio minima doloremque tempore sed aspernatur accusantium quidem, velit omnis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Control -->
-    <div class="control">
-      <div class="btn btn-repeat">
-        <i class="fas fa-redo"></i>
-      </div>
-      <div class="btn btn-prev">
-        <i class="fas fa-step-backward"></i>
-      </div>
-      <div class="btn btn-toggle-play">
-        <i class="fas fa-pause icon-pause"></i>
-        <i class="fas fa-play icon-play"></i>
-      </div>
-      <div class="btn btn-next">
-        <i class="fas fa-step-forward"></i>
-      </div>
-      <div class="btn btn-random">
-        <i class="fas fa-random"></i>
-      </div>
-    </div>
-
-    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
-
-    <audio id="audio" src=""></audio>
-  </div>
-
-  <!-- Playlist -->
-  <div class="playlist">
-  
-  </div>
-</div>
 <script>
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-const heading = $('header h2')
-const cdThumb = $('.cd-thumb')
-const audio = $('#audio')
-const playBtn = $('.btn-toggle-play')
-const player = $('.player')
-const progress = $('#progress')
-const nextBtn = $('.btn-next') 
-const prevBtn = $('.btn-prev') 
-const btnRandom= $('.btn-random')
-const repeatBtn= $('.btn-repeat')
-const playList = $('.playlist')
+    const $ = document.querySelector.bind(document)
+    const $$ = document.querySelectorAll.bind(document)
 
-const app= {
-  currentIndex: 0,
-  isPlaying: false,
-  isRandom: false,
-  songs: [
-  {
-    name: 'Cưa là đổ',
-    singer: 'Phát Hồ X2X-Đại Mèo',
-    path: './assets/music/cua-la-do.mp3',
-    img: './assets/img/cua-la-do.png'
-  },{
-    name: 'Yêu là cưới',
-    singer: 'Phát Hồ X2X-Đại Mèo',
-    path: './assets/music/ Yêu Là Cưới Lofi Ver  Phát Hồ x X2x 1992  Lyric Video.mp3',
-    img: './assets/img/yeu-la-cuoi.png'
-  },{
-    name: 'Đổi tình đỏi áo đổi anh',
-    singer: 'Thành Đạt',
-    path: './assets/music/doi-tinh-doi-ao-doi-anh.mp3',
-    img: './assets/img/doi-tinh-doi-ao-doi-anh.png'
-  },{
-    name: 'Thất tình',
-    singer: 'Trịnh Đình Quang',
-    path: './assets/music/that-tinh.m4a',
-    img: './assets/img/that-tinh.png'
-  },{
-    name: 'Hẹn em kiếp sau',
-    singer: 'Lã',
-    path: './assets/music/hen-em-kiep-sau.mp3',
-    img: './assets/img/hen-em-kiep-sau.png'
-  },{
-    name: 'Hoa sứ nhà nàng',
-    singer: 'H2K x KProxLoFi',
-    path: './assets/music/y2mate.com - Hoa Sứ Nhà Nàng  H2K x KProxLoFi Ver Audio Lyrics Video.mp3',
-    img: './assets/img/hoa su nha nang.png'
-  },{
-    name: 'Lỡ Duyên',
-    singer: 'RUM ft NIT',
-    path: './assets/music/lo-duyen.mp3',
-    img: './assets/img/lo-duyen.png'
-  },{
-    name: 'Một lần dang dở',
-    singer: 'H2K x KProxLoFi',
-    path: './assets/music/y2mate.com - MỘT LẦN DANG DỞ  H2K  LOFI  video lyrics .mp3',
-    img: './assets/img/mot-lan-dang-do.png'
-  },{
-    name: 'Đạt G',
-    singer: 'Thêm Bao Nhiêu Lâu',
-    path: './assets/music/y2mate.com - Thêm Bao Nhiêu Lâu  Đạt G  OFFICIAL MV.mp3',
-    img: './assets/img/them-bao-nhieu-lau.png'
-  },{
-    name: 'Lê Bảo Bình',
-    singer: 'Thương em đến già',
-    path: './assets/music/y2mate.com - THƯƠNG EM ĐẾN GIÀ  LÊ BẢO BÌNH  OFFICIAL MUSIC VIDEO.mp3',
-    img: './assets/img/thuong-em-den-gia.png'
-  }
-],
-  render: function(){
-    const htmls = this.songs.map((song,index) => {
-      return `
-      <div class="song ${index === this.currentIndex ? 'active':''} " data-index="${index}">
-        <div class="thumb" style="background-image: url('${song.img}')">
-          </div>
-          <div class="body">
-            <h3 class="title">${song.name}</h3>
-            <p class="author">${song.singer}</p>
-          </div>
-          <div class="option">
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-      </div>
-      `
+    const items = $$('.container__selection-item')
+    const contents = $$('.container__content')
+
+    // CONTAINER-ITEM
+    items.forEach(function(item,index) {
+        item.onclick = function(){
+            const content = contents[index]
+            // tabActive()
+            $('.container__content.active').classList.remove('active')
+            $('.container__selection-item.active').classList.remove('active')
+
+            item.classList.add('active')
+            content.classList.add('active')
+        }
     })
-    $('.playlist').innerHTML = htmls.join('')
-  },
-  defineProperties: function(){
-    Object.defineProperty(this, 'currenSong',{
-      get: function(){
-        return this.songs[this.currentIndex]
-      }
-    })
-  },
-  handleEvents: function(){
-    const cd = $('.cd')
-    const cdWidth = cd.offsetWidth
-    const _this = this
-    
-    const cdThumbAnimate = cdThumb.animate([
-      {transform:'rotate(360deg)'}
-    ],{
-      duration: 10000,
-      iterations: Infinity
-    })
-    cdThumbAnimate.pause()
-    
-    // zoom in , zoom out
-    document.onscroll = function(){
-    const scrollTop = window.scrollY
-    const newCdWidth = cdWidth - scrollTop
-    cd.style.width = newCdWidth > 0 ? newCdWidth + 'px': 0
-    cd.style.opacity = newCdWidth/cdWidth
+    function tabActive(){
+        document.documentElement.scrollTop= 100 + 'px'
     }
-    // play songs
-    playBtn.onclick = function(){
-      
-      if (_this.isPlaying){
-        _this.isPlaying=false
-        audio.pause()
-        player.classList.remove('playing')
-        cdThumbAnimate.pause()
-
-      }else{
-        _this.isPlaying=true
-        audio.play()
-        player.classList.add('playing')
-        cdThumbAnimate.play()
-
-      }
-      //
-      audio.onplay = function () {
-      _this.isPlaying = true;
-      player.classList.add("playing");
-      cdThumbAnimate.play();
-    };
-      audio.ontimeupdate = function(){
-        if (audio.duration){
-          const progressCurrentTime = Math.floor(audio.currentTime/audio.duration*100)
-          progress.value = progressCurrentTime
+    // DOT-SLIDE
+    const dots=$$('.slide-dot-item')
+    const slides=$$('.slide-main')
+    const numberOfSilides = slides.length
+    var slideNumber = 0
+    var slideIndex = 0
+    dots.forEach(function(dot,index){
+        dot.onclick = function(){
+            const slide = slides[index]
+            $('.slide-main.active').classList.remove('active')
+            $('.slide-dot-item.active').classList.remove('active')
+            dot.classList.add('active')
+            slide.classList.add('active')
         }
-        progress.onchange = function(e){
-          const seekTime = audio.duration/100 * e.target.value
-          audio.currentTime = seekTime
-        }
-      }
-      //nextSong
-      nextBtn.onclick = function(){
-        if (_this.isRandom){
-          _this.playRandomSong()
-        } else {
-          _this.nextSong()
-        }
-        audio.play()
-        _this.render()
-        _this.scrollToActiveSong()
-
-      }
-      prevBtn.onclick = function(){
-        if (_this.isRandom){
-          _this.playRandomSong()
-        } else {
-          _this.prevSong()
-        }
-        audio.play()
-        _this.render()
-        _this.scrollToActiveSong()
-      }
-      //random song
-      btnRandom.onclick = function (e) {
-      _this.isRandom = !_this.isRandom;
-      // _this.setConfig("isRandom", _this.isRandom);
-      btnRandom.classList.toggle("active", _this.isRandom);
-    };
-      
-      //repeat only
-      repeatBtn.onclick = function (e) {
-      _this.isRepeat = !_this.isRepeat;
-      // _this.setConfig("isRepeat", _this.isRepeat);
-      repeatBtn.classList.toggle("active", _this.isRepeat);
-    };
-      audio.onended = function(){
-        if(_this.isRepeat){
-          audio.play()
-        } else {
-          nextBtn.click()
-        }
-      }
-      // 
-      playList.onclick = function(e){
-        const songNode= e.target.closest(".song:not(.active)")
-
-        if (songNode || e.target.closest(".option")) {
-          //click song
-          if (songNode) {
-          _this.currentIndex = Number(songNode.dataset.index);
-          _this.loadCurrentSong();
-          _this.render();
-          audio.play();
-         }
-          if (e.target.closest(".option")){
+    })
+    // AUTO SLIDE
+    function autoSlide(){
+        setInterval(function(){
+            dots.forEach(function(dot){
+            dot.classList.remove('active')
+            })
+            slides.forEach(function(slide){
+            slide.classList.remove('active')
+            })
+            slideNumber ++
             
-          }
-        }
-      }
+            if (slideNumber > dots.length-1){
+                slideNumber =0;
+            }
+            dots[slideNumber].classList.add('active')
+            slides[slideNumber].classList.add('active')
+        },3000)
     }
-  },
+    autoSlide()
+    // NEXT SLIDE
+    const backBtn = $('.slide-left')
+    const nextBtn = $('.slide-right')
+    
+    nextBtn.addEventListener('click', function(){
+        dots.forEach(function(dot){
+            dot.classList.remove('active')
+            })
+            slides.forEach(function(slide){
+            slide.classList.remove('active')
+            })
+            slideNumber ++
+            
+            if (slideNumber > dots.length-1){
+                slideNumber =0;
+            }
+            dots[slideNumber].classList.add('active')
+            slides[slideNumber].classList.add('active')
+    })
+    // BACK SLIDE
+    backBtn.addEventListener('click', function(){
+        dots.forEach(function(dot){
+            dot.classList.remove('active')
+            })
+            slides.forEach(function(slide){
+            slide.classList.remove('active')
+            })
+            slideNumber --
 
-  scrollToActiveSong(){
-    setTimeout(()=> {
-      $('.song.active').scrollIntoView({
-        behavior: 'smooth',
-        block: 'end'
-      })
-    },300)
-  },
-  loadCurrentSong: function(){
-  
-    heading.textContent = this.currenSong.name
-    cdThumb.style.backgroundImage = `url('${this.currenSong.img}')`
-    audio.src = this.currenSong.path
-    console.log(heading,cdThumb,audio)
-  },
-  nextSong: function(){
-      this.currentIndex++
-      if (this.currentIndex >= this.songs.length) {
-        this.currentIndex=0
-      }
-      this.loadCurrentSong()
-  },
-  prevSong: function(){
-      this.currentIndex--
-      if (this.currentIndex < 0) {
-        this.currentIndex= this.songs.length-1
-      }
-      this.loadCurrentSong()
-  },
-  playRandomSong: function(){
-    let newIndex 
-    do {
-      newIndex =Math.floor(Math.random() * this.songs.length)
-    } while (newIndex === this.currentIndex)
-    this.currentIndex=newIndex
-    this.loadCurrentSong()
-  },
-  start: function(){
-    this.defineProperties()
-    this.handleEvents()
-    this.loadCurrentSong()
-    this.render()
-  }
-}
-app.start()
+            if(slideNumber<0){
+                slideNumber = dots.length -1
+            }
+            dots[slideNumber].classList.add('active')
+            slides[slideNumber].classList.add('active')
+    })
 </script>
 </body>
 </html>
