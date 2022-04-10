@@ -316,3 +316,44 @@ i.fa-brands.fa-github {
     text-align: center;
     font-weight:300;
 }
+/* CONTAINER TARGET */
+.container__target h1{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.container__target h2{
+    font-size: 1.4rem;
+    font-weight: 300;
+    position: relative;
+}
+.container__target h4{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color:rgb(121, 112, 112);
+}
+.container__target p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: justify;
+}
+.container__target p::after{
+    content:"";
+    position:absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #0066cc;
+    left:-10px;
+    top: 0;
+}
+.container__target h2::after{
+    content:"";
+    position:absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #0066cc;
+    left:-10px;
+    top: 0;
+}
