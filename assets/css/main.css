@@ -350,6 +350,8 @@ i.fa-brands.fa-github {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
+    text-align: center;
+
 }
 .container__target h2{
     font-size: 1.4rem;
@@ -390,10 +392,9 @@ i.fa-brands.fa-github {
 .container__enjoin h1{
     font-size:1.8rem;
     font-weight: 300;
+    text-align: center;
 }
-.container__enjoin{
-    text-align:center;
-}
+
 .container__enjoin-item{
     display: flex;
     padding:20px;
