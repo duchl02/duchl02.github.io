@@ -285,13 +285,13 @@
         </div>
     </div>
 <script>
-    const loading= $('.loading')
+    
 
-    window.onload = function(){
+    
 
-        loading.classList.remove('active')
 
-    }
+
+    
     const $ = document.querySelector.bind(document)
     const $$ = document.querySelectorAll.bind(document)
 
@@ -382,7 +382,13 @@
             dots[slideNumber].classList.add('active')
             slides[slideNumber].classList.add('active')
     })
-    
+    const loading= $('.loading')
+
+    window.onload = function(){
+
+        loading.classList.remove('active')
+
+    }
 </script>
 </body>
 </html>
