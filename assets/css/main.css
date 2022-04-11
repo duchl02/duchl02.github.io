@@ -387,8 +387,12 @@ i.fa-brands.fa-github {
     top: 0;
 }
 /* CONTAINER-ẸNJOIN */
+.container__enjoin h1{
+    font-size:1.8rem;
+    font-weight: 300;
+}
 .container__enjoin{
-    
+    text-align:center;
 }
 .container__enjoin-item{
     display: flex;
