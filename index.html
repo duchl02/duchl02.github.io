@@ -16,8 +16,12 @@
     <script src="https://kit.fontawesome.com/97aa991169.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="loading active ">
+        <p>LOADING DATA...</p>
+    </div>
     <div class="main">
-        <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="" direction="">Chào mừng đến với Web Site của tôi, liên hệ qua <a href="https://www.facebook.com/duchonglinh02/">Facebook</a> nhé!</marquee>
+        <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="" direction="">Chào mừng đến với Web Site của tôi | Ngày tạo: 09/04/2022 - Cập nhật: 11/04/2022
+        </marquee>
         <div class="grid wide">
             <!-- heading -->
             <div class="row  header">
@@ -30,10 +34,10 @@
                                 <h1 class="header__left-name">Nguyễn Văn Đức</h1>
                                 <div class="header__left-discription">Nông dân chuyên cần</div>
                                 <div class="header__left-icon">
-                                    <a href="https://www.facebook.com/duchonglinh02/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="http://zaloapp.com/qr/p/uhiwzpwro6hu"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCkEeWhaZUFm_hp_Wybq0EbQ"><i class="fa-brands fa-youtube"></i></a>
-                                    <a href="https://github.com/duchl02"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.facebook.com/duchonglinh02/"target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://zaloapp.com/qr/p/uhiwzpwro6hu"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCkEeWhaZUFm_hp_Wybq0EbQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://github.com/duchl02"><i class="fa-brands fa-github" target="_blank"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -57,6 +61,7 @@
                             </div>
                         </div>
                     </div>
+                    
             </div>
             <!-- CONTAINER -->
             <div class="row container">
@@ -64,6 +69,7 @@
                 <div class="container__selection-all col l-2 m-12 c-12 ">
                     <div class="container__selection ">
                         <div class="container__selection-item active">
+                            <a href="#info">
                             <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
                                 <lord-icon
                                     src="https://cdn.lordicon.com/nobciafz.json"
@@ -71,8 +77,10 @@
                                     style="width:70px;height:70px">
                                 </lord-icon>
                             <p>Bản Thân</p>
+                        </a>
                         </div>
                         <div class="container__selection-item ">
+                            <a href="#result">
                             <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
                                 <lord-icon
                                     src="https://cdn.lordicon.com/wxnxiano.json"
@@ -80,8 +88,10 @@
                                     style="width:70px;height:70px">
                                 </lord-icon>
                             <p>Kết Quả</p>
+                        </a>
                         </div>
                         <div class="container__selection-item">
+                            <a href="#target">
                             <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
                                 <lord-icon
                                     src="https://cdn.lordicon.com/iltqorsz.json"
@@ -89,8 +99,10 @@
                                     style="width:70px;height:70px">
                                 </lord-icon>
                             <p>Mục Tiêu</p>
+                        </a>
                         </div>
                         <div class="container__selection-item">
+                            <a href="#enjoin">
                             <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
                                 <lord-icon
                                     src="https://cdn.lordicon.com/rjzlnunf.json"
@@ -98,13 +110,14 @@
                                     style="width:70px;height:70px">
                                 </lord-icon>
                             <p>Sở Thích</p>
+                        </a>
                         </div>
                     </div>
                 </div>
                 <!-- CONTENT -->
                 <div class="container__content-all col l-10 m-12 c-12">
                     <!-- INFOMATION -->
-                    <div class="container__content active ">
+                    <div id="info" class="container__content active ">
                         <div class="container__content-info ">
                                 <div class="container__content-title">
                                     <h1>Giới Thiệu!</h1>
@@ -188,7 +201,7 @@
                         </div>
                     </div>
                     <!-- RESULT -->
-                    <div class="container__content ">
+                    <div id="result" class="container__content ">
                         <div class="container__result">
                             <div class="container__content-product">
                                 <div class="container__content-title">
@@ -196,19 +209,19 @@
                             </div>
                             <div class="container__content-img-item row">
                                 <div class="container__content-img col l-6 m-6 c-12">
-                                    <a href=""><img src="./assets/img/clock.png" alt=""></a>
-                                    <b>Đồng Hồ</b>
+                                    <a href="./assets/results/ShopeeClone/index.html" target="_blank"><img src="./assets/img/shopee.png" alt=""></a>
+                                    <b>Shopee Clone</b> 
                                 </div>
                                 <div class="container__content-img col l-6 m-6 c-12">
-                                    <a href=""><img src="./assets/img/clock.png" alt=""></a>
+                                    <a href=".//assets/results/Clock/index.html" target="_blank"><img src="./assets/img/clock.png" alt=""></a>
                                     <b>Đồng Hồ</b>
                                 </div> 
                                 <div class="container__content-img col l-6 m-6 c-12">
-                                    <a href=""><img src="./assets/img/clock.png" alt=""></a>
-                                    <b>Đồng Hồ</b>
+                                    <a href="./assets/results/playMusic/index.html" target="_blank"><img src="./assets/img/playmusic.png" alt=""></a>
+                                    <b>Play Music</b>
                                 </div> 
                                 <div class="container__content-img col l-6 m-6 c-12">
-                                    <a href="http://duchl02.ga/"><img src="./assets/img/clock.png" alt=""></a>
+                                    <a href="http://duchl02.ga/" target="_blank"><img src="./assets/img/clock.png" alt=""></a>
                                     <b>Đồng Hồ</b>
                                 </div>     
                               </div>
@@ -216,7 +229,7 @@
                         </div>
                     </div>
                     <!-- TARGET -->
-                    <div class="container__content">
+                    <div id="target" class="container__content">
                         <div class="container__target">
                             <h1>Mục Tiêu</h1>
                             <h2>Biết Sử Dụng Jquery và Boostrap</h2>
@@ -231,9 +244,40 @@
                         </div>
                     </div>
                     <!-- ENJOIN -->
-                    <div class="container__content">
-                        <div class="cnj">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis fugit a accusamus. Provident cupiditate reiciendis rem in beatae voluptas odio minima doloremque tempore sed aspernatur accusantium quidem, velit omnis.
+                    <div id="enjoin" class="container__content">
+                        <div class="container__enjoin ">
+                            <div class="container__enjoin-item">
+                                <img src="./assets/img/jav.webp" alt="" class="enjoin-img">
+                                <div class="enjoin-description">
+                                    <h1>Japanese Anti Virus</h1>
+                                    <p>JAV là trình diệt virus. Triệu chứng khi mắc loại virus này là cảm giác bức rức trong người, căng cơ và bị cứng đột ngột ở một số bộ phận trên cơ thể. Sau khi sử dụng trình diệt virus này, có cảm giác sảng khoái như được xả stress trút bỏ được gánh nặng nào đó, ngày nào cũng phải xem ít nhất 180 phút mới chịu được.</p>
+                                </div>
+                            </div>
+                            <div class="container__enjoin-item">
+                                <img src="./assets/img/mayTinh.jpeg" alt="" class="enjoin-img">
+                                <div class="enjoin-description">
+                                    <h1>Đồ chơi công nghệ</h1>
+                                    <p>Đồ chơi công nghệ là những món đồ chơi luôn có sức hấp dẫn đối với những người đam mê công nghệ.  Các sản phẩm đồ chơi công nghệ độc đáo, đầy sáng tạo, bao gồm cả các thiết bị công nghệ hỗ trợ các hoạt động gia đình và cả các thiết bị đồ chơi điều khiển từ xa như nhà thông minh, robot hút bụi lau nhà tự động, xe điều khiển từ xa, flycam, thuyền, tàu cano điều khiển từ xa , máy bay điều khiển từ xa,..</p>
+                                </div>
+                            </div>
+                            <div class="container__enjoin-item">
+                                <img src="./assets/img/lienquan.jpeg" alt="" class="enjoin-img">
+                                <div class="enjoin-description">
+                                    <h1>Liên Quân Moble</h1>
+                                    <p>Garena Liên Quân Mobile là một trò chơi đấu trường trận chiến trực tuyến nhiều người chơi do Timi Studio, một studio trực thuộc Tencent Games phát triển và phát hành bởi Garena, phân phối trên các nền tảng di động Android, iOS và Nintendo Switch, bắt đầu từ cuối năm 2016.</p>
+                                </div>
+                            </div>
+                            <div class="container__enjoin-item">
+                                <img src="./assets/img/bunchaaaaaa.jpeg"  alt="" class="enjoin-img">
+                                <div class="enjoin-description">
+                                    <h1>Bún chả Hà Nội</h1>
+                                    <p>Bún chả là một món ăn của Việt Nam, bao gồm bún, chả thịt lợn nướng trên than hoa và bát nước mắm chua cay mặn ngọt. Món ăn xuất xứ từ miền Bắc Việt Nam, là thứ quà có sức sống lâu bền nhất của Hà Nội.</p>
+                                </div>
+                            </div>
+                            
+                            
+                           
+                            
                         </div>
                     </div>
                 </div>
@@ -293,7 +337,7 @@
             }
             dots[slideNumber].classList.add('active')
             slides[slideNumber].classList.add('active')
-        },3000)
+        },5000)
     }
     autoSlide()
     // NEXT SLIDE
@@ -331,6 +375,10 @@
             dots[slideNumber].classList.add('active')
             slides[slideNumber].classList.add('active')
     })
+    const loading= $('.loading')
+    window.onload = function(){
+        loading.classList.remove('active')
+    }
 </script>
 </body>
 </html>
