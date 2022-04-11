@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ShopeeClone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <script src="https://kit.fontawesome.com/97aa991169.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+
+                <nav class="header__navbar hideOnMoTa ">
+                    <!-- nav-bar-left -->
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate ">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+                            <!-- QR-Code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code/qr_code.png" alt="" class="header__qr-item">
+                                <div class="header__qr-app">
+                                    <img src="./assets/img/apple.png" alt="" class="header__qr-app-img">
+                                    <img src="./assets/img/androi.png" alt="" class="header__qr-app-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">Kết nối
+                            <a href="https://facebook.com/duchonglinh02" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- nav-bar right -->
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link ">
+                                    <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--readed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="ghe cong thai hoc" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Ghế Xoay Văn Phòng - Thiết Kế Công Thái Học</span>
+                                                <span class="header__notify-descriotion">
+                                                    Tựa Đầu 3D, Tay Vịn Thông Minh, Bảo Vệ Cột Sống Lưng, Vải Dệt Thoáng Khí.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--readed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="ghe cong thai hoc" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Ghế Xoay Văn Phòng - Thiết Kế Công Thái Học</span>
+                                                <span class="header__notify-descriotion">
+                                                    Tựa Đầu 3D, Tay Vịn Thông Minh, Bảo Vệ Cột Sống Lưng, Vải Dệt Thoáng Khí.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--readed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="ghe cong thai hoc" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Ghế Xoay Văn Phòng - Thiết Kế Công Thái Học</span>
+                                                <span class="header__notify-descriotion">
+                                                    Tựa Đầu 3D, Tay Vịn Thông Minh, Bảo Vệ Cột Sống Lưng, Vải Dệt Thoáng Khí.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem Tất Cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                Trợ Giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--trong header__navbar-item--separate ">
+                            Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--trong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/avata.jpeg" alt="" class="header__navbar-user-avata">
+                            <span class="header__navbar-user-name">Văn Đức</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- header-with-seach -->
+                <div class="header-with-search ">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox" > 
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="https://thailandtv.news/wp-content/uploads/2021/11/shopee-android-problem-cover-1024x538.jpg" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search ">
+                        
+                        <div class="header__search-input-wrap ">
+                            <input src="" alt="" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <!-- searhc-history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Iphone 11 </a>
+                                    </li>
+                                     <li class="header__search-history-item">
+                                        <a href="">Iphone 12 like new </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-lable">Trong Shop</span>
+                            
+                            <i class=" header__search-select-icon fa-solid fa-angle-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item-active">
+                                    <span> Trong shop này</span>
+                                 <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span> Trong shoppe</span>
+                                 <i class="check-shopee-search fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class=" header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <!-- Gio hang -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">3</span>
+                            <div class="header__cart-list ">
+                                <!-- no cart : header-cart-list--no-cart -->
+                                <img src="./assets/img/images.png" alt="" class="header__cart-list--no-cart-img">
+                                <!-- has cart -->
+                                <h4 class="header__cart-heading">
+                                    Sản phẩm mới thêm
+                                </h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://ergolife.vn/image/catalog/Ghe%20cong%20thai%20hoc/M57%20Side%20View.JPG" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Ghế Xoay Văn Phòng 
+                                                </h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.890.000đ
+                                                    </span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-discription">Phân loại</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header_cart-view-cart btn btn--primary">Xem giỏ hàng</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__soft-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__soft-link">Mới Nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__soft-link">Bán Chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__soft-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="row sm-gutter app__content">
+                <div class="col l-2 m-0 c-0">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            <i class="category__heading-icon fa-solid fa-bars"></i>Danh Mục
+                        </h3>
+                        <ul class="category-list">
+                             <li class="category-list-item category-list-item--active">
+                                 <a href="" class="category-item__link">Macbook air m1 </a>
+                             </li>
+                             <li class="category-list-item">
+                                <a href="" class="category-item__link">Mac pro 14 inch</a>
+                            </li>
+                            <li class="category-list-item">
+                                <a href="" class="category-item__link">Mac pro 16 inch</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col l-10 m-12 c-12 ">
+                    <div class="home-filter hideOnMoTa">
+                            <span class="home-filter__lable">Sắp xếp theo</span>
+                            <button class="home-filter-btn btn">Phổ Biến</button>
+                            <button class="home-filter-btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter-btn btn">Bán Chạy</button>
+
+                            <div class="select-input">
+                                <div class="select-input__lable">Giá
+                                </div>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                        <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter-page">
+                                <span class="home-filter-page-num">
+                                    <span class="home-filter-number-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <nav class="mobile__category">
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">MacBook Pro Max 16 inch max options</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">Phụ kiện chính hãng</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">IPhone 13 Pro Max</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">MacBook Pro Max 16 inch max options</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">Phụ kiện chính hãng</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">IPhone 13 Pro Max</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">MacBook Pro Max 16 inch max options</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">Phụ kiện chính hãng</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">IPhone 13 Pro Max</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">MacBook Pro Max 16 inch max options</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">Phụ kiện chính hãng</li>
+                        </ul>
+                        <ul class="mobile__category-list">
+                            <li class="mobile__category-link">IPhone 13 Pro Max</li>
+                        </ul>
+                    </nav>
+                    <div class="home-product">
+                        <a class="row sm-gutter item">
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <!-- Product-Item -->
+                                <div class="home-product-item">
+                                    <img src="./assets/img/macbookairm1.png" alt="" class="home-product-item__img">
+                                    <h4 class="home-product-item__name">Apple MacBook Air (2020) M1 Chip, 13.3-inch, 8GB, 256GB SSD</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">27.000.000đ</div>
+                                        <div class="home-product-item__price-new">24.500.000đ</div>
+                                         
+                                    </div>
+                                    <div class="home-product-item__act">
+                                        <span class="home-product-item__like">
+                                            <!-- <i class="fa-regular fa-heart"></i> -->
+                                            <i class="fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">Đã bán 158</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">APPLE</span>
+                                        <span class="home-product-item__origin-name">APPLE STORE</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i> Yêu Thích
+                                    </div>
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__percent">10%</span>
+                                         <span class="home-product-item__sale-lable">GIẢM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">
+                                <i class="pagination-item-icon fas fa fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination-item pagination-item--active">
+                            <a href="" class="pagination-item-link ">1
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">2
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">3
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">4
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">5
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">...
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item-link">
+                                <i class="pagination-item-icon fas fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">CHĂM SÓC KHÁNH HÀNG</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                            <a href="" class="footer-item-link">Trung Tâm Trợ Giúp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Shopee Blog</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">      
+                                <a href="" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">  
+                                <a href="" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">VỀ SHOPEE</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                            <a href="" class="footer-item-link">Trung Tâm Trợ Giúp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Shopee Blog</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">      
+                                <a href="" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">  
+                                <a href="" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">THANH TOÁN</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                            <a href="" class="footer-item-link">Trung Tâm Trợ Giúp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Shopee Blog</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">      
+                                <a href="" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">  
+                                <a href="" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                            <a href="" class="footer-item-link">Trung Tâm Trợ Giúp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Shopee Blog</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">      
+                                <a href="" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">  
+                                <a href="" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                            <a href="" class="footer-item-link">Trung Tâm Trợ Giúp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Shopee Blog</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">      
+                                <a href="" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">  
+                                <a href="" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-about-me">
+                <div class="footer-about-me-list">
+                    <a href="https://www.facebook.com/duchonglinh02/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/duchl02/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCkEeWhaZUFm_hp_Wybq0EbQ"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://javhdd.net/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@duc1503honglinh"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://github.com/duchl02"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="footer-power">
+                    <p>Powered by <a href="https://www.facebook.com/duchonglinh02/">duchl02</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- modal?\ -->
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner"> -->
+                <!-- form login -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Ký</h3>
+                            <span class="auth-form__switch-btn" >Đăng Nhập</span>
+                        </div>
+                        
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu ">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu ">
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text"> Đồng ý chấn nhận điều khoản và dịch vụ của Shoppe
+                                    <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                                    <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn btn--nomal auth-form__controls-back">Trở Lại</button>
+                                <button class="btn btn--nomal btn--primary">Đăng Ký</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> -->
+                <!-- from sigin -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Nhập</h3>
+                            <span class="auth-form__switch-btn" >Đăng Ký</span>
+                        </div>
+                        
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu ">
+                            </div>
+                           
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__help-forgot auth-form__help-link">Quên mật khẩu</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="" class="auth-form__help-link">Trợ Giúp?</a>
+                                </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn btn--nomal auth-form__controls-back">Trở Lại</button>
+                                <button class="btn btn--nomal btn--primary">Đăng Nhập</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
