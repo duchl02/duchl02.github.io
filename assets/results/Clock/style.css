@@ -1,0 +1,196 @@
+:root{
+    --primary-color:rgb(32,32,32);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html{
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(32, 32, 32);
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    background: rgb(28, 28, 30);
+    width:500px;
+    height:500px;
+    overflow: hidden;
+    border-radius: 10%;
+    /* padding: 30px; */
+    /* border-top-left-radius: 225px;
+    border-top-right-radius: 225px; */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    /* transform: rotate(180deg) */
+}
+.clock{
+    position: relative;
+    width:450px;
+    height:450px;
+    
+    background: rgb(52,52,54);
+    
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color:var(--primary-color);
+    border: 3px solid #fff;
+    border-radius:50%;
+    z-index: 11;
+}
+.clock span{
+    position: absolute;
+    inset:20px;
+    color: white;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+.clock p{
+    position: absolute;
+    inset:1px;
+    color: white;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+.clock h6{
+    position: absolute;
+    inset:1px;
+    color: white;
+    text-align: center;
+    transform: rotate(calc(6deg * var(--i)));
+}
+
+.clock span b {
+    font-size: 30px;
+    /* opacity: 0.25; */
+    font-weight: bold;
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+.cricle {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 10;
+}
+.cricle i {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background:var(--clr);
+    transform-origin: bottom;
+    transform:scaleY(0.6);
+    border-radius:3px;
+}
+.cricle:nth-child(1) i{
+    width: 2px;
+}
+.cricle:nth-child(2) i{
+    width: 6px;
+}
+.cricle1{
+    /* width: 240px; */
+    height: 300px;
+    z-index: 9;
+}
+.cricle2{
+    /* width: 180px; */
+    height: 200px;
+    z-index: 8;
+
+}
+
+#time{
+    display:flex;
+    /* margin-bottom: 40px; */
+    padding: 10px 20px;
+    font-size:30px;
+    font-weight:600;
+    border: 2px solid rgb(100,100,100);
+    border-radius:40px;
+    margin-top:30px;
+}
+#time div{
+    position: relative;
+    width:60px;
+    text-align: center;
+    font-weight: 600;
+    color:var(--clr)
+}
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after{
+    content:":";
+    position: absolute;
+    right: -4px;
+
+}
+#time div:last-child{
+    color:#fff;
+}
+#time div:nth-child(2)::after{
+    animation:animation 1s steps(1) infinite;
+
+}
+@keyframes animation{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}
+@media (max-width:46.18em){
+    .clock{
+    width:300px;
+    height:300px;
+    }
+    .container{
+    width: 350px;
+    height:350px;
+    }
+    .cricle i {
+        position: absolute;
+        width: 6px;
+        height: 80%;
+        background:var(--clr);
+        transform-origin: bottom;
+        transform:scaleY(0.6);
+        border-radius:3px;
+    }
+    .cricle:nth-child(1) i{
+        width: 2px;
+    }
+    .cricle:nth-child(2) i{
+        width: 6px;
+    }
+}
