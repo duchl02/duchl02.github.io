@@ -1306,6 +1306,9 @@ img.header-img-center.grid.wide {
 /* mobile and tablet*/
 /* mobile */
 @media (max-width: 46.18em) {
+  .topbar-right-list {
+    display: none;
+  }
   .header-menu .header-menu-nav .header-menu-nav-list .header-menu-nav-list-item {
     display: none;
   }
