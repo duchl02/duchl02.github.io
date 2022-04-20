@@ -17,6 +17,11 @@
 
 /* mobile */
 @media (max-width:46.18em) {
-    
+    .header-menu .header-menu-nav .header-menu-nav-list .header-menu-nav-list-item {
+        display: none;
+    }
+    .mid-header .container-header .container-header-3 {
+        display: none;
+    }
 }
  
