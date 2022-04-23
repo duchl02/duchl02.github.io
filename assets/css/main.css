@@ -282,6 +282,7 @@ i.fa-brands.fa-github {
     flex-direction: column;
     transition:0.5s ease;
     border-radius: 20px;
+    /* pointer-events: none; */
     /* display:none; */
 }
 
