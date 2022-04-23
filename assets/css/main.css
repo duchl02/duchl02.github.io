@@ -222,11 +222,14 @@ i.fa-brands.fa-github {
     left:-10px;
     top: 0;
 }
+.container__content-img.col.l-6.m-6.c-12 {
+    display: flex;
+}
 .container__content-img-item{
     margin-top:40px;
 }
 .img-link{
-    width:80%;
+    width:90%;
 }
 .container__content-img img{
     object-fit: contain;
@@ -291,6 +294,7 @@ i.fa-brands.fa-github {
     font-size:1.4rem;
     margin-top:10px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .container__content.active{

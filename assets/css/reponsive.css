@@ -29,6 +29,10 @@
     .header__left{
         border-right:none;
     }
+    .display-flex h1, span{
+        color:#32ff07;
+        font-size: 1rem;
+    }
 }
 /* mobile */
 @media (max-width:46.18em) {
@@ -97,5 +101,12 @@
     }
     .enjoin-description h1{
         margin: 10px 0;
+    }
+    .img-link{
+        width:100%;
+    }
+    .display-flex h1, span{
+        color:#32ff07;
+        font-size: 1rem;
     }
 }
