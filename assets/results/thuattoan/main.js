@@ -82,7 +82,27 @@
 //     const todays = new Date()
 //     console.log(todays.getMilliseconds().toFixed(11))
 // });
-dmndndsnk
+// 
+// 
+let a = [1,3,22,31,4,6,5,54,]
+function compares(a,b){
+    return b-a
+}
+console.log(a.sort(compares))
+let sum=0
+a.forEach(function(element,index){
+    if (element % 2 ===0 ){
+        console.log(element)
+        return index;
+    
+    };
+    console.log('so nay k phai' ,element)
+})
+
+// console.log(sum)
+
+
+
 // Trong lập trình nói chung và lập trình JavaScript nói riêng, việc học thuật toán vẫn luôn vô cùng quan trọng. Thuật toán giúp cho lập trình viên rèn luyện tư duy.
 
 // Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn.

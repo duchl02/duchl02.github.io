@@ -210,7 +210,6 @@ i.fa-brands.fa-github {
 .title__discription p{
     font-size:1.2rem;
     margin: 10px;
-    text-align: justify;
     position: relative;
 }
 .title__discription p::after{
@@ -225,10 +224,11 @@ i.fa-brands.fa-github {
 }
 .container__content-img.col.l-6.m-6.c-12 {
     display: flex;
-}
-.container__content-img-item{
     margin-top:40px;
 }
+/* .container__content-img-item{
+    margin-top:40px;
+} */
 .img-link{
     width:90%;
 }
@@ -293,8 +293,7 @@ i.fa-brands.fa-github {
 
 .container__content-img b{
     font-size:1.4rem;
-    margin-top:10px;
-    margin-bottom: 20px;
+    margin-top:14px ;
     text-align: center;
 }
 
@@ -425,7 +424,6 @@ i.fa-brands.fa-github {
     font-weight: 300;
     margin-bottom: 20px;
     position: relative;
-    text-align: justify;
 }
 .container__target p::after{
     content:"";
@@ -459,7 +457,13 @@ i.fa-brands.fa-github {
     border-radius: 20px;
     margin: 20px 0;
     box-shadow: 0px 5px 5px 1px  rgba(50, 50, 50, 0.402);
-    cursor: pointer;
+    position: relative;
+    cursor: default;
+    transition: transform linear 0.2s;
+    transform: translateY(0);
+}
+.container__enjoin-item:hover{
+    transform: translateY(-3px);
 }
 .container__enjoin-item:last-child{
     margin-bottom:0;
@@ -479,5 +483,5 @@ i.fa-brands.fa-github {
     margin-bottom: 5px;
 }
 .enjoin-description p{
-    text-align: justify;
+    text-align: left;
 }
