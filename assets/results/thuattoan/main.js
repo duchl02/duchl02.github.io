@@ -66,7 +66,7 @@
 //     while(true){
 //         let n = prompt("Please type your number, type esc to sum: ", 0);
 //         if (n === '' || n === undefined || n === null || !isFinite(n)){
-//             break;
+//             break;   
 //         }
 //         result.push(+n);
 //     }
