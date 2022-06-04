@@ -8,22 +8,17 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Document</title>
     <style>
-        .yellow{
-                background: yellow;
-                height: 200px;
-            }
-             
-            .red{
-                background: red;
-                height: 200px;
-            }
+       
     </style>
 </head>
 <body>  
-    
-    <div id="container">
-    </div>
-    <input type="button" value="Đảo Ngược Màu" id="button-dao-nguoc"/>
+    <label><input type="radio" name="colorRadio" value="red"> red</label>
+    <label><input type="radio" name="colorRadio" value="green"> green</label>
+    <label><input type="radio" name="colorRadio" value="blue"> blue</label>
+    <br>
+    <div class="red box">Bạn đã chọn <strong>red radio button</strong></div>
+    <div class="green box">Bạn đã chọn <strong>green radio button</strong> </div>
+    <div class="blue box">Bạn đã chọn <strong>blue radio button</strong></div>
 <script src="./main.js"></script>
 </body>
 </html>

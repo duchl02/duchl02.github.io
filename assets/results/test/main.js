@@ -254,8 +254,13 @@
 //     }
 // })
 
-$('#button-dao-nguoc').click(function(){
-    var content = '<h1>hello</h1>'
-    $('#container').html(content)
-})
+
+// var checkbox = $(':radio')
+// checkbox.on('click', function(){
+//     var target= $('.' +this.value)
+//     target.show()
+//     $('.box').not(target).hide()
+//     console.log(target)
+// })
+
 
