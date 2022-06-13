@@ -263,3 +263,237 @@
 //     console.log(target)
 // })
 
+
+
+// stringify:JS --> JSON
+// Parse; JSON ---> JS
+
+// var promise = new Promise(function(resolve, reject) {
+//     resolve()
+// });
+
+// promise
+// .then(function(){
+//     return new Promise(function(resolve, reject) {
+//         setTimeout(function(){
+//             resolve([{ten:'duc'}])
+//         },2000)
+//     })
+// })
+// .then(function(ss){
+//     console.log(ss)
+// })
+// .catch(function(){
+//     console.log('error')
+// })
+// .finally(function(){
+//     console.log('done')
+// })
+
+// var postApi='https://6288a9b610e93797c15d8515.mockapi.io/api/id'
+
+// fetch(postApi)
+// .then(function(content){
+//     return content.json()
+// })
+// .then(function(cont){
+//     var impo = cont.map(function(conts){
+//         return `
+//         <h1>${conts.id}</h1>
+//         `
+//     })
+//     $('.block').html(impo)
+// })
+
+
+var userApi = 'https://6288a9b610e93797c15d8515.mockapi.io/api/id'
+
+
+
+
+function start(){
+    getUser(function(courses){
+        render(courses)
+    })
+    handerCreateForm()
+}
+start()
+
+function getUser(callback){
+    // console.log(callback)
+    fetch(userApi)
+    .then(function(reponsive){
+        return reponsive.json()
+    })
+    .then(callback)
+}
+
+function createList(data,callback){
+    console.log(data)
+    var options={
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(data)
+    }
+    fetch(userApi, options)
+    .then(res => {
+        res.json()
+    })
+    .then(callback)
+}
+
+function deleteUser(id){
+    var user = $("#list-" + id)
+    console.log(user)
+    // console.log(user)
+        if (user){
+            user.remove()
+            // console.log(user)
+        }
+    var options={
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        // body:JSON.stringify(data)
+    }
+    fetch(userApi + "/" + id, options)
+    .then(response => response.json())
+    .then(data => console.log(data));
+}
+
+function handerCreateForm(){
+    let btn =$('#btn-creat')
+    btn.on('click',function(){
+    $("#modal").modal();
+
+        var add = $('input[name="add"]').val()
+        var name = $('input[name="name"]').val()
+        
+        var form = {
+            name:name,
+            add:add,
+        }
+        createList(form,function(){
+            getUser(render)
+        })
+        
+        $('input[name="add"]').val('')
+        $('input[name="name"]').val('')
+        $('input[name="name"]').focus()
+    })
+        
+}
+
+function render(courses){
+    var listUser = $('.table')
+    
+    var htmls =courses.map(function(course){
+        return `
+        <tbody  id="list-${course.id}">
+            <tr>
+            <td>${course.id}</td>
+            <td id="name-${course.id}">${course.name}</td>
+            <td id="add-${course.id}">${course.add}</td>
+                <td><div>
+                    <button onclick="deleteUser(${course.id})" id="btn-delete" class="btn btn-danger">Xoá</button>
+                    <button onclick="editCourses(${course.id})" class="btn btn-warning" id="edit-btn">Sửa</button>
+                    <button onclick="runmodal()"class="btn btn-success" id="btn-creat">Thêm</button>
+                </div></td>
+            </tr>
+        </tbody>
+        
+        `
+    })
+    listUser.html(htmls)
+    var title = $('.table')
+    title.append(`<thead>
+    <tr class="">
+        <th>
+            ID
+        </th>
+        <th>
+            Họ Tên
+        </th>
+        <th>
+            Giới tính
+        </th>
+        <th>
+            Hành Động
+        </th>
+    </tr>
+</thead>`)
+}
+
+function editCourses(id){
+    console.log(id)
+    $("#modal").modal();
+    $('input[name="name"]').focus()
+    $('input[name="name"]').val($('#name-' + id).text()) 
+    $('input[name="add"]').val($('#add-' + id).text()) 
+    let submitEdit = $('#btn-creat')
+    var subbtn = $('#edit')
+    submitEdit.hide()
+    
+    subbtn.show()
+    subbtn.on('click', function(){
+        var name1 = $('input[name="name"]').val()
+    var add1 = $('input[name="add"]').val()
+    console.log(name1)
+
+        var form={
+        name:name1,
+        add:add1,
+    }
+    // console.log(form)
+    var options={
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(form)
+    }
+    fetch(userApi + "/" + id, options)
+    .then(response => response.json())
+    .then(function(){
+        getUser(render)
+        submitEdit.show()
+        subbtn.hide()
+        $('input[name="add"]').val('')
+        $('input[name="name"]').val('')
+    })
+    })
+    
+}
+
+function runmodal(){
+    $("#modal").modal();
+}
+
+// handerCreateForm(createComment())
+// function createComment(data) {
+//     var name = $('input[name="name"]').val()
+//     var add = $('input[name="add"]').val()
+//     if (name.value != "" && add.value != "") {
+//       var options = {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(data),
+//       };
+//       fetch(userApi, options).then(function (res) {
+//           console.log(res)
+//         return res.json();
+//       });
+//     }
+//   }
+
+// const getId = async (id)=> {
+//     let res = await fetch(`https://6288a9b610e93797c15d8515.mockapi.io/api/id/`)
+//     let data = await res.json()
+//     console.log(data)
+// }
+// getId(3)
