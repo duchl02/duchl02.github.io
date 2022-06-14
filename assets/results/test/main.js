@@ -312,8 +312,8 @@ var userApi = 'https://6288a9b610e93797c15d8515.mockapi.io/api/id'
 
 
 function start(){
-    getUser(function(courses){
-        render(courses)
+    getUser(function(users){
+        render(users)
     })
     handerCreateForm()
 }
@@ -387,10 +387,10 @@ function handerCreateForm(){
         
 }
 
-function render(courses){
+function render(users){
     var listUser = $('.table')
     
-    var htmls =courses.map(function(course){
+    var htmls =users.map(function(course){
         return `
         <tbody  id="list-${course.id}">
             <tr>
@@ -399,7 +399,7 @@ function render(courses){
             <td id="add-${course.id}">${course.add}</td>
                 <td><div>
                     <button onclick="deleteUser(${course.id})" id="btn-delete" class="btn btn-danger">Xoá</button>
-                    <button onclick="editCourses(${course.id})" class="btn btn-warning" id="edit-btn">Sửa</button>
+                    <button onclick="editusers(${course.id})" class="btn btn-warning" id="edit-btn">Sửa</button>
                     <button onclick="runmodal()"class="btn btn-success" id="btn-creat">Thêm</button>
                 </div></td>
             </tr>
@@ -427,7 +427,7 @@ function render(courses){
 </thead>`)
 }
 
-function editCourses(id){
+function editusers(id){
     console.log(id)
     $("#modal").modal();
     $('input[name="name"]').focus()
@@ -467,7 +467,9 @@ function editCourses(id){
     })
     
 }
-
+setInterval(function(){
+    getUser(render)
+},3000)
 function runmodal(){
     $("#modal").modal();
 }
