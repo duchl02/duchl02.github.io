@@ -400,7 +400,7 @@ function render(users){
                 <td><div>
                     <button onclick="deleteUser(${course.id})" id="btn-delete" class="btn btn-danger">Xoá</button>
                     <button onclick="editusers(${course.id})" class="btn btn-warning" id="edit-btn">Sửa</button>
-                    <button onclick="runmodal()"class="btn btn-success" id="btn-creat">Thêm</button>
+                    
                 </div></td>
             </tr>
         </tbody>
@@ -421,7 +421,7 @@ function render(users){
             Giới tính
         </th>
         <th>
-            Hành Động
+            <button onclick="runmodal()"class="btn btn-success" id="btn-creat">Thêm</button>
         </th>
     </tr>
 </thead>`)
