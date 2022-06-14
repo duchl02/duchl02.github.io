@@ -11,6 +11,24 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Cảm ơn bạn đã gửi tin nhắn</h4>
+            </div>
+            <div class="modal-body">
+              <p>Bạn có thể vào một số <a href="https://duchl02.github.io/assets/results/myinfo/index.html" target="_blank">trang web</a>  thú vị của tôi</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     <div class="main">
         <div class="info">
             <div class="grid">
@@ -49,7 +67,7 @@
                         </div>
                         <div class="form-group">
                             <br>
-                            <button class="btn btn-default btn-modal  pull-right" type="submit">Send</button>
+                            <button id="submit" class="btn btn-default btn-modal  pull-right" type="submit" data-toggle="modal" data-target="#myModal">Send</button>
                         </div>
                     </div>
                     <div class="col l-6 m-6 c-12 info-right">
@@ -253,6 +271,6 @@
     </div>    
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!-- <script src="./main.js"></script> -->
+<script src="./assets/main.js"></script>
 </body>
 </html>
