@@ -329,6 +329,7 @@ function getUser(callback){
 }
 
 function createList(data,callback){
+    console.log(callback)
     console.log(data)
     var options={
         method: 'POST',
@@ -390,16 +391,16 @@ function handerCreateForm(){
 function render(users){
     var listUser = $('.table')
     
-    var htmls =users.map(function(course){
+    var htmls =users.map(function(user){
         return `
-        <tbody  id="list-${course.id}">
+        <tbody  id="list-${user.id}">
             <tr>
-            <td>${course.id}</td>
-            <td id="name-${course.id}">${course.name}</td>
-            <td id="add-${course.id}">${course.add}</td>
+            <td>${user.id}</td>
+            <td id="name-${user.id}">${user.name}</td>
+            <td id="add-${user.id}">${user.add}</td>
                 <td><div>
-                    <button onclick="deleteUser(${course.id})" id="btn-delete" class="btn btn-danger">Xoá</button>
-                    <button onclick="editusers(${course.id})" class="btn btn-warning" id="edit-btn">Sửa</button>
+                    <button onclick="deleteUser(${user.id})" id="btn-delete" class="btn btn-danger">Xoá</button>
+                    <button onclick="editusers(${user.id})" class="btn btn-warning" id="edit-btn">Sửa</button>
                     
                 </div></td>
             </tr>
@@ -436,7 +437,7 @@ function editusers(id){
     let submitEdit = $('#btn-creat')
     var subbtn = $('#edit')
     submitEdit.hide()
-    
+    console.log($('#add-' + id))
     subbtn.show()
     subbtn.on('click', function(){
         var name1 = $('input[name="name"]').val()
@@ -463,6 +464,7 @@ function editusers(id){
         subbtn.hide()
         $('input[name="add"]').val('')
         $('input[name="name"]').val('')
+        console.log(id)
     })
     })
     
