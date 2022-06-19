@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quản lý Api </title>
+</head>
+<body>
+    
+    <div class="modal  fade" id="modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="text-center">Sửa hoặc thêm user</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email">Tên</label>
+                        <input class="form-control" type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Giới Tính</label>
+                        <input class="form-control" type="text" name="add" id="add"> <br>
+                    </div>
+                    <div class="checkbox">
+                        <button class="btn btn-success" id="btn-creat">Thêm</button>
+        <button class="btn btn-success" data-dismiss="modal" style="display:none" id="edit">Sửa</button>
+                        <button type="submit" class="btn pull-right btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div>
+        <h1 style="margin:40px 0">Thêm sửa xoá sử dụng REST API</h1>
+        <h3>Nhập API có name và comment</h3>
+        <form class="text-center form-inline">
+            <div class="input-group">
+                <input type="text" size="50" id="newapi" class="form-control" placeholder="Nhập API"required>
+                <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Xác nhận</button>
+            </div>
+            </div>
+        </form>
+        <ul class="list-courses">
+        </ul>
+    </div>
+    <table class="table text-center table-hover table-bordered">
+        <thead>
+            <tr class="text-center">
+                <th>
+                    STT
+                </th>
+                <th>
+                    Họ tên
+                </th>
+                <th>
+                    Địa chỉ
+                </th>
+                <th>
+                    Hành Động
+                </th>
+            </tr>
+        </thead>
+        
+    </table>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

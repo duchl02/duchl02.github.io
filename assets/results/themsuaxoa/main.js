@@ -501,3 +501,7 @@ function runmodal(){
 //     console.log(data)
 // }
 // getId(3)
+var hello = $('#hello')
+hello.on('click',function (){
+    console.log(this)
+})
