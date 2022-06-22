@@ -30,3 +30,15 @@ $('#submit').on('click', function createComment() {
     $('#email').val('')
     $('#comments').val('')
 })
+
+
+$(window).scroll(function() {
+  $(".slideScroll").each(function(){
+    var pos = $(this).offset().top;
+    var winTop = $(window).scrollTop();
+    console.log(winTop);
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});

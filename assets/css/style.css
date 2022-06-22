@@ -770,6 +770,44 @@ body {
   border-radius: 20px;
 }
 
+.slideScroll {
+  visibility: hidden;
+}
+
+.slide {
+  -webkit-animation-name: slideanimate;
+          animation-name: slideanimate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  visibility: visible;
+}
+
+@-webkit-keyframes slideanimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideanimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 /* pc */
 /* tablet and pc */
 /* tablet */
