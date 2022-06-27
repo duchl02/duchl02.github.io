@@ -11,7 +11,7 @@
 //         }
 //     }
 //     document.write('so lon nhat ', max,' so be nhat ', min)
-// }   
+// }
 // minmax()
 
 // function ptbac2() {
@@ -79,7 +79,6 @@
 
 // array = array.filter(num => num % 2 !== 0)
 
-
 // array = array.reduce(function (acc,value){
 //     return acc += value
 // },0)
@@ -88,7 +87,6 @@
 // function run() {
 //     let a = document.querySelector('#data').value
 //     let checked= true
-
 
 //     for (let i = 2; i < a; ++i) {
 //         if (a % i == 0){
@@ -109,7 +107,7 @@
 //     let a = document.getElementsByTagName('div')
 //     for (let i = 0; i < a.length; i++) {
 //         if (i % 2 !== 0) {
-            
+
 //             a1 = a1 + i
 //             console.log(a1)
 //         } else{
@@ -224,8 +222,6 @@
 //     return flag;
 // }
 
-
-
 // function firstQuestion() {
 // var curdate = new Date()
 // var year = curdate.getFullYear()
@@ -254,7 +250,6 @@
 //     }
 // })
 
-
 // var checkbox = $(':radio')
 // checkbox.on('click', function(){
 //     var target= $('.' +this.value)
@@ -262,8 +257,6 @@
 //     $('.box').not(target).hide()
 //     console.log(target)
 // })
-
-
 
 // stringify:JS --> JSON
 // Parse; JSON ---> JS
@@ -305,100 +298,93 @@
 //     $('.block').html(impo)
 // })
 
-
-
-
-
-
-function start(){
-    
-    getUser(function(users){
-        render(users)
-    })
-    handerCreateForm()
+function start() {
+  getUser(function (users) {
+    render(users);
+  });
+  handerCreateForm();
 }
-start()
+start();
 
-function getUser(callback){
-    // console.log(callback)
-var userApi = $('#newapi').val()
+function getUser(callback) {
+  // console.log(callback)
+  var userApi = $("#newapi").val();
 
-    fetch(userApi)
-    .then(function(reponsive){
-        return reponsive.json()
+  fetch(userApi)
+    .then(function (reponsive) {
+      return reponsive.json();
     })
-    .then(callback)
+    .then(callback);
 }
 
-function createList(data,callback){
-    console.log(callback)
-    console.log(data)
-    var options={
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body:JSON.stringify(data)
-    }
-var userApi = $('#newapi').val()
+function createList(data, callback) {
+  console.log(callback);
+  console.log(data);
+  var options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  };
+  var userApi = $("#newapi").val();
 
-    fetch(userApi, options)
-    .then(res => {
-        res.json()
+  fetch(userApi, options)
+    .then((res) => {
+      res.json();
     })
-    .then(callback)
+    .then(callback);
 }
 
-function deleteUser(id){
-    var user = $("#list-" + id)
-    console.log(user)
+function deleteUser(id) {
+  var user = $("#list-" + id);
+  console.log(user);
+  // console.log(user)
+  if (user) {
+    user.remove();
     // console.log(user)
-        if (user){
-            user.remove()
-            // console.log(user)
-        }
-    var options={
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        // body:JSON.stringify(data)
-    }
-var userApi = $('#newapi').val()
+  }
+  var options = {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // body:JSON.stringify(data)
+  };
+  var userApi = $("#newapi").val();
 
-    fetch(userApi + "/" + id, options)
-    .then(response => response.json())
-    .then(data => console.log(data));
+  fetch(userApi + "/" + id, options)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
 }
 
-function handerCreateForm(){
-    let btn =$('#btn-creat')
-    btn.on('click',function(){
+function handerCreateForm() {
+  let btn = $("#btn-creat");
+  btn.on("click", function () {
     $("#modal").modal();
 
-        var comment = $('input[name="add"]').val()
-        var name = $('input[name="name"]').val()
-        
-        var form = {
-            name:name,
-            comment:comment,
-        }
-        createList(form,function(){
-            getUser(render)
-        })
-        
-        $('input[name="comment"]').val('')
-        $('input[name="name"]').val('')
-        $('input[name="name"]').focus()
-    })
-        
+    var comment = $('input[name="add"]').val();
+    var name = $('input[name="name"]').val();
+
+    var form = {
+      name: name,
+      comment: comment,
+    };
+    createList(form, function () {
+      getUser(render);
+    });
+
+    $('input[name="comment"]').val("");
+    $('input[name="name"]').val("");
+    $('input[name="name"]').focus();
+  });
 }
 
-function render(users){
-    var listUser = $('.table')
-    
-    var htmls =users.map(function(user){
-        return `
+function render(users) {
+  var htmls = users.map(function (user) {
+    var listUser = $(".table");
+
+    return `
         <tbody  id="list-${user.id}">
             <tr>
             <td>${user.id}</td>
@@ -412,11 +398,11 @@ function render(users){
             </tr>
         </tbody>
         
-        `
-    })
-    listUser.html(htmls)
-    var title = $('.table')
-    title.append(`<thead>
+        `;
+  });
+  listUser.html(htmls);
+  var title = $(".table");
+  title.append(`<thead>
     <tr class="">
         <th>
             ID
@@ -431,57 +417,56 @@ function render(users){
             <button onclick="runmodal()"class="btn btn-success" id="btn-creat">Thêm</button>
         </th>
     </tr>
-</thead>`)
+</thead>`);
 }
 
-function editusers(id){
-    console.log(id)
-    $("#modal").modal();
-    $('input[name="name"]').focus()
-    $('input[name="name"]').val($('#name-' + id).text()) 
-    $('input[name="add"]').val($('#comment-' + id).text()) 
-    let submitEdit = $('#btn-creat')
-    var subbtn = $('#edit')
-    submitEdit.hide()
-    console.log($('#comment-' + id))
-    subbtn.show()
-    subbtn.on('click', function(){
-        var name1 = $('input[name="name"]').val()
-    var comment1 = $('input[name="add"]').val()
-    console.log(name1)
+function editusers(id) {
+  console.log(id);
+  $("#modal").modal();
+  $('input[name="name"]').focus();
+  $('input[name="name"]').val($("#name-" + id).text());
+  $('input[name="add"]').val($("#comment-" + id).text());
+  let submitEdit = $("#btn-creat");
+  var subbtn = $("#edit");
+  submitEdit.hide();
+  console.log($("#comment-" + id));
+  subbtn.show();
+  subbtn.on("click", function () {
+    var name1 = $('input[name="name"]').val();
+    var comment1 = $('input[name="add"]').val();
+    console.log(name1);
 
-        var form={
-        name:name1,
-        comment:comment1,
-    }
+    var form = {
+      name: name1,
+      comment: comment1,
+    };
     // console.log(form)
-    var options={
-        method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body:JSON.stringify(form)
-    }
-var userApi = $('#newapi').val()
+    var options = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    };
+    var userApi = $("#newapi").val();
 
     fetch(userApi + "/" + id, options)
-    .then(response => response.json())
-    .then(function(){
-        getUser(render)
-        submitEdit.show()
-        subbtn.hide()
-        $('input[name="add"]').val('')
-        $('input[name="name"]').val('')
-        console.log(id)
-    })
-    })
-    
+      .then((response) => response.json())
+      .then(function () {
+        getUser(render);
+        submitEdit.show();
+        subbtn.hide();
+        $('input[name="add"]').val("");
+        $('input[name="name"]').val("");
+        console.log(id);
+      });
+  });
 }
-setInterval(function(){
-    getUser(render)
-},3000)
-function runmodal(){
-    $("#modal").modal();
+setInterval(function () {
+  getUser(render);
+}, 3000);
+function runmodal() {
+  $("#modal").modal();
 }
 
 // handerCreateForm(createComment())
