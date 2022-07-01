@@ -1,0 +1,44 @@
+.navbar{
+    margin-bottom: 0;
+    background-color: #f4511e;
+    border:none;
+    .navbar-header{
+        color: #fff;
+        button{
+        border:none;
+        }
+        a{
+            color: #fff;
+            font-family: Montserrat;
+            
+            &:hover{
+                color:#fff;
+            }
+        }
+    }
+    
+
+    .nav{
+        li{
+            .active{
+                background-color: #fff;
+                color:#f4511e;
+            }
+            a{
+                color: #fff;
+                padding:14px 18px;
+                height: 50px;
+                &:hover{
+                    background-color: #fff;
+                    color:#f4511e;
+                }
+                &:focus{
+                    background-color: #fff;
+                    color:#f4511e;
+                }
+
+            }
+
+        }
+    }
+}

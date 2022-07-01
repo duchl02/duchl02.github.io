@@ -1,0 +1,27 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border:1px solid rgb(255, 255, 255);
+    h1{
+        font-size:18px;
+        text-align: left;
+    }
+    p{
+        font-size:14px;
+        padding-bottom: auto;
+        text-align: left;
+    }
+    button{
+        margin-top:auto;
+    }
+}
+.container-fluid{
+    margin-top:20px;
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+    h1{
+        margin:auto;
+    }
+}
