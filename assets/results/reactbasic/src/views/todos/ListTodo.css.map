@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,SAAS,EAAC,IAAI;CACjB;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,IAAI;CACd;;AACD,AAAA,kBAAkB,CAAA;EACd,UAAU,EAAC,IAAI;CAClB;;AACD,AAAA,SAAS,CAAA;EACL,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "ListTodo.scss"
+    ],
+    "names": [],
+    "file": "ListTodo.css"
+}

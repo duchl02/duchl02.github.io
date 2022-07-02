@@ -1,0 +1,15 @@
+.list-user-container {
+  max-width: 500px;
+}
+
+.list-user-container .list-user .item {
+  margin: 0 auto;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4a4a4a;
+}
+/*# sourceMappingURL=ListUser.css.map */

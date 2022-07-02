@@ -1,0 +1,16 @@
+* {
+  font-size: 20px;
+}
+
+input {
+  color: #000;
+}
+
+.list-todo-content {
+  margin-top: 20px;
+}
+
+#edit-btn {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=ListTodo.css.map */
