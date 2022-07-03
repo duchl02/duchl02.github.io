@@ -1,0 +1,101 @@
+.item-center {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-center img {
+  width: 320px;
+}
+
+.item-center h1 {
+  font-family: Water Brush,cursive;
+  color: #325080;
+  font-size: 40px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.home-container {
+  margin-top: 120px;
+  z-index: 0;
+}
+
+.home-container .wide .intro {
+  padding: 30px 0;
+}
+
+.home-container .wide .intro .slide-left img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-container .wide .intro .slide-right .slide-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.home-container .wide .intro .slide-right .slide-item i {
+  font-size: 40px;
+  color: #fff;
+  background-color: #325080;
+  padding: 16px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.home-container .wide .intro .slide-right .slide-item:nth-child(2) {
+  border: 2px solid #b7b7b6;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 0;
+}
+
+.home-container .wide .intro .slide-right .slide-item .slide-content h3 {
+  font-size: 16px;
+  margin: 3px 0;
+  color: #325080;
+}
+
+.home-container .wide .intro .slide-right .slide-item .slide-content p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* pc */
+/* tablet and pc */
+/* tablet */
+/* mobile and tablet*/
+@media (max-width: 63.9em) {
+  .home-container .wide .intro .slide-right .slide-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .home-container .wide .intro {
+    padding: 0;
+  }
+  .home-container {
+    margin-top: 80px;
+  }
+}
+
+/* mobile */
+/*# sourceMappingURL=Homestyle.css.map */

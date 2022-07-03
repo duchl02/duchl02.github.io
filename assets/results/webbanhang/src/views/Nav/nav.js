@@ -8,7 +8,7 @@ const Nav = () =>{
   let header = document.getElementsByClassName("wide");
   let searchBox = document.getElementsByClassName("search-nav");
   let loginNav = document.getElementsByClassName("login-nav");
-  const [offset, setOffset] = useState(300);
+  const [offset, setOffset] = useState(200);
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -17,12 +17,12 @@ const Nav = () =>{
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  if (offset < 300 ) {
+  if (offset < 200 ) {
     header[0].style.height = 120 + "px";
     searchBox[0].style.display = "flex";
     loginNav[0].style.display = "block";
   }
-  if (offset > 300) {
+  if (offset > 200) {
     header[0].style.height = 80 + "px";
     searchBox[0].style.display = "none";
     loginNav[0].style.display = "none";
@@ -31,7 +31,7 @@ const Nav = () =>{
   
   
     return (
-      <div>
+      <div className='header-container'>
         <div className="header">
         <div className="wide grid">
           <div className="nav-button">

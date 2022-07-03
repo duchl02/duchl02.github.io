@@ -1,0 +1,103 @@
+$textcolor: #325080;
+$bgacolor: #f4511e;
+$bodercolor: #b7b7b6;
+.item-center {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    img{
+        width: 320px;
+
+    }
+    h1{
+        font-family: Water Brush,cursive;
+        color:$textcolor;
+        font-size:40px;
+        margin:0;
+        margin-top: 30px;
+    }
+}
+.home-container {
+    margin-top: 120px;
+    z-index: 0;
+
+    .wide {
+        .intro {
+            padding: 30px 0;
+           
+            .slide-left {
+                img {
+                    height: 300px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .slide-right {
+                .slide-item {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding:10px 0;
+                    i {
+                        font-size: 40px;
+                        color:#fff;
+                        background-color:$textcolor;
+                        padding:16px;
+                        border-radius: 50%;
+                        margin: 5px;
+                    }
+                    &:nth-child(2){
+                        border: 2px solid $bodercolor;
+                        border-left: 0;
+                        border-right:0;
+                        padding:10px 0;
+                    }
+
+                    .slide-content {
+                        h3 {
+                            font-size: 16px;
+                            margin:3px 0;
+                            color: $textcolor;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            margin:10px 0;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* pc */
+@media (min-width:64em) {}
+
+/* tablet and pc */
+@media (min-width:63.93em) and (max-width:77.5em) {}
+
+/* tablet */
+@media (min-width:46.25em) and (max-width:63.93em) {}
+
+/* mobile and tablet*/
+@media (max-width:63.9em) {
+    .home-container .wide .intro .slide-right .slide-item{
+        justify-content: flex-start;
+    }
+    .home-container .wide .intro {
+        padding: 0;
+    }
+    .home-container{
+        margin-top:80px;
+    }
+}
+
+/* mobile */
+@media (max-width:46.18em) {
+    
+
+}
