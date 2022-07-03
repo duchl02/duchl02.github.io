@@ -1,3 +1,4 @@
+import "../styles/global.css"
 import Nav from "./Nav/nav";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 function App() {
