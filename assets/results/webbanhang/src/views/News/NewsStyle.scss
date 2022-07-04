@@ -1,7 +1,43 @@
 $textcolor: #325080;
 $bgacolor: #f4511e;
 $bodercolor: #b7b7b6;
-.product-container{
+
+.news-container {
     margin-top: 120px;
     z-index: 0;
+    
+    .wide {
+        margin-top: 30px;
+        .loading{
+            text-align: center;
+            background-color: #fff;
+            height:100vh;
+            padding: 50px;
+        }
+        .product-item {
+            background-color: #fff;
+            padding:40px;
+            margin-top:40px ;
+            h1 {
+                font-family: Water Brush, cursive;
+                color: #325080;
+                font-size: 40px;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                text-align: center;
+            }
+            p{
+                font-size:20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+@media (max-width:46.18em) {
+    .product-item{
+        padding:20px !important;
+    }
+
 }

@@ -18,7 +18,7 @@ const Home = () => {
     <div className="home-container">
       <div className=" grid wide">
         <div className="intro">
-          <div className="row8">
+          <div className="row">
             <div className="slide-left col l-9 m-12 c-12">
               <Swiper
                 spaceBetween={30}

@@ -17,6 +17,10 @@ body {
    -o- :OfSet
    -gutters- : no-margin
 */
+/* pc */
+/* tablet */
+/* mobile and tablet*/
+/* mobile */
 .grid {
   width: 100%;
   display: block;
@@ -28,7 +32,7 @@ body {
   margin: 0 auto;
 }
 
-.row8 {
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +42,7 @@ body {
   margin-right: -4px;
 }
 
-.row8.no-gutters {
+.row.no-gutters {
   margin-left: 0;
   margin-right: 0;
 }
@@ -48,7 +52,7 @@ body {
   padding-right: 4px;
 }
 
-.row8.no-gutters .col {
+.row.no-gutters .col {
   padding-left: 0;
   padding-right: 0;
 }
@@ -187,7 +191,7 @@ body {
 
 /* >= Tablet */
 @media (min-width: 740px) {
-  .row8 {
+  .row {
     margin-left: -8px;
     margin-right: -8px;
   }
@@ -321,11 +325,11 @@ body {
 
 /* PC medium resolution > */
 @media (min-width: 1113px) {
-  .row8 {
+  .row {
     margin-left: -12px;
     margin-right: -12px;
   }
-  .row8.sm-gutter {
+  .row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -333,7 +337,7 @@ body {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .row8.sm-gutter .col {
+  .row.sm-gutter .col {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -471,7 +475,7 @@ body {
 /* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
   .wide {
-    width: 644px;
+    width: 644px !important;
   }
 }
 
@@ -480,11 +484,11 @@ body {
   .wide {
     width: 984px;
   }
-  .wide .row8 {
+  .wide .row {
     margin-left: -12px;
     margin-right: -12px;
   }
-  .wide .row8.sm-gutter {
+  .wide .row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -492,7 +496,7 @@ body {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .wide .row8.sm-gutter .col {
+  .wide .row.sm-gutter .col {
     padding-left: 5px;
     padding-right: 5px;
   }
