@@ -49,7 +49,7 @@ const Nav = () =>{
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="active" to="/productions">
+                  <NavLink activeClassName="active" to="/product">
                     Sản phẩm
                   </NavLink>
                 </li>

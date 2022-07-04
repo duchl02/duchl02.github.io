@@ -19,9 +19,7 @@ $bodercolor: #b7b7b6;
     }
 }
 .home-container {
-    margin-top: 120px;
-    z-index: 0;
-
+        margin-top:120px;
     .wide {
         .intro {
             padding: 30px 0;
@@ -91,13 +89,13 @@ $bodercolor: #b7b7b6;
     .home-container .wide .intro {
         padding: 0;
     }
-    .home-container{
-        margin-top:80px;
-    }
+    
 }
 
 /* mobile */
 @media (max-width:46.18em) {
-    
+    .home-container{
+        margin-top:80px;
+    }
 
 }

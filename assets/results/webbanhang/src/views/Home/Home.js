@@ -11,6 +11,8 @@ import h1cover from "../../assets/img/h1cover.png";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "../Home/Homestyle.scss";
+
+
 const Home = () => {
   return (
     <div className="home-container">

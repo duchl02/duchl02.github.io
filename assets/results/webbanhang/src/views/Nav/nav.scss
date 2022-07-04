@@ -1,4 +1,6 @@
-
+$textcolor: #325080;
+$bgacolor: #f4511e;
+$bodercolor: #b7b7b6;
 
 @keyframes slide {
     100% {
@@ -128,6 +130,7 @@
                         &:focus~.search-auto {
                             display: none;
                         }
+
                     }
 
                     .search-auto {
@@ -472,5 +475,13 @@
     .header .nav-second .wide .header-right a{
         display: block;
     }
-    
+    .header .nav-second .wide .header-center .navbar8 ul li a {
+        display: block;
+        width: 80%;
+        margin: 0px 26px;
+    }
+    .header .nav-second .wide .header-center .navbar8 ul li i{
+        position: relative;
+        top: 21px;
+    }
 }

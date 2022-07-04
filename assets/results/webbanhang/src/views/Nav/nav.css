@@ -565,5 +565,14 @@
   .header .nav-second .wide .header-right a {
     display: block;
   }
+  .header .nav-second .wide .header-center .navbar8 ul li a {
+    display: block;
+    width: 80%;
+    margin: 0px 26px;
+  }
+  .header .nav-second .wide .header-center .navbar8 ul li i {
+    position: relative;
+    top: 21px;
+  }
 }
 /*# sourceMappingURL=nav.css.map */

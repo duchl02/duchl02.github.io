@@ -1,0 +1,202 @@
+[
+    {
+     "name": "Bát lam diệp",
+     "price": "202000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/1-min.png",
+     "type": "Bát",
+     "topSale": false,
+     "news": true,
+     "content": " Ba cái bát ",
+     "id": "1"
+    },
+    {
+     "name": "Đĩa sâu lòng Hồng Mai",
+     "price": "123250",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/1e57f18df340c2ffd63502c1e71ffdc9-min.png",
+     "type": "Đĩa",
+     "topSale": false,
+     "news": true,
+     "content": "Hoa mai là biểu tượng của sự may mắn, sung túc và hạnh phúc. Nổi bật trên nền sứ sáng bóng là hình ảnh những nhành mai đua nhau khoe sắc. Từ búp, đọt non, cánh hoa đến nhụy hoa đều được đội ngũ nghệ nhân của Minh Long I phác họa tinh tế và sống động. Những búp mai đang khỏe khoắn, e ấp rồi bung rộ thắm tươi như báo hiệu một mùa mới an lành, ngập tràn hạnh phúc. Sở hữu Daisy Hồng Mai là chủ sở hữu tự tặng cho mình những điều tốt đẹp nhất trong cuộc sống.",
+     "id": "2"
+    },
+    {
+     "name": "Bát hoa nho",
+     "price": "352000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/2-min.png",
+     "type": "Bát",
+     "topSale": true,
+     "news": false,
+     "content": "3 cái bát sứ",
+     "id": "3"
+    },
+    {
+     "name": "Bát cơm Cẩm Tú",
+     "price": "645000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/2bb7a9c29c26af0723a77789ee9a37a3-min.png",
+     "type": "Bát",
+     "topSale": false,
+     "news": true,
+     "content": "Mang phong cách cung đình, vương tộc nhưng vẫn đậm đà hình ảnh văn hóa dân gian Việt Nam, sự sáng tạo nghệ thuật thể hiện ở từng nét vẽ có tính thẩm mỹ riêng tạo nên phần hồn, chiều sâu văn hóa của từng tác phẩm. Từ những hoa văn đậm chất làng quê Việt, khắc họa đời sống sinh hoạt của người dân (bộ Hồn Việt, Hồn quê), linh vật biểu tượng thiêng liêng như chim lạc, trống đồng (Bộ Lạc Hồng, Cội Nguồn), cho tới họa tiết cung đình xưa như rồng phượng, hoa sen (Bộ Quốc sắc, Cẩm Tú, Hoàng Bào, Sen vàng)… đều được khắc họa sinh động và tinh tế hình ảnh một Việt giàu giàu bản sắc, thuần hậu. Đặc biệt, bộ sản phẩm còn đánh dấu thành tựu của Minh Long trong kỹ thuật làm đồ sứ, từ những chi tiết vẽ vàng 24k tới việc phục chế màu sắc hoàng tộc, quyền quý và kỹ thuật nung màu dưới men ở nhiệt độ cao làm toát lên nét cao sang, quý phái nhưng vô cùng gần gũi. Sở hữu bộ sản phẩm Hoàng Cung chính là sự trân trọng, tôn vinh giá trị những “bảo vật” đậm chất văn hóa Việt và niềm ước vọng về sự trường tồn, phồn thịnh của dân tộc.",
+     "id": "4"
+    },
+    {
+     "name": "Bát diệp hoa",
+     "price": "202000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/4-min.png",
+     "type": "Bát",
+     "topSale": true,
+     "news": false,
+     "content": "(Có nắp)",
+     "id": "5"
+    },
+    {
+     "name": "Bát cơm Lạc Hồng",
+     "price": "245000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/4105e8c78fb90792fc41f98d86823cec-min%20(1).png",
+     "type": "Bát",
+     "topSale": false,
+     "news": true,
+     "content": "Lạc Hồng với ý nghĩa bay lên từ cội nguồn dân tộc. Minh Long đã cho ra đời dòng sản phẩm Lạc Hồng mang thông điệp ngàn xưa từ những gì đẹp đẽ, linh thiêng cho tâm hồn và khát vọng bay lên, là niềm tự hào sáng tạo và thăng hoa suốt ngàn đời của dân tộc vào bữa ăn hàng ngày của gia đình nhằm nhắc nhớ con cháu luôn hướng về cội nguồn dân tộc và mang đến cho gia đình bữa cơm thêm trọn vị, ấm cúng hơn. Sản phẩm có lối thiết kế tinh tế, trang nhã. Trên nền sứ sáng bóng, các họa tiết, hoa văn được trang trí bằng vàng 24k trên tông xanh cobalt (blue Huế) đặc trưng, mang ý nghĩa thịnh vượng và sang trọng.",
+     "id": "6"
+    },
+    {
+     "name": "Đĩa lam ngư",
+     "price": " 252000",
+     "image": "https://github.com/duchl02/duchl02.github.io/blob/main/assets/results/reactbasic/src/untitled%20folder/5-min.png",
+     "type": "Đĩa",
+     "topSale": true,
+     "news": false,
+     "content": "Đĩa",
+     "id": "7"
+    },
+    {
+     "name": "Bình hoa Lộc Phát",
+     "price": " 3000000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/5a9c909068e1eda45cd6104c141119de-min.png",
+     "type": "Bình hoa",
+     "topSale": false,
+     "news": true,
+     "content": "Khoác lên vẻ truyền thống, nền nã của loài hoa Á Đông nhưng lại không kém phần tinh tế hiện đại, những cánh sen bung tròn, phúc hậu ôm lấy nhụy đã được tái hiện sống động bằng màu xanh cobalt đặc trưng của cung đình Huế. Bức tranh chân thực và sống động về lá, cỏ và hoa sen như đưa người ngắm về với một làng quê Việt Nam vốn yên bình, trù phú...  Nghệ nhân cũng khéo léo tạo nét vương giả bằng những chi tiết vẽ vàng 24k uyển chuyển trên từng cánh hoa, vành, tay cầm và nắp tạo nên sắc màu lấp lánh dưới sự phản chiếu của ánh sáng. Bộ sản phẩm thích hợp cho những buổi sum họp thân tình trong không gian yên bình, thư giãn vừa gần gũi vừa sang trọng.",
+     "id": "8"
+    },
+    {
+     "name": "Bát lam đằng",
+     "price": "220000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/6-min.png",
+     "type": "Bát",
+     "topSale": true,
+     "news": false,
+     "content": "Bát lam đằng",
+     "id": "9"
+    },
+    {
+     "name": "Bát lam ký",
+     "price": "202000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/7-min.png",
+     "type": "Bát",
+     "topSale": true,
+     "news": false,
+     "content": "Bát lam ký",
+     "id": "10"
+    },
+    {
+     "name": "Tách trà lam",
+     "price": "200000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/c8-min.png",
+     "type": "Tách trà",
+     "topSale": true,
+     "news": false,
+     "content": "Tách trà lam",
+     "id": "11"
+    },
+    {
+     "name": "Đĩa súp Hồn Việt",
+     "price": "480000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/973b237c5e0973e7586e8f9acc831cbd-min.png",
+     "type": "Đĩa",
+     "topSale": false,
+     "news": true,
+     "content": "Mang phong cách cung đình, vương tộc nhưng vẫn đậm đà hình ảnh văn hóa dân gian Việt Nam, sự sáng tạo nghệ thuật thể hiện ở từng nét vẽ có tính thẩm mỹ riêng tạo nên phần hồn, chiều sâu văn hóa của từng tác phẩm. Từ những hoa văn đậm chất làng quê Việt, khắc họa đời sống sinh hoạt của người dân (bộ Hồn Việt, Hồn quê), linh vật biểu tượng thiêng liêng như chim lạc, trống đồng (Bộ Lạc Hồng, Cội Nguồn), cho tới họa tiết cung đình xưa như rồng phượng, hoa sen (Bộ Quốc sắc, Cẩm Tú, Hoàng Bào, Sen vàng)… đều được khắc họa sinh động và tinh tế hình ảnh một Việt giàu giàu bản sắc, thuần hậu. Đặc biệt, bộ sản phẩm còn đánh dấu thành tựu của Minh Long trong kỹ thuật làm đồ sứ, từ những chi tiết vẽ vàng 24k tới việc phục chế màu sắc hoàng tộc, quyền quý và kỹ thuật nung màu dưới men ở nhiệt độ cao làm toát lên nét cao sang, quý phái nhưng vô cùng gần gũi. Sở hữu bộ sản phẩm Hoàng Cung chính là sự trân trọng, tôn vinh giá trị những “bảo vật” đậm chất văn hóa Việt và niềm ước vọng về sự trường tồn, phồn thịnh của dân tộc.",
+     "id": "12"
+    },
+    {
+     "name": "Bát cơm Hồn Việt",
+     "price": "245000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/c0f8b734239ed3095220e6af57ffa830-min.png",
+     "type": "Bát",
+     "topSale": true,
+     "news": false,
+     "content": "Mang phong cách cung đình, vương tộc nhưng vẫn đậm đà hình ảnh văn hóa dân gian Việt Nam, sự sáng tạo nghệ thuật thể hiện ở từng nét vẽ có tính thẩm mỹ riêng tạo nên phần hồn, chiều sâu văn hóa của từng tác phẩm. Từ những hoa văn đậm chất làng quê Việt, khắc họa đời sống sinh hoạt của người dân (bộ Hồn Việt, Hồn quê), linh vật biểu tượng thiêng liêng như chim lạc, trống đồng (Bộ Lạc Hồng, Cội Nguồn), cho tới họa tiết cung đình xưa như rồng phượng, hoa sen (Bộ Quốc sắc, Cẩm Tú, Hoàng Bào, Sen vàng)… đều được khắc họa sinh động và tinh tế hình ảnh một Việt giàu giàu bản sắc, thuần hậu. Đặc biệt, bộ sản phẩm còn đánh dấu thành tựu của Minh Long trong kỹ thuật làm đồ sứ, từ những chi tiết vẽ vàng 24k tới việc phục chế màu sắc hoàng tộc, quyền quý và kỹ thuật nung màu dưới men ở nhiệt độ cao làm toát lên nét cao sang, quý phái nhưng vô cùng gần gũi. Sở hữu bộ sản phẩm Hoàng Cung chính là sự trân trọng, tôn vinh giá trị những “bảo vật” đậm chất văn hóa Việt và niềm ước vọng về sự trường tồn, phồn thịnh của dân tộc.",
+     "id": "13"
+    },
+    {
+     "name": "Âu sứ lam diệp",
+     "price": "400000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/c3-min.png",
+     "type": "Âu",
+     "topSale": true,
+     "news": false,
+     "content": "Âu sứ lam diệp có nắp",
+     "id": "14"
+    },
+    {
+     "name": "Bát cơm Sen Vàng",
+     "price": "245000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/d0ea2d8dac316f992f0791f31c7832d0-min.png",
+     "type": "Bát",
+     "topSale": true,
+     "news": false,
+     "content": "Khoác lên vẻ truyền thống, nền nã của loài hoa Á Đông nhưng lại không kém phần tinh tế hiện đại, những cánh sen bung tròn, phúc hậu ôm lấy nhụy đã được tái hiện sống động bằng màu xanh cobalt đặc trưng của cung đình Huế. Bức tranh chân thực và sống động về lá, cỏ và hoa sen như đưa người ngắm về với một làng quê Việt Nam vốn yên bình, trù phú...  Nghệ nhân cũng khéo léo tạo nét vương giả bằng những chi tiết vẽ vàng 24k uyển chuyển trên từng cánh hoa, vành, tay cầm và nắp tạo nên sắc màu lấp lánh dưới sự phản chiếu của ánh sáng. Bộ sản phẩm thích hợp cho những buổi sum họp thân tình trong không gian yên bình, thư giãn vừa gần gũi vừa sang trọng.",
+     "id": "15"
+    },
+    {
+     "name": "Bát cành mai",
+     "price": "320000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/e7649cf83de4e425913bee91585cf28e-min.png",
+     "type": "Bát",
+     "topSale": false,
+     "news": true,
+     "content": "Bộ sản phẩm nổi bật với họa tiết hoa mai – một loài hoa đẹp, tượng trưng cho sự phú quý và tài lộc dù dịp Tết hay ngày thường. Bộ bàn ăn Daisy IFP Hoàng Mai hoàn hảo trong từng độ mảnh lượn, màu sắc (màu hồng tượng trưng cho hạnh phúc, lãng mạn) cùng sự kỳ công trong quy trình sản xuất như một lời chúc may mắn, giàu sang, hạnh phúc nhà chế tác gửi đến chủ sở hữu. Có Hoàng Mai là có cả mùa xuân trong ngôi nhà của bạn!",
+     "id": "16"
+    },
+    {
+     "name": "Đĩa sâu lòng Hoàng Mai",
+     "price": "95000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/f25e0908ec2a7330120311fb14abbdfc-min.png",
+     "type": "Đĩa",
+     "topSale": false,
+     "news": true,
+     "content": "Bộ sản phẩm nổi bật với họa tiết hoa mai – một loài hoa đẹp, tượng trưng cho sự phú quý và tài lộc dù dịp Tết hay ngày thường. Bộ bàn ăn Daisy IFP Hoàng Mai hoàn hảo trong từng độ mảnh lượn, màu sắc (màu hồng tượng trưng cho hạnh phúc, lãng mạn) cùng sự kỳ công trong quy trình sản xuất như một lời chúc may mắn, giàu sang, hạnh phúc nhà chế tác gửi đến chủ sở hữu. Có Hoàng Mai là có cả mùa xuân trong ngôi nhà của bạn!",
+     "id": "17"
+    },
+    {
+     "name": "Đĩa văn lam 2",
+     "price": "210000",
+     "image": "https://duchl02.github.io/assets/results/reactbasic/src/untitled%20folder/hot3-min.png",
+     "type": "Bộ Trà",
+     "topSale": false,
+     "news": true,
+     "content": "Đĩa văn lam 2",
+     "id": "18"
+    },
+    {
+     "name": "name 19",
+     "price": "price 19",
+     "image": "image 19",
+     "type": "type 19",
+     "topSale": false,
+     "news": false,
+     "content": "content 19",
+     "id": "19"
+    },
+    {
+     "name": "name 20",
+     "price": "price 20",
+     "image": "image 20",
+     "type": "type 20",
+     "topSale": false,
+     "news": false,
+     "content": "content 20",
+     "id": "20"
+    }
+   ]
