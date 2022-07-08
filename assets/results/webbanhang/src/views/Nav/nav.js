@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import "./nav.css";
 import { NavLink } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
+
 import logoheader from "../../assets/img/logoheader.png";
 import bgr from "../../assets/img/bgr.jpg";
 
-const Nav = () =>{
+const Nav = (props) =>{
+  let listProduct = props.listProduct
+  // const [product, setProduct] = useState(listProduct);
+  let numberProduct = listProduct.length 
+  // useEffect(() => {
+  //   console.log(listProduct)
+  //   setProduct(listProduct)
+  // },[listProduct])
   let header = document.getElementsByClassName("wide");
   let searchBox = document.getElementsByClassName("search-nav");
   let loginNav = document.getElementsByClassName("login-nav");
@@ -27,9 +36,21 @@ const Nav = () =>{
     searchBox[0].style.display = "none";
     loginNav[0].style.display = "none";
   }
-  console.log(offset);
-  
-  
+  let history = useHistory()
+  const handleClickLogo = () =>{
+    history.push("/")
+  }
+  const handleClickCartIcon=() =>{
+    history.push("/cart")
+  }
+  // var navSecond = document.getElementsByClassName('nav-second')
+  // var navOverLay = document.getElementsByClassName('nav-overlay')
+  // const handleClickNav = () =>{
+  //   navOverLay[0].style.display = "none";
+  //   navSecond[0].style.transform = "translateX(0)";
+
+  //   console.log(navOverLay)
+  // }
     return (
       <div className='header-container'>
         <div className="header">
@@ -38,13 +59,14 @@ const Nav = () =>{
           <label htmlFor="nav-input-id"><i className="bar-icon icon fa-solid fa-bars"></i></label>
           </div>
           <div className="header-left">
-            <img src={logoheader} />
+          
+            <img onClick={()=>handleClickLogo()} src={logoheader} />
           </div>
           <div className="header-center">
             <div className="navbar8">
-              <ul className="navbar8-nav ">
+              <ul className="navbar8-nav  " >
                 <li>
-                  <NavLink activeClassName="active" exact={true} to="/">
+                  <NavLink  activeClassName="active" exact={true} to="/">
                     Trang chủ
                   </NavLink>
                 </li>
@@ -88,7 +110,10 @@ const Nav = () =>{
           </div>
           <div className="header-right">
             <a href="#" className="login-nav">Đăng nhập</a>
-            <i className="fa-solid fa-cart-shopping"></i>
+            <div className="cart-icon">
+            <i onClick={() =>handleClickCartIcon()} className="fa-solid fa-cart-shopping"></i>
+            <span>{numberProduct}</span>
+            </div>
           </div>
         </div>
         <input type="checkbox" hidden className="nav-input" id="nav-input-id"/>
@@ -113,7 +138,7 @@ const Nav = () =>{
                 </li>
                 <li>
                 <i className="fa-brands fa-product-hunt"></i>
-                  <NavLink activeClassName="active" to="/productions">
+                  <NavLink activeClassName="active" to="/product">
                     Sản phẩm
                   </NavLink>
                 </li>

@@ -14,31 +14,31 @@
   padding: 50px;
 }
 
-.news-container .wide .product-item {
+.news-container .wide .news-item {
   background-color: #fff;
   padding: 40px;
   margin-top: 40px;
 }
 
-.news-container .wide .product-item h1 {
+.news-container .wide .news-item h1 {
   font-family: Water Brush, cursive;
   color: #325080;
   font-size: 40px;
   text-align: center;
 }
 
-.news-container .wide .product-item img {
+.news-container .wide .news-item img {
   width: 100%;
   text-align: center;
 }
 
-.news-container .wide .product-item p {
+.news-container .wide .news-item p {
   font-size: 20px;
   font-weight: 400;
 }
 
 @media (max-width: 46.18em) {
-  .product-item {
+  .news-item {
     padding: 20px !important;
   }
 }

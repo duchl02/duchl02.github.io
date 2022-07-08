@@ -1,0 +1,96 @@
+$textcolor: #325080;
+$bgacolor: #f4511e;
+$bodercolor: #b7b7b6;
+button{
+    cursor: pointer;
+}
+.link-product {
+    margin:40px 0;
+    a,
+    span {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    a {
+        color: $textcolor;
+    }
+}
+.product-page-container {
+    margin-top: 120px;
+    z-index: 110;
+
+    .wide {
+       
+
+        .row {
+            .l-7{
+                display: flex;
+            }
+            .l-5 {
+                .buy-btn{
+                    width:100%;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    background-color:$textcolor;
+                    padding:10px;
+                    font-size: 20px;
+                    color: #fff;
+                    border-radius: 6px;
+                    border: none;
+                }
+                .content-right {
+                    background-color: rgba(241, 252, 255, 0.548);
+                    padding: 30px;
+                    border-radius: 10px;
+
+                    h1 {
+                        font-family: Water Brush, cursive;
+                        text-align: center;
+                        font-size: 40px;
+                        line-height: 46px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                    .amount-product{
+                        width: 100%;
+                    }
+                    // .amount-product {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     border: 1px solid #000;
+                    //     width: 90px;
+                    //     border-radius: 3px;
+                    //     button{
+                    //         width: 30px;
+                    //         height: 30px;
+                    //         border-color: inherit;
+                    //     }
+                    //     p{
+                    //         margin: 0 10px;
+                    //     }
+                    //     .add-product {
+                    //         background-color:#22da56;
+                    //     }
+
+                    //     .decrease-product {
+                    //         background-color:#f66767;
+                    //     }
+                    // }
+                }
+            }
+        }
+        .info-product{
+            background-color: rgba(241, 252, 255, 0.548);
+            padding:30px;
+            border-radius: 10px;
+            margin:30px 0;
+            p{
+                font-size:18px;
+            }
+        }
+    }
+}

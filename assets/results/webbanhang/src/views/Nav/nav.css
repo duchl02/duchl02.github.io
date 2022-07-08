@@ -53,6 +53,7 @@
 
 .header .wide .header-left img {
   height: 80%;
+  cursor: pointer;
 }
 
 .header .wide .header-center {
@@ -72,6 +73,7 @@
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .header .wide .header-center .navbar8 ul li .active {
@@ -121,8 +123,7 @@
 
 .header .wide .header-center .search-nav {
   width: 450px;
-  margin-left: 20px;
-  margin-bottom: 12px;
+  padding-bottom: 20px;
 }
 
 .header .wide .header-center .search-nav .search-box {
@@ -149,8 +150,8 @@
   background-color: #f2f2f2;
 }
 
-.header .wide .header-center .search-nav .search-box input:focus {
-  border: none;
+.header .wide .header-center .search-nav .search-box input:focus .search-box {
+  border: 1px solid #325080;
 }
 
 .header .wide .header-center .search-nav .search-box input:focus ~ .search-auto {
@@ -178,6 +179,7 @@
 .header .wide .header-center .search-nav .search-box .search-auto li span {
   position: relative;
   margin: 5px 0;
+  color: #525860;
 }
 
 .header .wide .header-center .search-nav .search-box .search-auto li span:after {
@@ -234,16 +236,32 @@
           align-items: center;
 }
 
+.header .wide .header-right .cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.header .wide .header-right .cart-icon i {
+  font-size: 40px;
+  color: #325080;
+}
+
+.header .wide .header-right .cart-icon span {
+  position: absolute;
+  background-color: #f44336;
+  border-radius: 50%;
+  color: #fff;
+  padding: 1px 5px;
+  right: -4px;
+  top: -6px;
+}
+
 .header .wide .header-right a {
+  white-space: nowrap;
   font-size: 16px;
   text-decoration: none;
   color: #325080;
   font-weight: 600;
-}
-
-.header .wide .header-right i {
-  font-size: 40px;
-  color: #325080;
 }
 
 .header .nav-input:checked ~ .nav-second {
@@ -275,7 +293,7 @@
   left: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  width: 350px;
+  width: 300px;
   height: 100vh;
   background-color: #fff;
   -webkit-transition-duration: 0.5s;
@@ -355,7 +373,6 @@
 }
 
 .header .nav-second .wide .header-center .navbar8 ul li {
-  padding: 10px;
   display: block;
   cursor: pointer;
 }
@@ -497,6 +514,7 @@
 }
 
 .header .nav-second .wide .header-right a {
+  white-space: nowrap;
   font-size: 16px;
   text-decoration: none;
   color: #325080;
@@ -558,6 +576,9 @@
   }
   .header .wide .header-center {
     display: none;
+  }
+  .header .wide .nav-second .header-right a {
+    display: block !important;
   }
   .header .wide .header-right a {
     display: none;

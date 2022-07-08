@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { NavLink, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
+import imgcenter from "../../assets/img/center.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,13 +10,30 @@ import "swiper/css/navigation";
 import slide1 from "../../assets/img/slide1.jpg";
 import slide2 from "../../assets/img/slide2.jpg";
 import h1cover from "../../assets/img/h1cover.png";
-
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation, Grid } from "swiper";
 import "../Home/Homestyle.scss";
 
+const Home = (props) => {
+  let handlePush= props.handlePush
 
-const Home = () => {
+  document.title = "Gốm nhà Khuê My";
+  let dataBlock = props.dataBlock;
+  let loadedData = props.loadedData;
+  let newproducts = dataBlock.filter((item) => {
+    return item.news === true && item.topSale === false;
+  });
+  let saleproducts = dataBlock.filter((item) => {
+    return item.topSale === true && item.news === false;
+  });
+  const bestProduct = dataBlock.filter((item) => {
+    return item.news === true;
+  });
+  const databestProduct = bestProduct.slice(8, 14);
+  let history = useHistory();
+  const handleClickProduct = (id) => {
+    history.push(`/product/${id}`);
+  };
   return (
     <div className="home-container">
       <div className=" grid wide">
@@ -65,7 +85,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="item-center">
+            <div className="title-name-center">
               <h1>Sản phẩm mới</h1>
               <img src={h1cover} />
             </div>
@@ -74,39 +94,197 @@ const Home = () => {
         <div className="center-item-1">
           <Swiper
             slidesPerView={1}
-            spaceBetween={10}
+            spaceBetween={50}
+            // centeredSlides={true}
+            // grid={{
+            //             rows: 2,
+            //         }}
+            navigation={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Navigation, Grid]}
+            className="mySwiper"
+          >
+            {loadedData === false &&
+              newproducts.map((item) => {
+                if (item.id > 0) {
+                  return (
+                    <SwiperSlide>
+                      <div key={item.id} className="product-item  ">
+                        <Link to={`/product/${item.id}`}>
+                          <img src={item.image} />
+                        </Link>
+                        <div className="product-content">
+                          <Link to={`/product/${item.id}`}>
+                            <a>{item.name}</a>
+                          </Link>
+
+                          <h5>{parseInt(item.price).toLocaleString()}đ</h5>
+                          <span onClick={() => handlePush(item.id)}>
+                            <a>MUA NGAY</a>
+                          </span>
+                        </div>
+                        <div className="product-tag">
+                          <div className="product-tag-news">
+                            <Link to={`/product/${item.id}`}>
+                              {item.news === true && <span>news</span>}
+                            </Link>
+                          </div>
+                          <div className="product-tag-sale">
+                            <Link to={`/product/${item.id}`}>
+                              {item.topSale === true && <span>sale</span>}
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  );
+                }
+              })}
+          </Swiper>
+        </div>
+        <div className="title-name-center">
+          <h1>Sản phẩm bán chạy</h1>
+          <img src={h1cover} />
+        </div>
+        <div className="center-item-1">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={50}
+            // centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            navigation={true}
             pagination={{
               clickable: true,
             }}
             breakpoints={{
               640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 40,
               },
               1024: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 50,
               },
             }}
-            modules={[Pagination]}
+            modules={[Autoplay, Navigation, Grid]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <img className="slide-1" src={slide1} />
-            </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            {loadedData === false &&
+              saleproducts.map((item) => {
+                if (item.id > 0) {
+                  return (
+                    <SwiperSlide>
+                      <div key={item.id} className="product-item  ">
+                        <Link to={`/product/${item.id}`}>
+                          <img src={item.image} />
+                        </Link>
+                        <div className="product-content">
+                          <Link to={`/product/${item.id}`}>
+                            <a>{item.name}</a>
+                          </Link>
+
+                          <h5>{parseInt(item.price).toLocaleString()}đ</h5>
+                          <span onClick={() => handlePush(item.id)}>
+                              <a>MUA NGAY</a>
+                          </span>
+                        </div>
+                        <div className="product-tag">
+                          <div className="product-tag-news">
+                            <Link to={`/product/${item.id}`}>
+                              {item.news === true && <span>news</span>}
+                            </Link>
+                          </div>
+                          <div className="product-tag-sale">
+                            <Link to={`/product/${item.id}`}>
+                              {item.topSale === true && <span>sale</span>}
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  );
+                }
+              })}
           </Swiper>
+        </div>
+        <div className="title-name-center">
+          <h1>Sản phẩm tiêu biểu</h1>
+          <img src={h1cover} />
+        </div>
+        <div className="best-product">
+          {loadedData === false &&
+            databestProduct.map((item) => {
+              return (
+                <div className="best-product-item">
+                  <div className="best-img-item">
+                    <img
+                      onClick={() => handleClickProduct(item.id)}
+                      src={item.image}
+                    ></img>
+                  </div>
+                  <div className="dis-best-product">
+                    <div className="title-name-center">
+                      <h1 onClick={() => handleClickProduct(item.id)}>
+                        {item.name}
+                      </h1>
+                    </div>
+                    <p>{parseInt(item.price).toLocaleString()}vnd</p>
+                    <p>{item.content}</p>
+                  </div>
+                </div>
+              );
+            })}
+
+          <div className="best-product-img">
+            <img src={imgcenter}></img>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact-container">
+        <div className="contact-bar">
+          <h1>LIÊN HỆ</h1>
+          <h3>Chăm sóc khách hàng là niềm vui của chúng tôi!</h3>
+        </div>
+        <div className="contact-address wide grid">
+          <div className="contact-item-1 boder-db">
+            <h2>Cửa hàng 1</h2>
+            <p>Địa chỉ: 23 Nguyễn Ái Quốc - Hoàng Mai</p>
+            <p>Số điện thoại: 0123456789</p>
+            <p>Email: gomnhakhuemy@gmail.com</p>
+            <a href="https://www.facebook.com/G%E1%BB%91m-nh%C3%A0-Khu%C3%AA-My-106591728105268/">
+              Website: Gốm nhà Khuê My
+            </a>
+          </div>
+          <div className="contact-item-2 boder-db">
+            <h2>Cửa hàng 2</h2>
+            <p>Địa chỉ: 23 Nguyễn Tri Phương - Cầu Giấy</p>
+            <p>Số điện thoại: 0123456789</p>
+            <p>Email: gomnhakhuemy@gmail.com</p>
+            <a href="https://www.facebook.com/G%E1%BB%91m-nh%C3%A0-Khu%C3%AA-My-106591728105268/">
+              Website: Gốm nhà Khuê My
+            </a>
+          </div>
         </div>
       </div>
     </div>

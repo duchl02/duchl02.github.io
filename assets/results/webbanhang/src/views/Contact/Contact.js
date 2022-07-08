@@ -1,6 +1,9 @@
 import "../Contact/ContactStyle.scss";
 
 const Contact = () => {
+  document.title = "Liên hệ - Gốm nhà Khuê My"
+  window.scrollTo({top: 0})
+
   return (
     <div className="contact-container">
       <div className="contact-bar">

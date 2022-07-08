@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="inmain">
-        <div className="fanpage">
+        {/* <div className="fanpage">
           <div
             className="fb-page"
             data-href="https://www.facebook.com/G%E1%BB%91m-nh%C3%A0-Khu%C3%AA-My-106591728105268/"
@@ -30,7 +30,7 @@ const Footer = () => {
               </a>
             </blockquote>
           </div>
-        </div>
+        </div> */}
         <div className="foorter-item">
           <p>Địa chỉ: 23 Nguyễn Ái Quốc - Hoàng Mai</p>
           <p>Số điện thoại: 0123456789</p>

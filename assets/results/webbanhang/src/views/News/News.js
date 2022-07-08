@@ -5,13 +5,15 @@ import axios from "axios";
 
 import useFetch from "../../custom/fetch";
 const News = () => {
+  document.title = "Tin tức - Gốm nhà Khuê My"
+  window.scrollTo({top: 0})
+
   const { data: dataBlock, loadedData } = useFetch(
-    "https://6288a9b610e93797c15d8515.mockapi.io/api/user"
+    "https://duchl02.github.io/assets/results/webbanhang/src/views/news.json"
   );
-  console.log(dataBlock);
   return (
     <div className="news-container">
-      <div className="item-center">
+      <div className="title-name-center">
         <h1>Tin mới</h1>
         <img src={h1cover} />
       </div>
@@ -20,7 +22,7 @@ const News = () => {
         {loadedData === false &&
           dataBlock.map((item) => {
             return (
-              <div key={item.id} className="product-item">
+              <div key={item.id} className="news-item">
                 <h1>{item.title}</h1>
                 <p>{item.content1}</p>
                 <img src={item.image1}></img>

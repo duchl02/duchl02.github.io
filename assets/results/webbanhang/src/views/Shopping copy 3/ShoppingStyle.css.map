@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACf,UAAU,EAAC,KAAK;EAChB,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "ShoppingStyle.scss"
+    ],
+    "names": [],
+    "file": "ShoppingStyle.css"
+}

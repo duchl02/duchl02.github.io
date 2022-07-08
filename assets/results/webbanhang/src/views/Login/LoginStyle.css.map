@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,UAAU,EAAC,KAAK;EAChB,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "LoginStyle.scss"
+    ],
+    "names": [],
+    "file": "LoginStyle.css"
+}

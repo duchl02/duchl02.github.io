@@ -1,0 +1,74 @@
+button {
+  cursor: pointer;
+}
+
+.link-product {
+  margin: 40px 0;
+}
+
+.link-product a,
+.link-product span {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link-product a {
+  color: #325080;
+}
+
+.product-page-container {
+  margin-top: 120px;
+  z-index: 110;
+}
+
+.product-page-container .wide .row .l-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-page-container .wide .row .l-5 .buy-btn {
+  width: 100%;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #325080;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+}
+
+.product-page-container .wide .row .l-5 .content-right {
+  background-color: rgba(241, 252, 255, 0.548);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.product-page-container .wide .row .l-5 .content-right h1 {
+  font-family: Water Brush, cursive;
+  text-align: center;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.product-page-container .wide .row .l-5 .content-right p {
+  font-size: 18px;
+}
+
+.product-page-container .wide .row .l-5 .content-right .amount-product {
+  width: 100%;
+}
+
+.product-page-container .wide .info-product {
+  background-color: rgba(241, 252, 255, 0.548);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.product-page-container .wide .info-product p {
+  font-size: 18px;
+}
+/*# sourceMappingURL=ProductPageStyle.css.map */

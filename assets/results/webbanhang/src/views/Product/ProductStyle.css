@@ -1,10 +1,14 @@
+a {
+  cursor: pointer;
+}
+
 .product-container {
   margin-top: 150px;
   z-index: 0;
+  overflow: hidden;
 }
 
 .product-container .wide .product-slide {
-  margin: 60px 0;
   background-color: rgba(231, 242, 251, 0.8);
   border-radius: 4px;
   padding: 4px;
@@ -30,6 +34,8 @@
 .product-container .wide .product-slide .sort-type img {
   width: 120px;
   height: 80px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .product-container .wide .product-slide .sort-type p {
@@ -39,5 +45,171 @@
   font-size: 20px;
   margin: 0;
   text-align: center;
+}
+
+.product-container .wide .product-slide .sort-type:hover > img {
+  opacity: 0.8;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.product-container .wide .product-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 30px 0;
+}
+
+.product-container .wide .product-filter span {
+  font-size: 18px;
+}
+
+.product-container .wide .product-filter select {
+  font-size: 16px;
+}
+
+.product-container .wide .product-area .row > h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.product-item {
+  height: 300px;
+  width: 210px;
+  margin-bottom: 40px;
+  background: url(../../assets/img/product-bg.png) center center/cover no-repeat;
+  background-size: contain;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-item img {
+  width: 100%;
+  height: 150px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-duration: all 0.5s ease;
+          transition-duration: all 0.5s ease;
+}
+
+.product-item img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.product-item .product-content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.product-item .product-content > a {
+  font-family: Water Brush, cursive;
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.product-item .product-content h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.product-item .product-content span a {
+  color: #fff;
+  background-color: #325080;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.product-item .product-tag {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.product-item .product-tag a {
+  text-decoration: none;
+}
+
+.product-item .product-tag .product-tag-sale {
+  margin: 6px 0;
+}
+
+.product-item .product-tag .product-tag-sale span {
+  padding: 0 7px;
+}
+
+.product-item .product-tag .product-tag-news span {
+  background-color: #9e1a0e;
+}
+
+.product-item .product-tag span {
+  color: #fff;
+  background-color: #325080;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+}
+
+/* pc */
+@media (min-width: 64em) {
+  .product-container .wide .product-area .row .product-item img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* tablet and pc */
+@media (min-width: 63.93em) and (max-width: 77.5em) {
+  .product-container .wide .product-area .row .product-item .product-tag {
+    right: 26px;
+  }
+}
+
+/* tablet */
+/* mobile and tablet*/
+@media (max-width: 63.9em) {
+  .product-container .wide .product-area .row .product-item .product-tag {
+    right: 0;
+  }
+}
+
+/* mobile */
+@media (max-width: 46.18em) {
+  .product-container .wide .product-area .row .product-item .product-content {
+    margin: 0;
+  }
+  .product-container .wide .product-area .row .product-item img {
+    width: 100%;
+    height: 150px;
+  }
+  .product-container .wide .product-area .row .product-item .product-tag {
+    right: 0;
+  }
+  .product-container {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=ProductStyle.css.map */
