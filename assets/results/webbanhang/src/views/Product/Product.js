@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import React, { useState, useEffect } from "react";
 import "../Product/ProductStyle.scss";
-import useFetch from "../../custom/fetch";
-import a1 from "../../assets/img/ab.png";
-import { NavLink , Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,11 +10,11 @@ import "swiper/css/navigation";
 import { autoplay, Pagination, Navigation } from "swiper";
 let dontLoad = false;
 const Product = (props) => {
-  document.title = "Sản Phẩm - Gốm nhà Khuê My"
-  let handlePush = props.handlePush
-  let dataBlock = props.dataBlock
-  let loadedData = props.loadedData
-  dontLoad = true
+  document.title = "Sản Phẩm - Gốm nhà Khuê My";
+  let handlePush = props.handlePush;
+  let dataBlock = props.dataBlock;
+  let loadedData = props.loadedData;
+  dontLoad = true;
   let [newData, setNewData] = useState(dataBlock);
   const handleSortBat = (e) => {
     if (e.target.alt === "bat") {
@@ -156,7 +154,11 @@ const Product = (props) => {
           >
             <SwiperSlide>
               <div onClick={(e) => handleSortBat(e)} className="sort-type">
-                <img alt="all" src={a1} />
+                <img
+                  alt="all"
+                  src="https://duchl02.github.io/assets/results/webbanhang/src/assets/img/ab.png
+"
+                />
                 <p>Tất cả</p>
               </div>
             </SwiperSlide>
@@ -197,22 +199,20 @@ const Product = (props) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div
-                onClick={(e) => handleSortBat(e)}
-                
-                className="sort-type"
-              >
-                <img alt="au" src="https://duchl02.github.io/assets/results/webbanhang/src/assets/img/productimg/c2-min.png" />
+              <div onClick={(e) => handleSortBat(e)} className="sort-type">
+                <img
+                  alt="au"
+                  src="https://duchl02.github.io/assets/results/webbanhang/src/assets/img/productimg/c2-min.png"
+                />
                 <p>Âu</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div
-                onClick={(e) => handleSortBat(e)}
-                
-                className="sort-type"
-              >
-                <img alt="boTra" src="https://duchl02.github.io/assets/results/webbanhang/src/assets/img/productimg/249770791a0ff26bd6db03e6c620ea1d-min.png" />
+              <div onClick={(e) => handleSortBat(e)} className="sort-type">
+                <img
+                  alt="boTra"
+                  src="https://duchl02.github.io/assets/results/webbanhang/src/assets/img/productimg/249770791a0ff26bd6db03e6c620ea1d-min.png"
+                />
                 <p>Bộ trà</p>
               </div>
             </SwiperSlide>
@@ -241,27 +241,27 @@ const Product = (props) => {
                       key={item.id}
                       className="product-item col l-3 m-4 c-6 "
                     >
-                      <Link  to={`/product/${item.id}`}>
+                      <Link to={`/product/${item.id}`}>
                         <img src={item.image} />
                       </Link>
                       <div className="product-content">
-                        <Link  to={`/product/${item.id}`}>
+                        <Link to={`/product/${item.id}`}>
                           <a>{item.name}</a>
                         </Link>
 
                         <h5>{parseInt(item.price).toLocaleString()}đ</h5>
                         <span onClick={() => handlePush(item.id)}>
-                            <a>MUA NGAY</a>
+                          <a>MUA NGAY</a>
                         </span>
                       </div>
                       <div className="product-tag">
                         <div className="product-tag-news">
-                          <Link  to={`/product/${item.id}`}>
+                          <Link to={`/product/${item.id}`}>
                             {item.news === true && <span>news</span>}
                           </Link>
                         </div>
                         <div className="product-tag-sale">
-                          <Link  to={`/product/${item.id}`}>
+                          <Link to={`/product/${item.id}`}>
                             {item.topSale === true && <span>sale</span>}
                           </Link>
                         </div>

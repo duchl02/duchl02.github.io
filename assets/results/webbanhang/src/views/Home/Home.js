@@ -2,13 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { NavLink, Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
-import imgcenter from "../../assets/img/center.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import slide1 from "../../assets/img/slide1.jpg";
-import slide2 from "../../assets/img/slide2.jpg";
 import h1cover from "../../assets/img/h1cover.png";
 // import required modules
 import { Autoplay, Pagination, Navigation, Grid } from "swiper";
@@ -55,10 +52,10 @@ const Home = (props) => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img className="slide-1" src={slide1} />
+                  <img className="slide-1" src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/slide1.jpg' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className="slide-1" src={slide2} />
+                  <img className="slide-1" src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/slide2.jpg' />
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -87,7 +84,7 @@ const Home = (props) => {
             </div>
             <div className="title-name-center">
               <h1>Sản phẩm mới</h1>
-              <img src={h1cover} />
+              <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/h1cover.png' />
             </div>
           </div>
         </div>
@@ -157,7 +154,7 @@ const Home = (props) => {
         </div>
         <div className="title-name-center">
           <h1>Sản phẩm bán chạy</h1>
-          <img src={h1cover} />
+          <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/h1cover.png' />
         </div>
         <div className="center-item-1">
           <Swiper
@@ -229,7 +226,7 @@ const Home = (props) => {
         </div>
         <div className="title-name-center">
           <h1>Sản phẩm tiêu biểu</h1>
-          <img src={h1cover} />
+          <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/h1cover.png' />
         </div>
         <div className="best-product">
           {loadedData === false &&
@@ -256,7 +253,7 @@ const Home = (props) => {
             })}
 
           <div className="best-product-img">
-            <img src={imgcenter}></img>
+            <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/center.png'></img>
           </div>
         </div>
       </div>

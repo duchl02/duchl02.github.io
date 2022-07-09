@@ -1,7 +1,5 @@
 import "../News/NewsStyle.scss";
-import e1 from "../../assets/img/news/e1.png";
 import h1cover from "../../assets/img/h1cover.png";
-import axios from "axios";
 
 import useFetch from "../../custom/fetch";
 const News = () => {

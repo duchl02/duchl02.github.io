@@ -1,7 +1,6 @@
 import "../ProductPage/ProductPageStyle.scss";
 import { NavLink } from "react-router-dom";
 import { useParams, useHistory } from "react-router-dom";
-import useFetch from "../../custom/fetch";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React, { useState, useEffect } from "react";
 

@@ -47,7 +47,7 @@ const Footer = () => {
           <h3>Miễn phí giao hàng</h3>
           <p>Dành cho hóa đơn trên 300k và &lt; 4km</p>
         </div>
-        <img src={logoheader}></img>
+        <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/logoheader.png'></img>
       </div>
       <p>Logo Copyright 2022 © duchl02 - Design & code by duchl02</p>
     </div>

@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import {  useHistory } from "react-router-dom";
 
 import logoheader from "../../assets/img/logoheader.png";
-import bgr from "../../assets/img/bgr.jpg";
 
 const Nav = (props) =>{
   let listProduct = props.listProduct
@@ -60,7 +59,7 @@ const Nav = (props) =>{
           </div>
           <div className="header-left">
           
-            <img onClick={()=>handleClickLogo()} src={logoheader} />
+            <img onClick={()=>handleClickLogo()} src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/logoheader.png' />
           </div>
           <div className="header-center">
             <div className="navbar8">
@@ -125,7 +124,7 @@ const Nav = (props) =>{
           <div className="nav-button">
           <label htmlFor="nav-input-id"><i className="bar-icon icon fa-solid fa-bars"></i></label>
           </div>
-            <img src={logoheader} />
+            <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/logoheader.png' />
           </div>
           <div className="header-center">
             <div className="navbar8">
@@ -185,7 +184,7 @@ const Nav = (props) =>{
         </div>
       </div>
       <div className="background">
-        <img src={bgr}/>
+        <img src='https://duchl02.github.io/assets/results/webbanhang/src/assets/img/bgr.jpg'/>
       </div>
       </div>
     );
