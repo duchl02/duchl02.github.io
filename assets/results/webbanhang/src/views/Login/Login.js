@@ -2,7 +2,7 @@ import "../Login/LoginStyle.scss";
 import { NavLink } from "react-router-dom";
 import { GoogleLogin } from "react-google-login";
 import { GoogleLogout } from "react-google-login";
-import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 export const Login = (props) => {
   let clientId = props.clientId
@@ -35,12 +35,16 @@ export const Login = (props) => {
 export const Logout = (props) => {
   const clientId = props.clientId
   const user = props.user
+  let history = useHistory();
+  const handleClickLogout = () => {
+    history.push("/");
+  };
   const onSuccess = () => {
     console.log("logout success");
   };
   return (
     <>
-      {user&& <div  onClick={() => window.location.reload()} className="google-logout">
+      {user&& <div  onClick={() => handleClickLogout()} className="google-logout">
       <GoogleLogout
         clientId={clientId}
         buttonText="Logout"
