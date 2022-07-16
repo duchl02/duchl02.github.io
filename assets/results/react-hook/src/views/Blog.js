@@ -47,6 +47,7 @@ const Blog = () => {
     setNewData(data)
     console.log(data)
   }
+  
   return (
     <div>
       <button
