@@ -1,337 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Cảm ơn bạn đã gửi tin nhắn</h4>
-            </div>
-            <div class="modal-body">
-              <p>Bạn có thể vào một số <a href="https://duchl02.github.io/assets/results/myinfo/index.html" target="_blank">trang web</a>  thú vị của tôi</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Cảm ơn bạn đã gửi tin nhắn</h4>
           </div>
-          
+          <div class="modal-body">
+            <p>
+              Bạn có thể vào một số
+              <a
+                href="https://duchl02.github.io/assets/results/myinfo/index.html"
+                target="_blank"
+                >trang web</a
+              >
+              thú vị của tôi
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
       </div>
+    </div>
     <div class="main">
-        <div class="info">
-            <div class="grid">
-                <div class="row8">
-                    <div class="col l-6 m-6 c-12 info-left">
-                        <div class="row8">
-                            <div class="col l-4 m-4 c-12 info-left-l">
-                                <img src="./assets/img/me.jpg" alt="" class="img-rounded img-me">
-                            </div>
-                            <div class="col l-8 m-8 c-12 info-left-r">
-                                <h4>Tên: <span>Nguyễn Văn Đức</span></h4><br>
-                                <h4>Profile: <span>Frontend Developer</span></h4><br>
-                                <h4>Email: <span>duc1503honglinh@gmail.com</span></h4><br>
-                                <h4>Điện thoại: <span>0354994904</span></h4>
-                                <div class="mycv">
-                                    <a href="https://www.topcv.vn/xem-cv/BFoGXAYLVAQBAANSV1ULAwcKBQJRBwRQVVIEBA5910"><button class="btn btn-default">My CV</button></a> 
-                                    <a href="https://zaloapp.com/qr/p/uhiwzpwro6hu" target="_blank"><button class="btn btn-default">Zalo</button> </a>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Contact me</h2>
-                        </div>
-                        <div class="row8">
-                            <div class="col l-6 m-6 c-6 form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Name" required>
-                            </div>
-                            <div class="col l-6 m-6 c-6 form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        
-                        <div class="row8 comment">
-                            <textarea class="col l-12 m-12 c-12 form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                        </div>
-                        <div class="form-group">
-                            <br>
-                            <button id="submit" class="btn btn-default btn-modal  pull-right" type="submit" data-toggle="modal" data-target="#myModal">Send</button>
-                        </div>
-                    </div>
-                    <div class="col l-6 m-6 c-12 info-right">
-                        <h1>
-                            Một số dự án cá nhân
-                        </h1>
-                        <h3>Web bán hàng</h3>
-                        <p>Mô tả: Trang bán hàng với các chức năng tìm kiếm, lọc sắp xếp sản phẩm,giỏ hàng,thanh toán, đăng nhập,Responsive...</p>
-                        <p>Công Nghệ: HTML - CSS(SASS) - Ractjs - REST-Api</p>
-                        <p>Source code: <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/webbanhang" target="_blank">Link Source Code</a></p>
-                        <p>Trang Web: <a href="https://duchl02-github.vercel.app/" target="_blank">Web bán hàng</a></p>
-                        <h2>Kỹ Năng</h2>
-                        <h4>Web Development: <span>( Frontend ) : HTML, CSS, JavaScript, DOM (Document Object Model), CSS Layouts, Responsive Design, Bootstrap, SASS, JQuery, Reactjs, Formik.</span></h4><br>
-                        <h4>Other: <span>Git,REST-Api(axios,Fetch).</span></h4><br>
-                    </div>
+      <div class="info">
+        <div class="grid">
+          <div class="row8">
+            <div class="col l-6 m-6 c-12 info-left">
+              <div class="row8">
+                <div class="col l-4 m-4 c-12 info-left-l">
+                  <img
+                    src="./assets/img/me.jpg"
+                    alt=""
+                    class="img-rounded img-me"
+                  />
                 </div>
-            </div>
-        </div>
-        <h1 class="text-center">MY PROJECT
-            <br>
-            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/" target="_blank"> Source Code</a>
-        </h1>
-        
-        <div class="project">
-            <div class="grid">
-                <div class="row8">
-                    <div class="list-item text-center ">
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="https://duchl02-github.vercel.app/" target="_blank">
-                                <h1 class="text-center">Web bán hàng</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/webanhang.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS-Javascript</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>Reactjs-SASS</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/webbanhang" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/test-react/build/index.html" target="_blank">
-                                <h1 class="text-center">CRUD ReactJs</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/CRUD-reactjs.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS-Javascript</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>Reactjs-Formik</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/test-react" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/myinfo/index.html" target="_blank">
-                                <h1 class="text-center">My Info</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/myinfo.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS-Javascript</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span></span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/CMSN/index.html" target="_blank">
-                                <h1 class="text-center">Sinh Nhật</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/cmsn.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>SCSS-jQuery</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/CMSN" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/maytinhdongian/index.html" target="_blank">
-                                <h1 class="text-center">Máy tính</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/maytinhdongian.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>SCSS-jQuery</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/maytinhdongian" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/WebUseBoostrap/index.html" target="_blank">
-                                <h1 class="text-center">WebUseBoostrap</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/webusebootrap.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>SCSS-jQuery-Boostrap</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/WebUseBoostrap" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/themsuaxoa/index.html" target="_blank">
-                                <h1 class="text-center">Thêm Sửa Xoá</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/themsuaxoa.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>jQuery</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/themsuaxoa" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/CloneYoutube/index.html" target="_blank">
-                                <h1 class="text-center">CloneYoutube</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/cloneyoutube.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS-Javascript</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>SCSS</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/CloneYoutube" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/Clock/index.html" target="_blank">
-                                <h1 class="text-center">Đồng hồ</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/clock.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS-Javascript</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span></span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/Clock" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/shopmaytinh/index.html" target="_blank">
-                                <h1 class="text-center">Shop Máy Tính</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/shopmaytinh.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span>SCSS</span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/shopmaytinh" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/playMusic/index.html" target="_blank">
-                                <h1 class="text-center">Play music</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/playmusic.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS-Javascript</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span></span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/playMusic" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col l-4 m-6 c-12 slideScroll">
-                            <a href="./assets/results/ShopeeClone/index.html" target="_blank">
-                                <h1 class="text-center">Shopee clone</h1>
-                                <div class="results-img">
-                                    <img src="./assets/img/shopee.png" alt="">
-                                    <div class="results-img-hover">
-                                        <div class="display-flex">
-                                            <h1>Ngôn ngữ:&nbsp</h1> <span>HTML-CSS</span>
-                                        </div>
-                                        <div class="display-flex">
-                                            <h1>Thư viện/Famework:&nbsp</h1> <span></span>
-                                        </div>
-                                        <div class="source-code">
-                                            <a href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/ShopeeClone" target="_blank"> Source Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                    </div>
-                    
+                <div class="col l-8 m-8 c-12 info-left-r">
+                  <h4>Tên: <span>Nguyễn Văn Đức</span></h4>
+                  <br />
+                  <h4>
+                    Profile: <span>Web Development (Nodejs, ReactJs)</span>
+                  </h4>
+                  <br />
+                  <h4>Email: <span>duc1503honglinh@gmail.com</span></h4>
+                  <br />
+                  <h4>Điện thoại: <span>0354994904</span></h4>
+                  <div class="mycv">
+                    <a
+                      href="https://www.topcv.vn/xem-cv/BFoGXAYLVAQBAANSV1ULAwcKBQJRBwRQVVIEBA5910"
+                      ><button class="btn btn-default">My CV</button></a
+                    >
+                    <a
+                      href="https://zaloapp.com/qr/p/uhiwzpwro6hu"
+                      target="_blank"
+                      ><button class="btn btn-default">Zalo</button>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div>
+                <h2>Contact me</h2>
+              </div>
+              <div class="row8">
+                <div class="col l-6 m-6 c-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="col l-6 m-6 c-6 form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row8 comment">
+                <textarea
+                  class="col l-12 m-12 c-12 form-control"
+                  id="comments"
+                  name="comments"
+                  placeholder="Comment"
+                  rows="5"
+                ></textarea
+                ><br />
+              </div>
+              <div class="form-group">
+                <br />
+                <button
+                  id="submit"
+                  class="btn btn-default btn-modal pull-right"
+                  type="submit"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                >
+                  Send
+                </button>
+              </div>
             </div>
+            <div class="col l-6 m-6 c-12 info-right">
+              <!-- <h1>Một số dự án cá nhân</h1>
+              <h3>Web bán hàng</h3>
+              <p>
+                Mô tả: Trang bán hàng với các chức năng tìm kiếm, lọc sắp xếp
+                sản phẩm,giỏ hàng,thanh toán, đăng nhập,Responsive...
+              </p>
+              <p>Công Nghệ: HTML - CSS(SASS) - Ractjs - REST-Api</p>
+              <p>
+                Source code:
+                <a
+                  href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/webbanhang"
+                  target="_blank"
+                  >Link Source Code</a
+                >
+              </p>
+              <p>
+                Trang Web:
+                <a href="https://duchl02-github.vercel.app/" target="_blank"
+                  >Web bán hàng</a
+                >
+              </p> -->
+              <h2>Kỹ Năng</h2>
+              <h4>
+                Frontend:
+                <span
+                  > : HTML, CSS, JavaScript, DOM (Document Object
+                  Model), CSS Layouts, Responsive Design, Bootstrap, SASS,
+                  JQuery, Reactjs, Formik.</span
+                >
+              </h4>
+              <h4>
+                Backend:
+                <span
+                  > : Nodejs, Sequelize, Mysql</span
+                >
+              </h4>
+              <h4>Other: <span>Git,SVN.</span></h4>
+              <br />
+            </div>
+          </div>
         </div>
-    </div>    
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="./assets/main.js"></script>
-</body>
+      </div>
+      <h1 class="text-center">
+        MY PROJECT
+        <br />
+        <a
+          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/"
+          target="_blank"
+        >
+          Source Code</a
+        >
+      </h1>
+
+      <div class="project">
+        <div class="grid">
+          <div class="row8">
+            <div class="list-item text-center">
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a href="https://duchl02-github.vercel.app/" target="_blank">
+                  <h1 class="text-center">Web bán hàng</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/webanhang.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS-Javascript</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>Reactjs-SASS</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/webbanhang"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/test-react/build/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">CRUD ReactJs</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/CRUD-reactjs.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS-Javascript</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>Reactjs-Formik</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/test-react"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a href="./assets/results/myinfo/index.html" target="_blank">
+                  <h1 class="text-center">My Info</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/myinfo.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS-Javascript</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span></span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a href="./assets/results/CMSN/index.html" target="_blank">
+                  <h1 class="text-center">Sinh Nhật</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/cmsn.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>SCSS-jQuery</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/CMSN"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/maytinhdongian/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">Máy tính</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/maytinhdongian.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>SCSS-jQuery</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/maytinhdongian"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/WebUseBoostrap/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">WebUseBoostrap</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/webusebootrap.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>SCSS-jQuery-Boostrap</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/WebUseBoostrap"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/themsuaxoa/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">Thêm Sửa Xoá</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/themsuaxoa.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>jQuery</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/themsuaxoa"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/CloneYoutube/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">CloneYoutube</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/cloneyoutube.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS-Javascript</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>SCSS</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/CloneYoutube"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a href="./assets/results/Clock/index.html" target="_blank">
+                  <h1 class="text-center">Đồng hồ</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/clock.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS-Javascript</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span></span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/Clock"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/shopmaytinh/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">Shop Máy Tính</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/shopmaytinh.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span>SCSS</span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/shopmaytinh"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a href="./assets/results/playMusic/index.html" target="_blank">
+                  <h1 class="text-center">Play music</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/playmusic.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS-Javascript</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span></span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/playMusic"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item col l-4 m-6 c-12 slideScroll">
+                <a
+                  href="./assets/results/ShopeeClone/index.html"
+                  target="_blank"
+                >
+                  <h1 class="text-center">Shopee clone</h1>
+                  <div class="results-img">
+                    <img src="./assets/img/shopee.png" alt="" />
+                    <div class="results-img-hover">
+                      <div class="display-flex">
+                        <h1>Ngôn ngữ:&nbsp</h1>
+                        <span>HTML-CSS</span>
+                      </div>
+                      <div class="display-flex">
+                        <h1>Thư viện/Famework:&nbsp</h1>
+                        <span></span>
+                      </div>
+                      <div class="source-code">
+                        <a
+                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/ShopeeClone"
+                          target="_blank"
+                        >
+                          Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
 </html>
