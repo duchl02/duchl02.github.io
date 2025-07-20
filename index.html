@@ -4,532 +4,423 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>My Portfolio</title>
+    <title>Mn yêu cầu trang web đi ạ! 😂</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        overflow: hidden;
+        font-family: 'Comic Neue', cursive;
+        position: relative;
+        background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, #fd79a8);
+        background-size: 600% 600%;
+        animation: crazyGradient 8s ease infinite;
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="16" font-size="16">😂</text></svg>'), auto;
+      }
+
+      @keyframes crazyGradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        25% {
+          background-position: 100% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        75% {
+          background-position: 0% 100%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .emoji-rain {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .emoji {
+        position: absolute;
+        font-size: 2rem;
+        animation: fall 3s linear infinite;
+        opacity: 0.8;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-100px) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      .bouncing-text {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .main-text {
+        font-size: clamp(2rem, 8vw, 6rem);
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        animation: bounce 2s ease-in-out infinite;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        40% {
+          transform: translateY(-30px) rotate(-5deg);
+        }
+        60% {
+          transform: translateY(-15px) rotate(5deg);
+        }
+      }
+
+      .sub-text {
+        font-size: clamp(1rem, 4vw, 2rem);
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: wiggle 3s ease-in-out infinite;
+        margin-bottom: 2rem;
+      }
+
+      @keyframes wiggle {
+        0%, 100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-3deg);
+        }
+        75% {
+          transform: rotate(3deg);
+        }
+      }
+
+      .funny-button {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        animation: pulse 2s ease-in-out infinite;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        font-family: 'Comic Neue', cursive;
+      }
+
+      .funny-button:hover {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .floating-memes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .meme {
+        position: absolute;
+        font-size: 3rem;
+        animation: float 8s ease-in-out infinite;
+        opacity: 0.6;
+      }
+
+      .meme:nth-child(1) {
+        left: 10%;
+        top: 20%;
+        animation-delay: 0s;
+      }
+
+      .meme:nth-child(2) {
+        left: 80%;
+        top: 30%;
+        animation-delay: 2s;
+      }
+
+      .meme:nth-child(3) {
+        left: 20%;
+        top: 70%;
+        animation-delay: 4s;
+      }
+
+      .meme:nth-child(4) {
+        left: 70%;
+        top: 80%;
+        animation-delay: 6s;
+      }
+
+      .meme:nth-child(5) {
+        left: 50%;
+        top: 10%;
+        animation-delay: 1s;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        33% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+        66% {
+          transform: translateY(10px) rotate(-5deg);
+        }
+      }
+
+      .crazy-shapes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+        animation: spin 10s linear infinite;
+        opacity: 0.3;
+      }
+
+      .shape:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        background: #ff6b6b;
+        left: 5%;
+        top: 15%;
+        animation-delay: 0s;
+      }
+
+      .shape:nth-child(2) {
+        width: 80px;
+        height: 80px;
+        background: #4ecdc4;
+        left: 85%;
+        top: 25%;
+        animation-delay: 2s;
+      }
+
+      .shape:nth-child(3) {
+        width: 120px;
+        height: 120px;
+        background: #45b7d1;
+        left: 15%;
+        top: 75%;
+        animation-delay: 4s;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg) scale(1);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotate(360deg) scale(1);
+        }
+      }
+
+      .rainbow-text {
+        background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbowShift 3s ease-in-out infinite;
+      }
+
+      @keyframes rainbowShift {
+        0%, 100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main-text {
+          font-size: clamp(1.5rem, 6vw, 4rem);
+        }
+        
+        .sub-text {
+          font-size: clamp(0.8rem, 3vw, 1.5rem);
+        }
+        
+        .funny-button {
+          padding: 12px 24px;
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Cảm ơn bạn đã gửi tin nhắn</h4>
-          </div>
-          <div class="modal-body">
-            <p>
-              Bạn có thể vào một số
-              <a
-                href="https://duchl02.github.io/assets/results/myinfo/index.html"
-                target="_blank"
-                >trang web</a
-              >
-              thú vị của tôi
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="emoji-rain" id="emojiRain"></div>
+    
+    <div class="floating-memes">
+      <div class="meme">🤣</div>
+      <div class="meme">😂</div>
+      <div class="meme">🎉</div>
+      <div class="meme">🚀</div>
+      <div class="meme">💻</div>
     </div>
-    <div class="main">
-      
-      <div class="info">
-        <div class="grid">
-          <div class="row8">
-            <div class="col l-6 m-6 c-12 info-left">
-              <div class="row8">
-                <div class="col l-4 m-4 c-12 info-left-l">
-                  <img
-                    src="./assets/img/me.jpg"
-                    alt=""
-                    class="img-rounded img-me"
-                  />
-                </div>
-                <div class="col l-8 m-8 c-12 info-left-r">
-                  <h4>Tên: <span>Nguyễn Văn Đức</span></h4>
-                  <br />
-                  <h4>
-                    Profile: <span>Web Development (Nodejs, ReactJs)</span>
-                  </h4>
-                  <br />
-                  <h4>Email: <span>duc1503honglinh@gmail.com</span></h4>
-                  <br />
-                  <h4>Điện thoại: <span>0354994904</span></h4>
-                  <div class="mycv">
-                    <a
-                      href="ductestapp.com:/oauthredirect"
-                      ><button class="btn btn-default">My CV</button></a
-                    >
-                    <a
-                      href="https://zaloapp.com/qr/p/uhiwzpwro6hu"
-                      target="_blank"
-                      ><button class="btn btn-default">Zalo</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h2>Contact me</h2>
-              </div>
-              <div class="row8">
-                <div class="col l-6 m-6 c-6 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-                <div class="col l-6 m-6 c-6 form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-              </div>
 
-              <div class="row8 comment">
-                <textarea
-                  class="col l-12 m-12 c-12 form-control"
-                  id="comments"
-                  name="comments"
-                  placeholder="Comment"
-                  rows="5"
-                ></textarea
-                ><br />
-              </div>
-              <div class="form-group">
-                <br />
-                <button
-                  id="submit"
-                  class="btn btn-default btn-modal pull-right"
-                  type="submit"
-                  data-toggle="modal"
-                  data-target="#myModal"
-                >
-                  Send
-                </button>
-              </div>
-            </div>
-            <div class="col l-6 m-6 c-12 info-right">
-              <!-- <h1>Một số dự án cá nhân</h1>
-              <h3>Web bán hàng</h3>
-              <p>
-                Mô tả: Trang bán hàng với các chức năng tìm kiếm, lọc sắp xếp
-                sản phẩm,giỏ hàng,thanh toán, đăng nhập,Responsive...
-              </p>
-              <p>Công Nghệ: HTML - CSS(SASS) - Ractjs - REST-Api</p>
-              <p>
-                Source code:
-                <a
-                  href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/webbanhang"
-                  target="_blank"
-                  >Link Source Code</a
-                >
-              </p>
-              <p>
-                Trang Web:
-                <a href="https://duchl02-github.vercel.app/" target="_blank"
-                  >Web bán hàng</a
-                >
-              </p> -->
-              <h2>Kỹ Năng</h2>
-              <h4>
-                Frontend:
-                <span
-                  > : HTML, CSS, JavaScript, DOM (Document Object
-                  Model), CSS Layouts, Responsive Design, Bootstrap, SASS,
-                  JQuery, Reactjs, Formik.</span
-                >
-              </h4>
-              <h4>
-                Backend:
-                <span
-                  > : Nodejs, Sequelize, Mysql</span
-                >
-              </h4>
-              <h4>Other: <span>Git,SVN.</span></h4>
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1 class="text-center">
-        MY PROJECT
-        <br />
-        <a
-          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/"
-          target="_blank"
-        >
-          Source Code</a
-        >
-      </h1>
-
-      <div class="project">
-        <div class="grid">
-          <div class="row8">
-            <div class="list-item text-center">
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a href="https://duchl02-github.vercel.app/" target="_blank">
-                  <h1 class="text-center">Web bán hàng</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/webanhang.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS-Javascript</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>Reactjs-SASS</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/webbanhang"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/test-react/build/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">CRUD ReactJs</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/CRUD-reactjs.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS-Javascript</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>Reactjs-Formik</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/test-react"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a href="./assets/results/myinfo/index.html" target="_blank">
-                  <h1 class="text-center">My Info</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/myinfo.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS-Javascript</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span></span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a href="./assets/results/CMSN/index.html" target="_blank">
-                  <h1 class="text-center">Sinh Nhật</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/cmsn.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>SCSS-jQuery</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/CMSN"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/maytinhdongian/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">Máy tính</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/maytinhdongian.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>SCSS-jQuery</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/maytinhdongian"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/WebUseBoostrap/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">WebUseBoostrap</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/webusebootrap.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>SCSS-jQuery-Boostrap</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/WebUseBoostrap"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/themsuaxoa/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">Thêm Sửa Xoá</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/themsuaxoa.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>jQuery</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/themsuaxoa"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/CloneYoutube/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">CloneYoutube</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/cloneyoutube.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS-Javascript</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>SCSS</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/CloneYoutube"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a href="./assets/results/Clock/index.html" target="_blank">
-                  <h1 class="text-center">Đồng hồ</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/clock.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS-Javascript</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span></span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/Clock"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/shopmaytinh/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">Shop Máy Tính</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/shopmaytinh.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span>SCSS</span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/shopmaytinh"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a href="./assets/results/playMusic/index.html" target="_blank">
-                  <h1 class="text-center">Play music</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/playmusic.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS-Javascript</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span></span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/playMusic"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item col l-4 m-6 c-12 slideScroll">
-                <a
-                  href="./assets/results/ShopeeClone/index.html"
-                  target="_blank"
-                >
-                  <h1 class="text-center">Shopee clone</h1>
-                  <div class="results-img">
-                    <img src="./assets/img/shopee.png" alt="" />
-                    <div class="results-img-hover">
-                      <div class="display-flex">
-                        <h1>Ngôn ngữ:&nbsp</h1>
-                        <span>HTML-CSS</span>
-                      </div>
-                      <div class="display-flex">
-                        <h1>Thư viện/Famework:&nbsp</h1>
-                        <span></span>
-                      </div>
-                      <div class="source-code">
-                        <a
-                          href="https://github.com/duchl02/duchl02.github.io/tree/main/assets/results/ShopeeClone"
-                          target="_blank"
-                        >
-                          Source Code</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="crazy-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="./assets/main.js"></script>
+
+    <div class="bouncing-text">
+      <h1 class="main-text rainbow-text">Mn yêu cầu trang web đi ạ!</h1>
+      <p class="sub-text">Đây rồi đây! Trang web hài hước nhất thế giới! 😂🎉</p>
+      <button class="funny-button" onclick="makeItCrazier()">Làm nó điên hơn nữa! 🤪</button>
+    </div>
+
+    <script>
+      // Tạo emoji rain
+      function createEmojiRain() {
+        const emojis = ['😂', '🤣', '😆', '🎉', '🎊', '💻', '🌈', '⭐', '🚀', '💖', '🔥', '✨'];
+        const container = document.getElementById('emojiRain');
+        
+        setInterval(() => {
+          const emoji = document.createElement('div');
+          emoji.className = 'emoji';
+          emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+          emoji.style.left = Math.random() * 100 + '%';
+          emoji.style.animationDuration = (Math.random() * 3 + 2) + 's';
+          emoji.style.fontSize = (Math.random() * 2 + 1) + 'rem';
+          
+          container.appendChild(emoji);
+          
+          setTimeout(() => {
+            if (emoji.parentNode) {
+              emoji.parentNode.removeChild(emoji);
+            }
+          }, 5000);
+        }, 300);
+      }
+
+      // Làm trang web điên hơn
+      function makeItCrazier() {
+        // Thay đổi màu nền crazy hơn
+        document.body.style.animation = 'crazyGradient 2s ease infinite';
+        
+        // Tạo hiệu ứng rung
+        document.body.style.animation += ', shake 0.5s ease-in-out infinite';
+        
+        // Thêm CSS shake
+        const style = document.createElement('style');
+        style.textContent = `
+          @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+          }
+        `;
+        document.head.appendChild(style);
+        
+        // Tạo popup hài hước
+        alert('Ơ kìa! Điên rồi đó! 🤪🎉');
+        
+        // Reset sau 3 giây
+        setTimeout(() => {
+          document.body.style.animation = 'crazyGradient 8s ease infinite';
+        }, 3000);
+      }
+
+      // Khởi động emoji rain
+      createEmojiRain();
+
+      // Thêm hiệu ứng click chuột
+      document.addEventListener('click', (e) => {
+        const sparkle = document.createElement('div');
+        sparkle.style.position = 'absolute';
+        sparkle.style.left = e.clientX + 'px';
+        sparkle.style.top = e.clientY + 'px';
+        sparkle.style.fontSize = '2rem';
+        sparkle.style.pointerEvents = 'none';
+        sparkle.style.animation = 'sparkleClick 1s ease-out forwards';
+        sparkle.textContent = '✨';
+        
+        const clickStyle = document.createElement('style');
+        clickStyle.textContent = `
+          @keyframes sparkleClick {
+            0% { transform: scale(0) rotate(0deg); opacity: 1; }
+            100% { transform: scale(2) rotate(360deg); opacity: 0; }
+          }
+        `;
+        document.head.appendChild(clickStyle);
+        
+        document.body.appendChild(sparkle);
+        
+        setTimeout(() => {
+          if (sparkle.parentNode) {
+            sparkle.parentNode.removeChild(sparkle);
+          }
+        }, 1000);
+      });
+
+      // Random quotes hài hước
+      const funnyQuotes = [
+        "Code không chạy? Thử tắt mở lại! 😂",
+        "Lập trình viên là phù thủy thời hiện đại! ✨",
+        "Bug là tính năng chưa được tài liệu hóa! 🐛",
+        "Coffee + Code = Magic! ☕💻",
+        "Ctrl+C, Ctrl+V - Vũ khí bí mật! 🔥"
+      ];
+
+      // Hiển thị quote random mỗi 5 giây
+      setInterval(() => {
+        const randomQuote = funnyQuotes[Math.floor(Math.random() * funnyQuotes.length)];
+        const subText = document.querySelector('.sub-text');
+        subText.textContent = randomQuote;
+      }, 5000);
+    </script>
   </body>
 </html>
