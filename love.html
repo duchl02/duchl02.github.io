@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💖 Dành tặng người con gái tôi yêu nhất 💖</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&family=Kaushan+Script&display=swap');
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Dancing Script', cursive;
+        background: linear-gradient(-45deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        overflow-x: hidden;
+        position: relative;
+        min-height: 100vh;
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="16" font-size="16">💕</text></svg>'), auto;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .floating-hearts {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .heart {
+        position: absolute;
+        font-size: 2rem;
+        color: #ff69b4;
+        animation: floatUp 8s linear infinite;
+        opacity: 0.7;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      .container {
+        position: relative;
+        z-index: 10;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main-title {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        font-weight: 700;
+        color: #ff1744;
+        text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.3);
+        animation: heartbeat 2s ease-in-out infinite;
+        margin-bottom: 2rem;
+        font-family: 'Pacifico', cursive;
+      }
+
+      @keyframes heartbeat {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .love-message {
+        font-size: clamp(1.2rem, 4vw, 2.5rem);
+        color: #d81b60;
+        text-shadow: 1px 1px 4px rgba(216, 27, 96, 0.3);
+        animation: gentle-sway 3s ease-in-out infinite;
+        margin-bottom: 3rem;
+        line-height: 1.6;
+        max-width: 800px;
+        font-family: 'Dancing Script', cursive;
+      }
+
+      @keyframes gentle-sway {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .photo-frame {
+        width: 300px;
+        height: 300px;
+        border: 10px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+        margin: 2rem auto;
+        overflow: hidden;
+        position: relative;
+        animation: rotate-frame 20s linear infinite;
+        background: linear-gradient(45deg, #ff9a9e, #fecfef);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        color: #ff1744;
+      }
+
+      @keyframes rotate-frame {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .photo-frame::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(45deg, #ff1744, #ff69b4, #ff1744);
+        border-radius: 50%;
+        z-index: -1;
+        animation: rainbow-border 3s linear infinite;
+      }
+
+      @keyframes rainbow-border {
+        0%, 100% {
+          background: linear-gradient(45deg, #ff1744, #ff69b4, #ff1744);
+        }
+        50% {
+          background: linear-gradient(45deg, #ff69b4, #ff1744, #ff69b4);
+        }
+      }
+
+      .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+
+      .love-button {
+        background: linear-gradient(45deg, #ff1744, #ff69b4);
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        animation: button-glow 2s ease-in-out infinite;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 20px rgba(255, 23, 68, 0.3);
+        transition: all 0.3s ease;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+        overflow: hidden;
+      }
+
+      @keyframes button-glow {
+        0%, 100% {
+          box-shadow: 0 8px 20px rgba(255, 23, 68, 0.3);
+        }
+        50% {
+          box-shadow: 0 8px 30px rgba(255, 23, 68, 0.6);
+        }
+      }
+
+      .love-button:hover {
+        transform: scale(1.1) translateY(-5px);
+        box-shadow: 0 15px 35px rgba(255, 23, 68, 0.5);
+      }
+
+      .love-button:active {
+        transform: scale(0.95);
+      }
+
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        animation: fadeIn 0.5s ease;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .popup {
+        background: linear-gradient(135deg, #ff9a9e, #fecfef);
+        padding: 40px;
+        border-radius: 30px;
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+        animation: popup-bounce 0.6s ease;
+        box-shadow: 0 30px 60px rgba(255, 105, 180, 0.4);
+        border: 3px solid #fff;
+      }
+
+      @keyframes popup-bounce {
+        0% {
+          transform: scale(0) rotate(180deg);
+        }
+        50% {
+          transform: scale(1.1) rotate(-10deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .popup h2 {
+        color: #ff1744;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(255, 23, 68, 0.3);
+        font-family: 'Kaushan Script', cursive;
+      }
+
+      .popup p {
+        color: #d81b60;
+        margin-bottom: 25px;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        font-family: 'Dancing Script', cursive;
+      }
+
+      .close-btn {
+        background: linear-gradient(45deg, #ff1744, #ff69b4);
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        font-family: 'Dancing Script', cursive;
+      }
+
+      .close-btn:hover {
+        background: linear-gradient(45deg, #ff69b4, #ff1744);
+        transform: scale(1.05);
+      }
+
+      .sparkles {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 5;
+      }
+
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        animation: sparkle-twinkle 2s ease-in-out infinite;
+      }
+
+      @keyframes sparkle-twinkle {
+        0%, 100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .romantic-quotes {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px 25px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        color: #d81b60;
+        text-align: center;
+        max-width: 90%;
+        animation: quote-fade 4s ease-in-out infinite;
+        font-family: 'Dancing Script', cursive;
+        box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+      }
+
+      @keyframes quote-fade {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+
+      .love-counter {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px 20px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        color: #ff1744;
+        text-align: center;
+        animation: counter-pulse 2s ease-in-out infinite;
+        font-family: 'Dancing Script', cursive;
+        box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+      }
+
+      @keyframes counter-pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+
+      .floating-bubbles {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        animation: bubble-float 10s linear infinite;
+      }
+
+      @keyframes bubble-float {
+        0% {
+          transform: translateY(100vh) scale(0);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100px) scale(1);
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main-title {
+          font-size: clamp(2rem, 6vw, 4rem);
+        }
+        
+        .love-message {
+          font-size: clamp(1rem, 3vw, 1.8rem);
+        }
+        
+        .photo-frame {
+          width: 250px;
+          height: 250px;
+        }
+        
+        .love-button {
+          padding: 12px 20px;
+          font-size: 1.1rem;
+        }
+      }
+
+      .memory-slideshow {
+        margin: 2rem 0;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+      }
+
+      .memory-text {
+        font-size: 1.5rem;
+        color: #ff1744;
+        margin-bottom: 1rem;
+        font-family: 'Dancing Script', cursive;
+        animation: text-glow 3s ease-in-out infinite;
+      }
+
+      @keyframes text-glow {
+        0%, 100% {
+          text-shadow: 2px 2px 8px rgba(255, 23, 68, 0.3);
+        }
+        50% {
+          text-shadow: 2px 2px 15px rgba(255, 23, 68, 0.6);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="sparkles" id="sparkles"></div>
+    <div class="floating-bubbles" id="floatingBubbles"></div>
+
+    <div class="love-counter">
+      💕 Yêu em: <span id="loveCount">∞</span><br>
+      💖 Clicks: <span id="clickCount">0</span>
+    </div>
+
+    <div class="romantic-quotes" id="romanticQuote">
+      "Anh yêu em không phải vì em là ai, mà vì khi ở bên em, anh trở thành chính mình 💕"
+    </div>
+
+    <div class="container">
+      <h1 class="main-title">💖 Dành Tặng Người Con Gái Tôi Yêu Nhất 💖</h1>
+      
+      <div class="love-message">
+        Em là ánh sáng trong cuộc đời anh 🌟<br>
+        Là lý do anh cười mỗi ngày 😊<br>
+        Là tình yêu đẹp nhất anh từng có 💕<br>
+        <strong>Anh yêu em vô cùng! ❤️</strong>
+      </div>
+
+      <div class="photo-frame">
+        📸<br>
+        <small style="font-size: 1rem;">Ảnh của em ở đây</small>
+      </div>
+
+      <div class="memory-slideshow">
+        <div class="memory-text" id="memoryText">
+          "Kỷ niệm đầu tiên: Lần đầu gặp em, anh đã biết em là người đặc biệt ✨"
+        </div>
+      </div>
+
+      <div class="buttons-container">
+        <button class="love-button" onclick="showLove(1)">💕 Gửi Tình Yêu</button>
+        <button class="love-button" onclick="showLove(2)">🌹 Tặng Hoa</button>
+        <button class="love-button" onclick="showLove(3)">💖 Lời Yêu Thương</button>
+        <button class="love-button" onclick="showLove(4)">🎵 Bài Hát Cho Em</button>
+        <button class="love-button" onclick="showLove(5)">✨ Ước Nguyện</button>
+        <button class="love-button" onclick="showLove(6)">🎁 Quà Tặng Đặc Biệt</button>
+      </div>
+    </div>
+
+    <!-- Popups -->
+    <div class="popup-overlay" id="popup1">
+      <div class="popup">
+        <h2>💕 Tình Yêu Vô Tận</h2>
+        <p>
+          Anh gửi em tất cả tình yêu trong trái tim anh! 💖<br>
+          Em là điều tuyệt vời nhất đã đến với anh.<br>
+          Anh sẽ yêu em mãi mãi! 🥰
+        </p>
+        <button class="close-btn" onclick="closePopup('popup1')">Em cũng yêu anh! 😘</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup2">
+      <div class="popup">
+        <h2>🌹 Bó Hoa Tình Yêu</h2>
+        <p>
+          🌹🌹🌹🌹🌹🌹🌹🌹🌹<br>
+          Đây là bó hoa đẹp nhất anh có thể tìm được!<br>
+          Mỗi bông hoa đại diện cho một lý do anh yêu em! 💐
+        </p>
+        <button class="close-btn" onclick="closePopup('popup2')">Hoa đẹp quá! 🥰</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup3">
+      <div class="popup">
+        <h2>💖 Những Lời Yêu Thương</h2>
+        <p>
+          "Em là mặt trời trong ngày mưa của anh ☀️<br>
+          Là ngôi sao dẫn đường trong đêm tối 🌟<br>
+          Là tình yêu đẹp nhất anh từng biết 💕<br>
+          Anh yêu em hơn cả vũ trụ này! 🌌"
+        </p>
+        <button class="close-btn" onclick="closePopup('popup3')">Anh nói hay quá! 😍</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup4">
+      <div class="popup">
+        <h2>🎵 Bài Hát Dành Cho Em</h2>
+        <p>
+          🎶 "Em ơi, em có biết không<br>
+          Anh yêu em từ cái nhìn đầu tiên<br>
+          Em ơi, em có thấy không<br>
+          Trái tim anh chỉ có mỗi em thôi" 🎶<br><br>
+          🎤 Anh hát tặng em bài này! 🎤
+        </p>
+        <button class="close-btn" onclick="closePopup('popup4')">Giọng anh hay lắm! 🎵</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup5">
+      <div class="popup">
+        <h2>✨ Ước Nguyện Của Anh</h2>
+        <p>
+          Anh ước được ở bên em mãi mãi 💕<br>
+          Ước được thấy em cười hạnh phúc mỗi ngày 😊<br>
+          Ước được yêu thương và chăm sóc em suốt đời 🥰<br>
+          Em có thể làm ước nguyện này thành hiện thực không? ✨
+        </p>
+        <button class="close-btn" onclick="closePopup('popup5')">Em đồng ý! 💖</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup6">
+      <div class="popup">
+        <h2>🎁 Quà Tặng Đặc Biệt</h2>
+        <p>
+          Quà tặng đặc biệt nhất mà anh có thể tặng em là... 💝<br><br>
+          <strong>❤️ TRÁI TIM CỦA ANH! ❤️</strong><br><br>
+          Nó thuộc về em từ rất lâu rồi đó! 🥰<br>
+          Em có nhận không? 💕
+        </p>
+        <button class="close-btn" onclick="closePopup('popup6')">Em nhận! 😘</button>
+      </div>
+    </div>
+
+    <script>
+      let clickCount = 0;
+      let currentQuoteIndex = 0;
+      let currentMemoryIndex = 0;
+
+      const romanticQuotes = [
+        "Anh yêu em không phải vì em là ai, mà vì khi ở bên em, anh trở thành chính mình 💕",
+        "Em là câu trả lời cho tất cả những câu hỏi trong trái tim anh 💖",
+        "Nếu anh có thể sắp xếp lại bảng chữ cái, anh sẽ đặt 'U' và 'I' bên nhau 💑",
+        "Em là lý do anh tin vào tình yêu đích thực 🌟",
+        "Mỗi ngày bên em là một ngày tuyệt vời nhất trong đời anh 🥰",
+        "Anh muốn già đi bên em, từng ngày một 👫",
+        "Em là món quà đẹp nhất mà cuộc đời tặng cho anh 🎁",
+        "Tình yêu của anh dành cho em sâu như đại dương và rộng như vũ trụ 🌊🌌"
+      ];
+
+      const sweetMemories = [
+        "Kỷ niệm đầu tiên: Lần đầu gặp em, anh đã biết em là người đặc biệt ✨",
+        "Lần đầu nắm tay em, anh cảm thấy như có điện chạy trong người ⚡💕",
+        "Nụ cười đầu tiên của em khiến anh quên hết mọi thứ xung quanh 😊",
+        "Lần đầu em nói 'anh', tim anh đập như muốn vỡ ngực 💓",
+        "Mỗi khi em cười, cả thế giới của anh đều sáng lên 🌟",
+        "Em ôm anh lần đầu, anh biết đây chính là nhà của mình 🏠💖",
+        "Những cuộc gọi đêm khuya, giọng em ru anh ngủ ngon 🌙💤",
+        "Em khóc, anh cũng khóc theo. Vì em chính là tất cả với anh 😢💕"
+      ];
+
+      // Create floating hearts
+      function createFloatingHearts() {
+        const container = document.getElementById('floatingHearts');
+        const hearts = ['💕', '💖', '💗', '💘', '💝', '💞', '💟', '❤️', '🧡', '💛', '💚', '💙', '💜', '🤍', '🖤', '🤎'];
+        
+        setInterval(() => {
+          const heart = document.createElement('div');
+          heart.className = 'heart';
+          heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+          heart.style.left = Math.random() * 100 + '%';
+          heart.style.animationDuration = (Math.random() * 4 + 4) + 's';
+          heart.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
+          
+          container.appendChild(heart);
+          
+          setTimeout(() => {
+            if (heart.parentNode) {
+              heart.parentNode.removeChild(heart);
+            }
+          }, 8000);
+        }, 500);
+      }
+
+      // Create sparkles
+      function createSparkles() {
+        const container = document.getElementById('sparkles');
+        
+        for (let i = 0; i < 50; i++) {
+          const sparkle = document.createElement('div');
+          sparkle.className = 'sparkle';
+          sparkle.style.left = Math.random() * 100 + '%';
+          sparkle.style.top = Math.random() * 100 + '%';
+          sparkle.style.animationDelay = Math.random() * 2 + 's';
+          sparkle.style.animationDuration = (Math.random() * 2 + 1) + 's';
+          
+          container.appendChild(sparkle);
+        }
+      }
+
+      // Create floating bubbles
+      function createFloatingBubbles() {
+        const container = document.getElementById('floatingBubbles');
+        
+        setInterval(() => {
+          const bubble = document.createElement('div');
+          bubble.className = 'bubble';
+          bubble.style.left = Math.random() * 100 + '%';
+          bubble.style.width = bubble.style.height = (Math.random() * 60 + 20) + 'px';
+          bubble.style.animationDuration = (Math.random() * 5 + 5) + 's';
+          
+          container.appendChild(bubble);
+          
+          setTimeout(() => {
+            if (bubble.parentNode) {
+              bubble.parentNode.removeChild(bubble);
+            }
+          }, 10000);
+        }, 2000);
+      }
+
+      // Show love popup
+      function showLove(buttonNumber) {
+        clickCount++;
+        document.getElementById('clickCount').textContent = clickCount;
+        document.getElementById(`popup${buttonNumber}`).style.display = 'flex';
+        
+        // Create extra hearts effect
+        createExtraHearts();
+        
+        // Play love effect
+        createLoveExplosion();
+      }
+
+      // Close popup
+      function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+        createExtraHearts();
+      }
+
+      // Create extra hearts effect
+      function createExtraHearts() {
+        const container = document.getElementById('floatingHearts');
+        const hearts = ['💕', '💖', '💗', '💘', '💝'];
+        
+        for (let i = 0; i < 20; i++) {
+          setTimeout(() => {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 2 + 2) + 's';
+            heart.style.fontSize = (Math.random() * 2 + 2) + 'rem';
+            
+            container.appendChild(heart);
+            
+            setTimeout(() => {
+              if (heart.parentNode) {
+                heart.parentNode.removeChild(heart);
+              }
+            }, 4000);
+          }, i * 100);
+        }
+      }
+
+      // Create love explosion effect
+      function createLoveExplosion() {
+        const colors = ['#ff1744', '#ff69b4', '#ff9a9e', '#fecfef'];
+        
+        for (let i = 0; i < 15; i++) {
+          const explosion = document.createElement('div');
+          explosion.style.position = 'fixed';
+          explosion.style.left = '50%';
+          explosion.style.top = '50%';
+          explosion.style.width = '10px';
+          explosion.style.height = '10px';
+          explosion.style.background = colors[Math.floor(Math.random() * colors.length)];
+          explosion.style.borderRadius = '50%';
+          explosion.style.pointerEvents = 'none';
+          explosion.style.zIndex = '1000';
+          
+          const angle = (i / 15) * 360;
+          const distance = 100 + Math.random() * 100;
+          
+          explosion.style.animation = `
+            explosion-${i} 1s ease-out forwards
+          `;
+          
+          const style = document.createElement('style');
+          style.textContent = `
+            @keyframes explosion-${i} {
+              0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 1;
+              }
+              100% {
+                transform: translate(-50%, -50%) 
+                          translate(${Math.cos(angle * Math.PI / 180) * distance}px, 
+                                   ${Math.sin(angle * Math.PI / 180) * distance}px) 
+                          scale(1);
+                opacity: 0;
+              }
+            }
+          `;
+          document.head.appendChild(style);
+          
+          document.body.appendChild(explosion);
+          
+          setTimeout(() => {
+            if (explosion.parentNode) {
+              explosion.parentNode.removeChild(explosion);
+            }
+            if (style.parentNode) {
+              style.parentNode.removeChild(style);
+            }
+          }, 1000);
+        }
+      }
+
+      // Change romantic quotes
+      function changeQuote() {
+        const quoteElement = document.getElementById('romanticQuote');
+        currentQuoteIndex = (currentQuoteIndex + 1) % romanticQuotes.length;
+        
+        quoteElement.style.opacity = '0';
+        setTimeout(() => {
+          quoteElement.textContent = romanticQuotes[currentQuoteIndex];
+          quoteElement.style.opacity = '1';
+        }, 500);
+      }
+
+      // Change sweet memories
+      function changeMemory() {
+        const memoryElement = document.getElementById('memoryText');
+        currentMemoryIndex = (currentMemoryIndex + 1) % sweetMemories.length;
+        
+        memoryElement.style.opacity = '0';
+        setTimeout(() => {
+          memoryElement.textContent = sweetMemories[currentMemoryIndex];
+          memoryElement.style.opacity = '1';
+        }, 500);
+      }
+
+      // Mouse click effects
+      document.addEventListener('click', (e) => {
+        const clickEffect = document.createElement('div');
+        clickEffect.style.position = 'fixed';
+        clickEffect.style.left = e.clientX + 'px';
+        clickEffect.style.top = e.clientY + 'px';
+        clickEffect.style.fontSize = '2rem';
+        clickEffect.style.pointerEvents = 'none';
+        clickEffect.style.animation = 'heart-pop 1s ease-out forwards';
+        clickEffect.textContent = '💕';
+        clickEffect.style.zIndex = '1000';
+        
+        const clickStyle = document.createElement('style');
+        clickStyle.textContent = `
+          @keyframes heart-pop {
+            0% { transform: translate(-50%, -50%) scale(0) rotate(0deg); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(3) rotate(360deg); opacity: 0; }
+          }
+        `;
+        document.head.appendChild(clickStyle);
+        
+        document.body.appendChild(clickEffect);
+        
+        setTimeout(() => {
+          if (clickEffect.parentNode) {
+            clickEffect.parentNode.removeChild(clickEffect);
+          }
+          if (clickStyle.parentNode) {
+            clickStyle.parentNode.removeChild(clickStyle);
+          }
+        }, 1000);
+      });
+
+      // Initialize everything
+      window.addEventListener('load', () => {
+        createFloatingHearts();
+        createSparkles();
+        createFloatingBubbles();
+        
+        // Change quotes every 6 seconds
+        setInterval(changeQuote, 6000);
+        
+        // Change memories every 8 seconds
+        setInterval(changeMemory, 8000);
+        
+        // Random love effects
+        setInterval(() => {
+          if (Math.random() < 0.3) {
+            createExtraHearts();
+          }
+        }, 5000);
+      });
+
+      // Prevent right click with love message
+      document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        alert('Anh không cho em chuột phải đâu! Chỉ được yêu anh thôi! 😘💕');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎯 CHÚC MỪNG! Bạn vừa trúng 1 tỷ đồng! 💰</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Dancing+Script:wght@700&display=swap');
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Comic Neue', cursive;
+        background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00, #ff00ff, #00ffff);
+        background-size: 800% 800%;
+        animation: psychedelicBg 2s ease infinite;
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="16" font-size="16">🤡</text></svg>'), auto;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      @keyframes psychedelicBg {
+        0%, 100% { background-position: 0% 50%; }
+        25% { background-position: 100% 0%; }
+        50% { background-position: 100% 100%; }
+        75% { background-position: 0% 100%; }
+      }
+
+      .troll-container {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        z-index: 10;
+      }
+
+      .main-title {
+        font-size: clamp(2rem, 8vw, 5rem);
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+        animation: crazyBounce 1s ease-in-out infinite;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: 'Dancing Script', cursive;
+        transform-origin: center;
+      }
+
+      @keyframes crazyBounce {
+        0%, 100% { transform: scale(1) rotate(0deg); }
+        25% { transform: scale(1.2) rotate(-5deg); }
+        50% { transform: scale(0.8) rotate(5deg); }
+        75% { transform: scale(1.1) rotate(-3deg); }
+      }
+
+      .sub-title {
+        font-size: clamp(1rem, 4vw, 2rem);
+        color: #ffff00;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        animation: wiggleText 2s ease-in-out infinite;
+        text-align: center;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 300% 300%;
+        animation: wiggleText 2s ease-in-out infinite, rainbowText 3s linear infinite;
+      }
+
+      @keyframes wiggleText {
+        0%, 100% { transform: translateX(0) rotate(0deg); }
+        25% { transform: translateX(-10px) rotate(-2deg); }
+        75% { transform: translateX(10px) rotate(2deg); }
+      }
+
+      @keyframes rainbowText {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      .troll-button {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+        background-size: 400% 400%;
+        border: none;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        animation: buttonPulse 1s ease-in-out infinite, buttonColor 2s linear infinite;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+        font-family: 'Comic Neue', cursive;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      @keyframes buttonPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+
+      @keyframes buttonColor {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      .troll-button:hover {
+        transform: scale(1.2) rotate(10deg);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+      }
+
+      .troll-button:active {
+        transform: scale(0.9) rotate(-10deg);
+      }
+
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .popup {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        animation: popupBounce 0.5s ease;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes popupBounce {
+        0% { transform: scale(0) rotate(180deg); }
+        50% { transform: scale(1.2) rotate(-10deg); }
+        100% { transform: scale(1) rotate(0deg); }
+      }
+
+      .popup h2 {
+        color: white;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .popup p {
+        color: white;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+
+      .close-btn {
+        background: #ff4757;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .close-btn:hover {
+        background: #ff3742;
+        transform: scale(1.1);
+      }
+
+      .falling-emojis {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 5;
+      }
+
+      .falling-emoji {
+        position: absolute;
+        font-size: 3rem;
+        animation: fall 4s linear infinite;
+        opacity: 0.8;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-100px) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      .dancing-text {
+        position: absolute;
+        font-size: 2rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        animation: dance 3s ease-in-out infinite;
+        pointer-events: none;
+        font-weight: bold;
+      }
+
+      @keyframes dance {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        25% { transform: translateY(-20px) rotate(10deg); }
+        50% { transform: translateY(0) rotate(0deg); }
+        75% { transform: translateY(-10px) rotate(-10deg); }
+      }
+
+      .fake-virus {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #ff4757;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        animation: virusAlert 1s ease-in-out infinite;
+        z-index: 100;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      @keyframes virusAlert {
+        0%, 100% { transform: scale(1); background: #ff4757; }
+        50% { transform: scale(1.1); background: #ff6b6b; }
+      }
+
+      .floating-cats {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 3;
+      }
+
+      .cat {
+        position: absolute;
+        font-size: 4rem;
+        animation: floatCat 8s ease-in-out infinite;
+      }
+
+      @keyframes floatCat {
+        0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
+        25% { transform: translateX(50px) translateY(-30px) rotate(90deg); }
+        50% { transform: translateX(-30px) translateY(-50px) rotate(180deg); }
+        75% { transform: translateX(-50px) translateY(30px) rotate(270deg); }
+      }
+
+      .spinning-wheels {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .wheel {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 5px solid transparent;
+        border-top: 5px solid #ff6b6b;
+        border-right: 5px solid #4ecdc4;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .troll-counter {
+        position: fixed;
+        top: 50%;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #00ff00;
+        padding: 15px;
+        border-radius: 10px;
+        font-family: 'Courier New', monospace;
+        font-size: 1.2rem;
+        animation: matrix 2s linear infinite;
+        z-index: 50;
+      }
+
+      @keyframes matrix {
+        0%, 100% { color: #00ff00; }
+        50% { color: #ff0000; }
+      }
+
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .main-title {
+          font-size: clamp(1.5rem, 6vw, 3rem);
+        }
+        
+        .sub-title {
+          font-size: clamp(0.8rem, 3vw, 1.5rem);
+        }
+        
+        .troll-button {
+          padding: 15px 25px;
+          font-size: 1.2rem;
+        }
+      }
+
+      .secret-message {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.9);
+        color: #00ff00;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-family: 'Courier New', monospace;
+        animation: blink 1s ease-in-out infinite;
+        z-index: 100;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fake-virus">
+      ⚠️ VIRUS DETECTED! 🦠<br>
+      <small>Joke Detected: 100% Safe! 😂</small>
+    </div>
+
+    <div class="troll-counter">
+      TROLL LEVEL: <span id="trollLevel">0</span><br>
+      CLICKS: <span id="clickCount">0</span><br>
+      STATUS: <span id="status">INITIALIZING...</span>
+    </div>
+
+    <div class="secret-message">
+      💻 HACKER MODE ACTIVATED 💻 Press ESC to exit simulation
+    </div>
+
+    <div class="falling-emojis" id="fallingEmojis"></div>
+    <div class="floating-cats" id="floatingCats"></div>
+    <div class="spinning-wheels" id="spinningWheels"></div>
+
+    <div class="troll-container">
+      <h1 class="main-title">🎉 CHÚC MỪNG! 🎉<br>Bạn vừa trúng 1 TỶ ĐỒNG!</h1>
+      
+      <p class="sub-title">
+        💰 Nhấn vào bất kỳ nút nào để nhận tiền ngay! 💰<br>
+        ⏰ Còn lại: <span id="countdown">59</span> giây!
+      </p>
+
+      <div class="button-container">
+        <button class="troll-button" onclick="trollUser(1)">💰 NHẬN TIỀN NGAY!</button>
+        <button class="troll-button" onclick="trollUser(2)">🎁 MỞ QUÀ TẶNG!</button>
+        <button class="troll-button" onclick="trollUser(3)">🚀 BẮN PHÁO HOA!</button>
+        <button class="troll-button" onclick="trollUser(4)">🎪 PARTY TIME!</button>
+        <button class="troll-button" onclick="trollUser(5)">🤡 TROLL MODE!</button>
+        <button class="troll-button" onclick="trollUser(6)">🎭 SURPRISE ME!</button>
+      </div>
+    </div>
+
+    <!-- Popup Overlays -->
+    <div class="popup-overlay" id="popup1">
+      <div class="popup">
+        <h2>🤡 GOTCHA!</h2>
+        <p>Bạn vừa bị troll! 😂<br>Không có 1 tỷ đồng nào cả!<br>Chỉ có tình yêu của tôi thôi! ❤️</p>
+        <button class="close-btn" onclick="closePopup('popup1')">OK, tôi bị lừa rồi! 😭</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup2">
+      <div class="popup">
+        <h2>🎁 QUÀ TẶNG ĐẶC BIỆT!</h2>
+        <p>Quà tặng của bạn là... MỘT CÁI HỚT! 😘<br>*Gửi hớt qua màn hình*<br>Đã nhận được chưa? 😂</p>
+        <button class="close-btn" onclick="closePopup('popup2')">Cảm ơn... cái hớt! 😅</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup3">
+      <div class="popup">
+        <h2>🚀 PHÁO HOA!</h2>
+        <p>BOOM! 💥 BANG! 🎆 POP! 🎇<br>Đây là pháo hoa bằng text! 😂<br>Đẹp không? Tôi làm 3 ngày đó! 🎨</p>
+        <button class="close-btn" onclick="closePopup('popup3')">Wow, siêu đẹp! 🤩</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup4">
+      <div class="popup">
+        <h2>🎪 LET'S PARTY!</h2>
+        <p>🕺💃🕺💃🕺💃<br>Dance dance dance!<br>🎵 *Nhạc sàn intensifies* 🎵<br>Bạn có cảm thấy vui không? 😄</p>
+        <button class="close-btn" onclick="closePopup('popup4')">Tôi đang nhảy! 💃</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup5">
+      <div class="popup">
+        <h2>🤡 WELCOME TO TROLL TOWN!</h2>
+        <p>Bạn vừa được thăng cấp lên Troll Master! 🎓<br>Giờ bạn có thể troll người khác rồi! 😈<br>Nhưng nhớ làm điều tốt nhé! ❤️</p>
+        <button class="close-btn" onclick="closePopup('popup5')">Tôi sẽ troll tử tế! 😇</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup6">
+      <div class="popup">
+        <h2>🎭 SURPRISE!</h2>
+        <p>Bất ngờ chưa? 😲<br>Đây là... KHÔNG CÓ GÌ CẢ! 😂<br>Nhưng ít ra bạn cũng có một nụ cười! 😊</p>
+        <button class="close-btn" onclick="closePopup('popup6')">Haha, cảm ơn! 😄</button>
+      </div>
+    </div>
+
+    <script>
+      let trollLevel = 0;
+      let clickCount = 0;
+      let countdown = 59;
+      let trollMessages = [
+        "BEGINNER TROLL",
+        "AMATEUR PRANKSTER", 
+        "JOKE APPRENTICE",
+        "MEME MASTER",
+        "TROLL EXPERT",
+        "LEGENDARY JOKESTER",
+        "ULTIMATE TROLL GOD!"
+      ];
+
+      // Countdown timer
+      function startCountdown() {
+        const countdownElement = document.getElementById('countdown');
+        const timer = setInterval(() => {
+          countdown--;
+          countdownElement.textContent = countdown;
+          
+          if (countdown <= 0) {
+            countdown = 59;
+          }
+          
+          if (countdown === 30) {
+            showRandomDancingText("⏰ NHANH LÊN! CHỈ CÒN 30 GIÂY!");
+          }
+          
+          if (countdown === 10) {
+            showRandomDancingText("🚨 10 GIÂY CUỐI! NHANH LÊN!");
+          }
+        }, 1000);
+      }
+
+      // Troll functions
+      function trollUser(buttonNumber) {
+        clickCount++;
+        trollLevel = Math.min(Math.floor(clickCount / 3), trollMessages.length - 1);
+        
+        document.getElementById('clickCount').textContent = clickCount;
+        document.getElementById('trollLevel').textContent = trollLevel;
+        document.getElementById('status').textContent = trollMessages[trollLevel];
+        
+        // Show popup
+        document.getElementById(`popup${buttonNumber}`).style.display = 'flex';
+        
+        // Add random effects
+        createEmojiRain();
+        createFloatingCats();
+        createSpinningWheels();
+        shakeScreen();
+        changeBackgroundSpeed();
+        showRandomDancingText(getRandomTrollMessage());
+        
+        // Play fake sound effect
+        console.log(`🔊 *TROLL SOUND EFFECT ${buttonNumber}*`);
+      }
+
+      function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+        showRandomDancingText("😂 BẠN VỪA BỊ TROLL RỒI!");
+      }
+
+      // Random effects
+      function createEmojiRain() {
+        const container = document.getElementById('fallingEmojis');
+        const emojis = ['😂', '🤣', '😭', '🤡', '💰', '🎉', '🎊', '🎁', '🚀', '❤️', '💎', '🦄'];
+        
+        for (let i = 0; i < 10; i++) {
+          setTimeout(() => {
+            const emoji = document.createElement('div');
+            emoji.className = 'falling-emoji';
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + '%';
+            emoji.style.animationDuration = (Math.random() * 2 + 2) + 's';
+            emoji.style.fontSize = (Math.random() * 2 + 2) + 'rem';
+            
+            container.appendChild(emoji);
+            
+            setTimeout(() => {
+              if (emoji.parentNode) {
+                emoji.parentNode.removeChild(emoji);
+              }
+            }, 4000);
+          }, i * 200);
+        }
+      }
+
+      function createFloatingCats() {
+        const container = document.getElementById('floatingCats');
+        const cats = ['🐱', '🐭', '🐹', '🐰', '🦊', '🐶', '🐻', '🐼'];
+        
+        for (let i = 0; i < 5; i++) {
+          const cat = document.createElement('div');
+          cat.className = 'cat';
+          cat.textContent = cats[Math.floor(Math.random() * cats.length)];
+          cat.style.left = Math.random() * 90 + '%';
+          cat.style.top = Math.random() * 90 + '%';
+          cat.style.animationDelay = (Math.random() * 2) + 's';
+          
+          container.appendChild(cat);
+          
+          setTimeout(() => {
+            if (cat.parentNode) {
+              cat.parentNode.removeChild(cat);
+            }
+          }, 8000);
+        }
+      }
+
+      function createSpinningWheels() {
+        const container = document.getElementById('spinningWheels');
+        
+        for (let i = 0; i < 3; i++) {
+          const wheel = document.createElement('div');
+          wheel.className = 'wheel';
+          wheel.style.left = Math.random() * 90 + '%';
+          wheel.style.top = Math.random() * 90 + '%';
+          wheel.style.animationDuration = (Math.random() * 2 + 1) + 's';
+          
+          container.appendChild(wheel);
+          
+          setTimeout(() => {
+            if (wheel.parentNode) {
+              wheel.parentNode.removeChild(wheel);
+            }
+          }, 5000);
+        }
+      }
+
+      function shakeScreen() {
+        document.body.style.animation = 'psychedelicBg 2s ease infinite, shake 0.5s ease-in-out 3';
+        
+        setTimeout(() => {
+          document.body.style.animation = 'psychedelicBg 2s ease infinite';
+        }, 1500);
+      }
+
+      function changeBackgroundSpeed() {
+        document.body.style.animationDuration = '0.5s';
+        
+        setTimeout(() => {
+          document.body.style.animationDuration = '2s';
+        }, 2000);
+      }
+
+      function showRandomDancingText(message) {
+        const text = document.createElement('div');
+        text.className = 'dancing-text';
+        text.textContent = message;
+        text.style.left = Math.random() * 70 + '%';
+        text.style.top = Math.random() * 70 + '%';
+        text.style.color = getRandomColor();
+        
+        document.body.appendChild(text);
+        
+        setTimeout(() => {
+          if (text.parentNode) {
+            text.parentNode.removeChild(text);
+          }
+        }, 3000);
+      }
+
+      function getRandomTrollMessage() {
+        const messages = [
+          "😂 GOTCHA!",
+          "🤡 TROLL SUCCESSFUL!",
+          "😈 MUAHAHAHA!",
+          "🎭 SURPRISE!",
+          "🃏 YOU'VE BEEN PRANKED!",
+          "🎪 WELCOME TO THE CIRCUS!",
+          "🤹 MAGIC TRICK!",
+          "🎨 ART OF TROLLING!",
+          "🎪 BIGGEST TROLL EVER!",
+          "😂 BẠN ĐÃ BỊ LỪA!"
+        ];
+        return messages[Math.floor(Math.random() * messages.length)];
+      }
+
+      function getRandomColor() {
+        const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#fd79a8', '#00ff00', '#ff00ff'];
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      // Add shake animation
+      const shakeStyle = document.createElement('style');
+      shakeStyle.textContent = `
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          25% { transform: translateX(-10px); }
+          75% { transform: translateX(10px); }
+        }
+      `;
+      document.head.appendChild(shakeStyle);
+
+      // Mouse movement effects
+      document.addEventListener('mousemove', (e) => {
+        // Random chance to show dancing text
+        if (Math.random() < 0.001) {
+          showRandomDancingText("👻 BOO!");
+        }
+        
+        // Create sparkles on mouse move
+        if (Math.random() < 0.02) {
+          const sparkle = document.createElement('div');
+          sparkle.style.position = 'absolute';
+          sparkle.style.left = e.clientX + 'px';
+          sparkle.style.top = e.clientY + 'px';
+          sparkle.style.fontSize = '1rem';
+          sparkle.style.pointerEvents = 'none';
+          sparkle.style.animation = 'sparkleClick 1s ease-out forwards';
+          sparkle.textContent = '✨';
+          sparkle.style.zIndex = '1000';
+          
+          document.body.appendChild(sparkle);
+          
+          setTimeout(() => {
+            if (sparkle.parentNode) {
+              sparkle.parentNode.removeChild(sparkle);
+            }
+          }, 1000);
+        }
+      });
+
+      // Keyboard events
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          showRandomDancingText("❌ ESC KHÔNG WORK ĐÂU! 😂");
+          shakeScreen();
+        }
+        
+        if (e.key === 'F5') {
+          e.preventDefault();
+          showRandomDancingText("🔄 REFRESH LÀM GÌ? TROLL FOREVER! 🔄");
+          createEmojiRain();
+        }
+      });
+
+      // Prevent right click
+      document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        showRandomDancingText("❌ KHÔNG ĐƯỢC CHUỘT PHẢI! 😈");
+        trollUser(Math.floor(Math.random() * 6) + 1);
+      });
+
+      // Initialize
+      window.addEventListener('load', () => {
+        startCountdown();
+        showRandomDancingText("🎉 WELCOME TO TROLL PARADISE! 🎉");
+        
+        // Auto troll every 10 seconds
+        setInterval(() => {
+          if (Math.random() < 0.3) {
+            showRandomDancingText(getRandomTrollMessage());
+            createEmojiRain();
+          }
+        }, 10000);
+      });
+
+      // Add sparkle animation
+      const sparkleStyle = document.createElement('style');
+      sparkleStyle.textContent = `
+        @keyframes sparkleClick {
+          0% { transform: scale(0) rotate(0deg); opacity: 1; }
+          100% { transform: scale(2) rotate(360deg); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(sparkleStyle);
+
+      // Fake loading simulation
+      setTimeout(() => {
+        document.getElementById('status').textContent = 'TROLL SYSTEM READY!';
+      }, 3000);
+    </script>
+  </body>
+</html>
